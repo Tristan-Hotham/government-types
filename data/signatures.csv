@@ -1,0 +1,113 @@
+signature_id,n_countries,population,family_id,head_of_state,head_of_state_detail,executive,hos_hog,territory,chambers,electoral_system,power_sharing,iso3,countries
+S001,14,40370453,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,List PR,No,ALB ARM BGR CPV EST FJI HRV ISL ISR KOS LVA MKD MNE SVK,Albania; Armenia; Bulgaria; Cabo Verde; Croatia; Estonia; Fiji; Iceland; Israel; Kosovo; Latvia; Montenegro; North Macedonia; Slovakia
+S002,13,301390001,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,List PR,No,AGO BEN CRI CYP ECU GTM HND LKA MOZ PER SLE SLV TUR,Angola; Benin; Costa Rica; Cyprus; Ecuador; El Salvador; Guatemala; Honduras; Mozambique; Peru; Sierra Leone; Sri Lanka; Turkey
+S003,7,100235056,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Bicameral,List PR,No,CHL COL DOM GNQ NAM PRY URY,Chile; Colombia; Dominican Republic; Equatorial Guinea; Namibia; Paraguay; Uruguay
+S005,6,133930929,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,First past the post,No,GHA GMB MDV MWI UGA ZMB,Gambia; Ghana; Malawi; Maldives; Uganda; Zambia
+S004,6,4054695,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Unitary,Bicameral,First past the post,No,ATG BHS BLZ GRD JAM LCA,Antigua and Barbuda; Bahamas; Belize; Grenada; Jamaica; Saint Lucia
+S006,5,28905834,PR,Republic,President,Parliamentary,Separate,Unitary with autonomous regions,Unicameral,List PR,No,FIN GEO GRC MDA SRB,Finland; Georgia; Greece; Moldova; Serbia
+S007,4,92290959,MI,Republic,President,Military government,Separate,Unitary,Unicameral,Indirect or appointed,No,BFA GIN MLI NER,Burkina Faso; Guinea; Mali; Niger
+S009,4,84025448,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Bicameral,Two-round system,No,BLR CIV CMR TUN,Belarus; Cameroon; Côte d'Ivoire; Tunisia
+S008,4,58045351,PR,Republic,President,Parliamentary,Separate,Unitary,Bicameral,List PR,No,CZE POL SVN TGO,Czechia; Poland; Slovenia; Togo
+S012,3,1854557130,PR,Republic,President,Parliamentary,Separate,Federal,Bicameral,First past the post,No,ETH IND PAK,Ethiopia; India; Pakistan
+S015,3,174837126,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Bicameral,List PR,No,COD DZA RWA,Algeria; DR Congo; Rwanda
+S013,3,164627124,PS,Republic,President,Presidential,Fused (one person or body),Unitary with autonomous regions,Bicameral,Parallel,No,PHL TJK UZB,Philippines; Tajikistan; Uzbekistan
+S016,3,160213454,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Bicameral,Parallel,No,EGY KAZ TCD,Chad; Egypt; Kazakhstan
+S011,3,139106766,OP,Republic,President,One-party state,Separate,Unitary,Unicameral,Two-round system,No,CUB PRK VNM,Cuba; North Korea; Vietnam
+S014,3,63281362,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Bicameral,First past the post,No,KEN LBR PLW,Kenya; Liberia; Palau
+S017,3,47815409,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Unicameral,Parallel,No,MRT SEN TWN,Mauritania; Senegal; Taiwan
+S010,3,16894460,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Unitary,Unicameral,List PR,No,LUX NOR SWE,Luxembourg; Norway; Sweden
+S024,2,579312639,PS,Republic,President,Presidential,Fused (one person or body),Federal,Bicameral,First past the post,No,NGA USA,Nigeria; United States
+S025,2,258663783,PS,Republic,President,Presidential,Fused (one person or body),Federal,Bicameral,List PR,No,ARG BRA,Argentina; Brazil
+S032,2,181100495,TR,Republic,President,Transitional or divided authority,Separate,Unitary,None sitting,No sitting chamber,No,BGD PSE,Bangladesh; Palestine
+S030,2,75204774,SP,Republic,President,Semi-presidential: premier-presidential,Separate,Unitary,Bicameral,Two-round system,No,COG FRA,Congo (Republic); France
+S019,2,73983188,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Unitary,Bicameral,Mixed-member proportional,No,LSO THA,Lesotho; Thailand
+S021,2,57100163,MI,Republic,President,Military government,Separate,Unitary,None sitting,No sitting chamber,No,GNB MMR,Guinea-Bissau; Myanmar
+S018,2,39945770,AM,Absolute monarchy,Hereditary monarch,Royal (absolute),Separate,Unitary,Unicameral,Indirect or appointed,No,QAT SAU,Qatar; Saudi Arabia
+S026,2,29532638,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Bicameral,Mixed-member proportional,No,BOL ZWE,Bolivia; Zimbabwe
+S029,2,11045125,SP,Republic,President,Semi-presidential: premier-presidential,Separate,Unitary with autonomous regions,Unicameral,List PR,No,PRT STP,Portugal; São Tomé and Príncipe
+S028,2,7755335,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,Two-round system,No,KIR TKM,Kiribati; Turkmenistan
+S031,2,6457752,SP,Republic,President,Semi-presidential: premier-presidential,Separate,Unitary,Unicameral,Parallel,No,LTU MNG,Lithuania; Mongolia
+S027,2,4693919,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,Parallel,No,PAN SYC,Panama; Seychelles
+S023,2,1475836,AE,Republic,President,"Parliamentary, executive president chosen by or through the legislature",Fused (one person or body),Unitary,Unicameral,List PR,No,GUY SUR,Guyana; Suriname
+S020,2,938569,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Unitary,Unicameral,First past the post,No,SLB VCT,Saint Vincent and the Grenadines; Solomon Islands
+S022,2,285177,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,First past the post,No,DMA WSM,Dominica; Samoa
+S070,1,1406585000,OP,Republic,President,One-party state,Separate,Unitary with autonomous regions,Unicameral,Indirect or appointed,No,CHN,China
+S094,1,285721236,PS,Republic,President,Presidential,Fused (one person or body),Unitary with autonomous regions,Bicameral,List PR,No,IDN,Indonesia
+S104,1,143513328,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Federal,Bicameral,Parallel,No,RUS,Russia
+S091,1,131946900,PS,Republic,President,Presidential,Fused (one person or body),Federal,Bicameral,Mixed-member proportional,No,MEX,Mexico
+S046,1,123366734,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Unitary,Bicameral,Parallel,No,JPN,Japan
+S111,1,92417681,TH,Republic,Supreme Leader,Theocratic,Separate,Unitary,Unicameral,Two-round system,No,IRN,Iran
+S074,1,83491249,PR,Republic,President,Parliamentary,Separate,Federal,Bicameral,Mixed-member proportional,No,DEU,Germany
+S095,1,70545865,PS,Republic,President,Presidential,Fused (one person or body),Unitary with autonomous regions,Unicameral,First past the post,No,TZA,Tanzania
+S042,1,69487000,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Regionalised,Bicameral,First past the post,No,GBR,United Kingdom
+S088,1,64747319,AE,Republic,President,"Parliamentary, executive president chosen by or through the legislature",Fused (one person or body),Unitary,Bicameral,List PR,No,ZAF,South Africa
+S077,1,58915656,PR,Republic,President,Parliamentary,Separate,Regionalised,Bicameral,Parallel,No,ITA,Italy
+S099,1,51684564,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,Mixed-member proportional,No,KOR,South Korea
+S062,1,51662147,MI,Republic,Collective presidency,Military government,Separate,Unitary,None sitting,No sitting chamber,No,SDN,Sudan
+S043,1,49355143,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Regionalised,Bicameral,List PR,No,ESP,Spain
+S076,1,47020774,PR,Republic,President,Parliamentary,Separate,Federal,Unicameral,Single non-transferable vote,No,IRQ,Iraq
+S112,1,43844111,TH,Theocratic emirate,Emir (religious leader),Theocratic,Separate,Unitary,None sitting,No sitting chamber,No,AFG,Afghanistan
+S065,1,41773878,TR,Republic,Collective presidency,Transitional or divided authority,Separate,Unitary,Bicameral,First past the post,No,YEM,Yemen
+S049,1,41651653,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Federal,Bicameral,First past the post,No,CAN,Canada
+S101,1,38980376,SP,Republic,President,Semi-presidential: premier-presidential,Separate,Unitary with autonomous regions,Unicameral,Parallel,No,UKR,Ukraine
+S054,1,38430770,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,Bicameral,List PR,No,MAR,Morocco
+S039,1,35977838,PM,"Constitutional monarchy, ceremonial monarch",Elective monarch,Parliamentary,Separate,Federal,Bicameral,First past the post,No,MYS,Malaysia
+S068,1,32740678,MI,Republic,President,Military government,Separate,Unitary,Bicameral,Parallel,No,MDG,Madagascar
+S075,1,29618118,PR,Republic,President,Parliamentary,Separate,Federal,Bicameral,Parallel,No,NPL,Nepal
+S092,1,28516896,PS,Republic,President,Presidential,Fused (one person or body),Federal,Unicameral,Parallel,No,VEN,Venezuela
+S048,1,27614411,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Federal,Bicameral,Alternative vote,No,AUS,Australia
+S110,1,25620427,TR,Republic,President,Transitional or divided authority,Fused (one person or body),Unitary,Unicameral,Indirect or appointed,No,SYR,Syria
+S072,1,19654739,PR,Republic,President,Parliamentary,Separate,Federal,Bicameral,Indirect or appointed,No,SOM,Somalia
+S102,1,19020271,SP,Republic,President,Semi-presidential: premier-presidential,Separate,Unitary,Bicameral,List PR,No,ROU,Romania
+S044,1,18087633,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Unitary with autonomous regions,Bicameral,List PR,No,NLD,Netherlands
+S040,1,17847982,PM,"Constitutional monarchy, ceremonial monarch",Elective monarch,Parliamentary,Separate,Unitary,Bicameral,List PR,No,KHM,Cambodia
+S106,1,14390003,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Bicameral,List PR,Ethnic,BDI,Burundi
+S109,1,12188788,TR,Republic,President,Transitional or divided authority,Fused (one person or body),Unitary,Bicameral,Indirect or appointed,No,SSD,South Sudan
+S041,1,11941781,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Federal,Bicameral,List PR,Linguistic,BEL,Belgium
+S066,1,11906095,TR,Republic,Collective presidency,Transitional or divided authority,Separate,Unitary,None sitting,No sitting chamber,No,HTI,Haiti
+S055,1,11520684,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,Bicameral,Parallel,No,JOR,Jordan
+S033,1,11513149,AM,Absolute monarchy,Elective monarch,Royal (absolute),Separate,Federal,Unicameral,Indirect or appointed,No,ARE,United Arab Emirates
+S051,1,10762817,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Unitary with autonomous regions,Unicameral,Alternative vote,No,PNG,Papua New Guinea
+S105,1,10246996,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary with autonomous regions,Unicameral,First past the post,No,AZE,Azerbaijan
+S083,1,9514251,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,Mixed-member proportional,No,HUN,Hungary
+S073,1,9208163,PR,Republic,President,Parliamentary,Separate,Federal,Bicameral,List PR,No,AUT,Austria
+S061,1,9092436,AE,Republic,Collective presidency,Directorial,Fused (one person or body),Federal,Bicameral,List PR,No,CHE,Switzerland
+S071,1,7873046,OP,Republic,President,One-party state,Separate,Unitary,Unicameral,Block vote,No,LAO,Laos
+S067,1,7458555,TR,Republic,Collective presidency,Transitional or divided authority,Separate,Unitary,Unicameral,Parallel,No,LBY,Libya
+S100,1,7343064,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,Single non-transferable vote,No,KGZ,Kyrgyzstan
+S096,1,7007502,PS,Republic,President,Presidential,Fused (one person or body),Unitary with autonomous regions,Unicameral,List PR,No,NIC,Nicaragua
+S084,1,6111175,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,Party block vote,No,SGP,Singapore
+S045,1,6009169,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Unitary with autonomous regions,Unicameral,List PR,No,DNK,Denmark
+S082,1,5849421,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,List PR,Confessional,LBN,Lebanon
+S108,1,5513282,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Unicameral,Two-round system,No,CAF,Central African Republic
+S035,1,5494691,AM,Absolute monarchy,Hereditary monarch,Royal (absolute),Fused (one person or body),Unitary,Bicameral,First past the post,No,OMN,Oman
+S081,1,5484367,PR,Republic,President,Parliamentary,Separate,Unitary,Bicameral,Single transferable vote,No,IRL,Ireland
+S053,1,5324700,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Unitary,Unicameral,Mixed-member proportional,No,NZL,New Zealand
+S057,1,4865298,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,None sitting,No sitting chamber,No,KWT,Kuwait
+S069,1,3607003,OP,Republic,President,One-party state,Fused (one person or body),Unitary,None sitting,No sitting chamber,No,ERI,Eritrea
+S063,1,3140095,PR,Republic,Collective presidency,Parliamentary,Separate,Federal,Bicameral,List PR,Ethnic,BIH,Bosnia and Herzegovina
+S097,1,2593130,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Bicameral,Two-round system,No,GAB,Gabon
+S090,1,2562122,AE,Republic,President,"Parliamentary, executive president chosen by or through the legislature",Fused (one person or body),Unitary,Unicameral,First past the post,No,BWA,Botswana
+S056,1,1600366,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,Bicameral,Two-round system,No,BHR,Bahrain
+S103,1,1418517,SP,Republic,President,Semi-presidential: premier-presidential,Separate,Unitary,Unicameral,List PR,No,TLS,Timor-Leste
+S078,1,1367764,PR,Republic,President,Parliamentary,Separate,Unitary with autonomous regions,Bicameral,First past the post,No,TTO,Trinidad and Tobago
+S037,1,1256174,AM,Absolute monarchy,Hereditary monarch,Royal (absolute),Separate,Unitary,Bicameral,First past the post,No,SWZ,Eswatini
+S079,1,1243741,PR,Republic,President,Parliamentary,Separate,Unitary with autonomous regions,Unicameral,Block vote,No,MUS,Mauritius
+S107,1,1184076,SR,Republic,President,Semi-presidential: president-parliamentary,Separate,Unitary,Unicameral,Mixed-member proportional,No,DJI,Djibouti
+S093,1,882847,PS,Republic,President,Presidential,Fused (one person or body),Federal,Unicameral,Two-round system,No,COM,Comoros
+S047,1,796682,PM,"Constitutional monarchy, ceremonial monarch",Hereditary monarch,Parliamentary,Separate,Unitary,Bicameral,Two-round system,No,BTN,Bhutan
+S086,1,579704,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,Single transferable vote,No,MLT,Malta
+S036,1,466330,AM,Absolute monarchy,Hereditary monarch,Royal (absolute),Fused (one person or body),Unitary,Unicameral,Indirect or appointed,No,BRN,Brunei
+S085,1,335169,PR,Republic,President,Parliamentary,Separate,Unitary,Unicameral,Single non-transferable vote,No,VUT,Vanuatu
+S080,1,282623,PR,Republic,President,Parliamentary,Separate,Unitary,Bicameral,First past the post,No,BRB,Barbados
+S087,1,113683,AE,Republic,President,"Parliamentary, executive president chosen by or through the legislature",Fused (one person or body),Federal,Unicameral,First past the post,No,FSM,Micronesia
+S058,1,103742,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,Unicameral,First past the post,No,TON,Tonga
+S038,1,82904,PM,"Constitutional monarchy, ceremonial monarch",Co-princes,Parliamentary,Separate,Unitary,Unicameral,Parallel,No,AND,Andorra
+S050,1,46922,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Federal,Unicameral,First past the post,No,KNA,Saint Kitts and Nevis
+S059,1,41024,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,Unicameral,List PR,No,LIE,Liechtenstein
+S060,1,38341,RM,"Constitutional monarchy, ruling monarch",Hereditary monarch,Dualist (monarch and parliament),Separate,Unitary,Unicameral,Parallel,No,MCO,Monaco
+S098,1,36282,PS,Republic,President,Presidential,Fused (one person or body),Unitary,Unicameral,Block vote,No,MHL,Marshall Islands
+S064,1,34109,PR,Republic,Collective presidency,Parliamentary,Separate,Unitary,Unicameral,List PR,No,SMR,San Marino
+S089,1,12025,AE,Republic,President,"Parliamentary, executive president chosen by or through the legislature",Fused (one person or body),Unitary,Unicameral,Borda count,No,NRU,Nauru
+S052,1,9492,PM,"Constitutional monarchy, ceremonial monarch",Monarch abroad (Commonwealth realm),Parliamentary,Separate,Unitary,Unicameral,Block vote,No,TUV,Tuvalu
+S034,1,825,TH,Absolute monarchy,Elective monarch,Theocratic,Separate,Unitary,Unicameral,Indirect or appointed,No,VAT,Holy See (Vatican City)

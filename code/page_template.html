@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>How the World Is Governed</title>
+<meta name="description" content="Every country's system of government, {{n.countries|int}} of them, mapped in detail: head of state, executive, federalism, chambers and electoral system, grouped into {{n.families|int}} families and {{signatures.n|int}} exact systems, beside V-Dem's democracy scores.">
+<meta property="og:title" content="How the world is governed: {{n.countries|int}} countries, {{signatures.n|int}} systems">
+<meta property="og:description" content="Beyond democracy or not: {{signatures.n_unique|int}} countries have a system of government no other country shares. V-Dem {{meta.vdem_version|raw}} and the CIA World Factbook, cross-checked.">
+<meta property="og:image" content="https://maps.tristanhotham.com/government-types/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/government-types/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Parchment: warm paper, iron-gall ink, sealing-wax red, a pale sea. */
+:root{
+  --bg:#F4EFE4; --panel:#EAE3D3; --fg:#22201C; --muted:#6A6458; --rule:#DCD3C0; --card:#FFFDF7; --border:#C9BFA9;
+  --hot:#A8322D; --gold:#B8860B; --ink:#1F2A44; --cool:#2F6F9F; --sea:#DFE7E6; --terr:#E2DCCF;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#17150F; --panel:#221F18; --fg:#EEE9DD; --muted:#A9A190; --rule:#38332A; --card:#1D1A14; --border:#4B4537;
+  --hot:#E07A6E; --gold:#E3B54A; --ink:#C7D2EA; --cool:#86B6DE; --sea:#1B2224; --terr:#2B2820; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17150F; --panel:#221F18; --fg:#EEE9DD; --muted:#A9A190; --rule:#38332A; --card:#1D1A14; --border:#4B4537;
+  --hot:#E07A6E; --gold:#E3B54A; --ink:#C7D2EA; --cool:#86B6DE; --sea:#1B2224; --terr:#2B2820; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden;overflow-x:clip}
+.wrap{max-width:720px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1220px,calc(100vw - 32px));margin-left:calc((100% - min(1220px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--ink);color:var(--bg);padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(42px,10.5vw,92px)/.9 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot)} h1 .b{color:var(--cool)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block;color:var(--fg)}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:58ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--gold)} .stats b.p{color:var(--ink)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:300px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:minmax(0,1fr)}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:700px;overflow:auto;min-width:0}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 26px/1.1 var(--display);margin:2px 0 4px;overflow-wrap:anywhere}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.side ul{margin:4px 0 8px;padding-left:18px}
+.side li{margin:3px 0}
+.side table{width:100%;border-collapse:collapse;margin:4px 0 6px;table-layout:fixed}
+.side td{padding:5px 4px 5px 0;border-bottom:1px solid var(--rule);vertical-align:top;overflow-wrap:anywhere}
+.side td:first-child{width:34%;color:var(--muted)}
+.side small{color:var(--muted);font-size:11px;line-height:1.35;display:block;margin-top:2px}
+.badge{display:inline-block;font:500 10px/1 var(--mono);padding:3px 5px;border-radius:2px;margin:3px 4px 0 0;border:1px solid var(--border);white-space:nowrap}
+.badge.agree{background:#2E7D4F;color:#fff;border-color:#2E7D4F}.badge.disagree{background:var(--hot);color:#fff;border-color:var(--hot)}
+.badge.hand{background:var(--gold);color:#1b1b1b;border-color:var(--gold)}.badge.one{background:var(--panel)}
+.back{font:400 12px var(--mono);background:none;border:0;color:var(--muted);padding:0;cursor:pointer;text-decoration:underline;margin-bottom:6px}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.chips{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 8px}
+.chip{font:400 11.5px/1 var(--mono);border:1px solid var(--border);border-radius:12px;padding:4px 8px;background:var(--bg);cursor:pointer;white-space:nowrap}
+.chip:hover{background:var(--panel)}
+.chip i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.lmap{height:640px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:600px){.lmap{height:min(62vh,470px)}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:250px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(62vh,540px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--hot)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.cntL{font:600 10.5px/1 var(--mono);color:var(--fg);white-space:nowrap;letter-spacing:.03em;text-shadow:0 0 3px var(--card),0 0 3px var(--card),0 0 2px var(--card);pointer-events:none;text-align:center}
+.mapnote{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid var(--border);border-radius:3px;padding:6px 9px;font:400 12px/1.35 var(--mono);max-width:min(320px,62vw);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.mapnote:empty{display:none}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+@media (max-width:600px){.leaflet-control-attribution{font-size:9px;line-height:1.25;max-width:58vw}}
+.leaflet-tooltip{font:400 12px/1.4 var(--mono);background:var(--card);color:var(--fg);border-color:var(--border)}
+.legend{font:400 12px/1.3 var(--mono);color:var(--fg);margin-top:10px;border:1px solid var(--border);background:var(--card);padding:10px 10px 6px}
+.legend .lh{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:2px 0 8px}
+.legend .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:6px 16px}
+.legend .item{display:flex;gap:7px;align-items:flex-start;cursor:pointer;padding:2px 3px;border-radius:2px;min-width:0}
+.legend .item:hover{background:var(--panel)}
+.legend .item.off{opacity:.35}
+.legend .sw{flex:0 0 auto;display:flex;gap:1px;margin-top:1px}
+.legend .sw i{display:block;width:13px;height:13px;border:1px solid rgba(0,0,0,.18)}
+.legend .tx{min-width:0;overflow-wrap:anywhere}
+.legend .tx small{color:var(--muted);display:block;font-size:11px}
+.legend .pats{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;border-top:1px solid var(--rule);padding-top:8px;color:var(--muted)}
+.legend .pats span{display:inline-flex;gap:6px;align-items:center}
+.legend .pats svg{width:18px;height:13px;border:1px solid rgba(0,0,0,.25);background:#C9BFA9}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+table.tbl{width:100%;border-collapse:collapse;font:400 13px/1.4 var(--mono)}
+table.tbl th{font:500 11px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 6px 6px 0;border-bottom:2px solid var(--fg);vertical-align:bottom}
+table.tbl td{padding:6px 6px 6px 0;border-bottom:1px solid var(--rule);vertical-align:top;overflow-wrap:anywhere}
+table.tbl td.r,table.tbl th.r{text-align:right;white-space:nowrap}
+table.tbl tr[data-q]{cursor:pointer}
+table.tbl tr[data-q]:hover td{background:var(--panel)}
+table.tbl small{color:var(--muted)}
+.tablebox{max-height:520px;overflow:auto;border:1px solid var(--border);background:var(--card);padding:0 10px}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+ <pattern id="hFed" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)"><rect width="2.1" height="7" fill="rgba(25,22,18,.55)"/></pattern>
+ <pattern id="hReg" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-45)"><rect width="1.4" height="7" fill="rgba(25,22,18,.45)"/><rect y="0" width="7" height="1.4" fill="rgba(25,22,18,.45)"/></pattern>
+ <pattern id="hAut" patternUnits="userSpaceOnUse" width="8" height="8"><circle cx="4" cy="4" r="1.25" fill="rgba(25,22,18,.55)"/></pattern>
+</defs></svg>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Political systems</span><span>{{n.countries|int}} countries, {{meta.ref_year|raw}}</span></div>
+<header class="hero">
+  <h1>How the world <span class="a">is</span> <span class="b">governed</span></h1>
+  <svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">"Democracy or not" is only the first question. Ask who is head of state, who runs the government and who can sack them, how the country is divided and how its parliament is elected, and the {{n.countries|int}} countries of the world fall into {{n.families|int}} families and {{signatures.n|int}} distinct systems. {{signatures.n_unique|int}} of those systems belong to a single country.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: V-Dem {{meta.vdem_version|raw}}; CIA World Factbook; World Bank; Natural Earth</div>
+
+<div class="stats">
+  <div><b class="p">{{n.families|int}}</b><span>families of government, from parliamentary monarchies to military rule</span></div>
+  <div><b class="c">{{signatures.n|int}}</b><span>exact systems once head of state, executive, territory, chambers, voting and power sharing are all compared</span></div>
+  <div><b class="g">{{signatures.n_unique|int}}</b><span>countries whose system no other country shares, home to {{signatures.pop_unique_pct|pc}} of the world's people</span></div>
+  <div><b class="h">{{h.autoc_pop_pct|pc}}</b><span>of the world's people live in autocracies, by V-Dem's Regimes of the World for {{meta.vdem_year|raw}}</span></div>
+</div>
+
+<p class="lede">Most maps of political systems use two or three colours: democracies, autocracies and a grey zone between. That tells you something important, but it hides almost everything about how a country is actually put together. Germany and Italy are both parliamentary republics with a ceremonial president. Look closer and Germany is a federation that elects its Bundestag by mixed-member proportional representation, while Italy is a regionalised state whose Chamber of Deputies uses a parallel system with no compensation between its two tiers. They are cousins, not twins.</p>
+<p>This page sorts every country by eight features of its constitution and its practice, cross-checks each against two independent sources, and documents every case where I had to decide by hand. Then it sets those features beside V-Dem's measures of how democratic each country really is, because the form of a government and the freedom of its people are different questions.</p>
+
+<h2><span class="n">01 · The map</span>Every country, by family and kind</h2>
+<p>Each colour is a family of government. Within a family, darker shades elect the lower (or only) chamber by majority or plurality, middle shades use a mixed or semi-proportional system, lighter shades use proportional representation, and the palest shades have no directly elected chamber. Stripes mark federations, a fine cross-hatch regionalised states, dots unitary states with autonomous regions. Switch the colours to any single feature, click a country for its full record, or ask for the systems most like it.</p>
+<div class="bleed" id="atlas">
+<div class="controls"><div class="scrollrow" id="modeRow"><span class="ctl-l">Colour by</span></div></div>
+<div class="controls">
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a country" aria-label="Search a country" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+  <button class="btn" id="likeBtn" aria-pressed="false" disabled>Systems like this</button>
+</div>
+<div class="controls"><div class="scrollrow" id="focusRow"><span class="ctl-l">Zoom to</span></div></div>
+<div class="mapgrid">
+  <div style="min-width:0"><div id="map" class="lmap" role="application" aria-label="World map of systems of government"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+<p class="src">Classification of {{n.countries|int}} states (the {{n.un_members|int}} UN members, the two UN observer states, Taiwan and Kosovo) as at the start of {{meta.ref_year|raw}}. Sources: V-Dem Country-Year Dataset {{meta.vdem_version|raw}} (Coppedge et al. 2026, CC BY-SA 4.0), latest year {{meta.vdem_year|raw}}; CIA World Factbook (2026 and December 2024 editions, public domain, via factbook.json); {{hand.n|int}} documented hand decisions. Population: World Bank {{n.pop_year|raw}}. Boundaries: Natural Earth; small states shown as dots. Grey land is a dependent territory or an unrecognised state, not classified. Base map tiles (optional) © Esri.</p>
+</div>
+
+<h2><span class="n">02 · Families</span>Twelve ways to run a country</h2>
+<p>The families group countries by two things: what kind of head of state they have and how the government is formed and removed. Presidential republics are the largest family by count ({{families.7.n|int}} countries), parliamentary republics next ({{families.3.n|int}}), and each holds a little over a quarter of the world's people ({{families.7.pop_pct|pc}} and {{families.3.pop_pct|pc}}). Then come the {{families.0.n|int}} parliamentary monarchies, {{h.realms|int}} of them Commonwealth realms whose monarch lives in London.</p>
+<div class="figure"><p class="fig-h">Countries and people in each family</p><p class="fig-sub">Each bar is split by how the lower or only chamber is elected (shades as on the map). Hover a segment; click a bar to show the family on the map.</p>
+<div class="controls"><div class="scrollrow" id="famRow"><span class="ctl-l">Measure</span><button class="btn" data-k="n" aria-pressed="true">Countries</button><button class="btn" data-k="pop" aria-pressed="false">Share of world population</button></div></div>
+<div class="chart" id="famChart"></div></div>
+<p>Population changes the picture. The {{families.8.n|int}} one-party states hold {{families.8.pop_pct|pc}} of humanity, almost all of it in China. The semi-presidential world splits in two: the {{families.5.n|int}} premier-presidential systems, where the government answers to parliament alone, are mostly in Europe; the {{families.6.n|int}} president-parliamentary systems, where the president can also dismiss the prime minister, include Russia, Egypt, Algeria, Kazakhstan and much of francophone Africa, and hold {{families.6.pop_pct|pc}} of the world's people. {{h.no_election_exec_n|int}} countries, with {{h.no_election_exec_pop_pct|pc}} of the world's people, are run by a party, an army, a cleric, a royal family or a transitional council rather than by an elected executive.</p>
+<p>There are {{h.monarchies|int}} monarchies in all, home to {{h.monarchies_pop_pct|pc}} of the world's people, and {{h.federal_n|int}} federations. The federations are few but large: India, the United States, Pakistan, Nigeria, Brazil and Russia are all federal, so {{h.federal_pop_pct|pc}} of humanity lives in one.</p>
+
+<h2><span class="n">03 · Exact systems</span>Twins, cousins and loners</h2>
+<p>Two countries count as having the same system only when all eight features match: the kind of head of state, how that office is filled (hereditary, elected, a monarch abroad, a collective presidency), the executive, whether head of state and head of government are one office, the territorial structure, the number of chambers, the lower-house electoral system and any power sharing fixed by community. On that test there are {{signatures.n|int}} systems. Only {{signatures.n_shared|int}} are shared by two or more countries; the other {{signatures.n_unique|int}} countries are loners.</p>
+<div class="figure"><p class="fig-h">The most widely shared systems</p><p class="fig-sub">Every country in a row has the same eight features. Click a row to light them up on the map.</p><div class="tablebox"><table class="tbl" id="sigTable"></table></div></div>
+<p>The largest group is a European one: {{signatures.largest.n|int}} unitary parliamentary republics with one chamber elected by list proportional representation, from Estonia and Latvia through Croatia, Bulgaria and North Macedonia to Israel, Iceland, Armenia, Cabo Verde and Fiji. The second is its presidential mirror, {{signatures.second.n|int}} unitary presidential republics with one list-PR chamber: six in Latin America, with Turkey, Cyprus, Sri Lanka, Angola, Benin, Mozambique and Sierra Leone. Some pairs are surprising. India shares its exact system with Pakistan and Ethiopia (federal parliamentary republics with two chambers and first past the post), the United States with Nigeria, and Brazil with Argentina.</p>
+<p>Germany and Italy, the pair this study started from, differ in two of the eight features: territory (federal against regionalised) and electoral system (mixed-member proportional against parallel). France, on the other hand, has exactly the same constitutional form as the Republic of the Congo: premier-presidential, unitary, two chambers, the two-round system. V-Dem scores France's liberal democracy at {{spot.FRA.libdem|f2}} and Congo's at {{spot.COG.libdem|f2}}. The form of a government is not its quality.</p>
+<h3>The loners</h3>
+<p>{{signatures.n_unique|int}} countries, {{signatures.pop_unique_pct|pc}} of the world's people, have a system nobody else has. The biggest are China, Indonesia, Russia, Mexico, Japan, Iran and Germany. Some are famous one-offs: Switzerland's seven-member Federal Council, Bosnia's three-member ethnic presidency, Lebanon's confessional parliament, the co-princes of Andorra, the Holy See. Others are unique because of one feature, such as Ireland's single transferable vote or Nauru's Borda count.</p>
+<div class="figure"><p class="fig-h">One-country systems, by family</p><p class="fig-sub">Click a name to open its record.</p><div id="uniqList"></div></div>
+
+<h2><span class="n">04 · Form and freedom</span>How the parts fit together</h2>
+<p>V-Dem's Regimes of the World puts each country in one of four classes for {{meta.vdem_year|raw}}: closed autocracy ({{h.closed_n|int}} countries), electoral autocracy ({{h.elaut_n|int}}), electoral democracy ({{h.eldem_n|int}}) and liberal democracy ({{h.lib_n|int}}). Only {{h.lib_pop_pct|pc}} of the world's people live in a liberal democracy. {{n.not_vdem|int}} small states are not covered by V-Dem. Setting the classes against the constitutional features shows some strong patterns. They are descriptive only: history, region, wealth and colonial inheritance shape both the institutions and the democracy, and a constitution can be copied without its spirit.</p>
+<div class="figure"><p class="fig-h">Electoral system against regime type</p><p class="fig-sub">Lower or only chamber, by V-Dem's Regimes of the World ({{meta.vdem_year|raw}}). Hover a cell.</p>
+<div class="controls"><div class="scrollrow" id="xRow"><span class="ctl-l">Count</span><button class="btn" data-k="n" aria-pressed="true">Countries</button><button class="btn" data-k="pop" aria-pressed="false">People (millions)</button></div></div>
+<div class="chart" id="xChart"></div></div>
+<p>{{x_elec_regime.dem_share.Proportional|pc}} of the countries that elect their lower house by proportional representation are democracies of either kind, against {{x_elec_regime.dem_share.Majoritarian|pc}} of those with a majoritarian system and {{x_elec_regime.dem_share.Mixed|pc}} of those with a mixed one. List PR is the commonest system by count ({{h.listpr_n|int}} countries) but covers only {{h.listpr_pop_pct|pc}} of the world's people; first past the post is used by {{h.fptp_n|int}} countries holding {{h.fptp_pop_pct|pc}}, {{h.fptp_ind_usa_share|pc}} of them in India and the United States.</p>
+<div class="figure"><p class="fig-h">Liberal democracy by family</p><p class="fig-sub">V-Dem's Liberal Democracy Index ({{meta.vdem_year|raw}}, 0 to 1), one dot per country; the tick is the family median. Hover a dot; click to open its record.</p><div class="chart" id="ldiChart"></div></div>
+<p>The most striking pattern is the monarchies. The {{mon_vs.cer_mon_n|int}} ceremonial monarchies that V-Dem scores have a mean Liberal Democracy Index of {{mon_vs.cer_mon_libdem_mean|f2}}, against {{mon_vs.parl_rep_libdem_mean|f2}} for parliamentary republics, and {{mon_vs.cer_mon_lib_n|int}} of the {{mon_vs.cer_mon_n|int}} are liberal democracies. The top three countries on the index, Denmark, Sweden and Norway, are all kingdoms. That is a story about Scandinavia and the old Commonwealth, not about crowns: Thailand, Cambodia and Papua New Guinea are ceremonial monarchies too, and V-Dem classes all three as autocracies. Where the monarch actually rules, the scores are low.</p>
+<p>The split inside semi-presidentialism is just as sharp. {{pres_parl.spp_dem_pct|pc}} of the premier-presidential countries are democracies, against {{pres_parl.srp_dem_pct|pc}} of the president-parliamentary ones. Among presidential republics the share is {{pres_parl.pres_dem_pct|pc}}, among parliamentary republics {{pres_parl.parl_dem_pct|pc}}.</p>
+<p class="pull">Two countries can share a constitution line for line and still live under very different governments.</p>
+
+<h2><span class="n">05 · Hard cases</span>Where I had to decide</h2>
+<p>Most countries classify themselves. Some do not fit any box cleanly, and for those I made a decision by hand, gave a reason and cited the constitution, a statute or the source text behind it. There are {{hand.n|int}} hand decisions across {{hand.countries|int}} countries; {{hand.by_conf.high|int}} I rate high confidence and {{hand.by_conf.medium|int}} medium. The table shows the hardest cases.</p>
+<div class="figure"><p class="fig-h">The hardest cases</p><p class="fig-sub">Click a row to open the country. Every decision, with its citation, is in data/hand_decisions.csv.</p><div class="tablebox"><table class="tbl" id="hardTable"></table></div></div>
+<details><summary>All {{hand.n|int}} hand decisions, with reasons and citations</summary><div class="tablebox"><table class="tbl" id="handTable"></table></div></details>
+
+<h2><span class="n">06 · Two sources</span>Checking the classification</h2>
+<p>Each field rests on V-Dem's expert coding of how the system works in practice and on the CIA World Factbook's description of the constitution, compared field by field. Where both sources speak, they agree most of the time. There are {{n.disagree_cells|int}} disagreements left standing, across {{n.disagree_countries|int}} countries. The largest group ({{checks_words.ex_semi_from_pres|int}}) are countries the Factbook calls presidential that also have a prime minister, whom V-Dem's indicators show the president can dismiss: the president-parliamentary family. Next come monarchies the Factbook calls parliamentary where V-Dem codes the monarch as ruling (Jordan, Morocco) and military regimes the Factbook still lists under their constitutional label (Mali, Niger, Burkina Faso). Where the Factbook's label lagged behind a new constitution (Georgia, Kyrgyzstan, Togo, Tunisia) I resolved the case by hand, citing the constitution.</p>
+<div class="figure"><p class="fig-h">How often the sources agree</p><p class="fig-sub">Countries per field. "One source" means only one of the two speaks to the field (mostly small states that V-Dem does not cover).</p><div class="tablebox"><table class="tbl" id="checkTable"></table></div></div>
+<details><summary>Every disagreement between the sources</summary><div class="tablebox"><table class="tbl" id="disTable"></table></div></details>
+
+<h2><span class="n">07 · How I did this</span>Methods and caveats</h2>
+<p><b>Countries.</b> The {{n.un_members|int}} UN member states, the Holy See and Palestine (UN observer states), Taiwan and Kosovo: {{n.countries|int}} in all. Dependent territories and unrecognised states are left grey. The reference date is the start of {{meta.ref_year|raw}}: V-Dem's latest year is {{meta.vdem_year|raw}} and the Factbook's last edition is from early {{meta.ref_year|raw}}. Where events moved fast (Guinea, Myanmar, Syria) the country's notes say what changed.</p>
+<p><b>Head of state and executive.</b> A country is a monarchy if V-Dem says its head of state reached office by hereditary succession, a royal council or appointment from abroad (the Commonwealth realms), or, outside V-Dem, if the Factbook calls it one. A monarch rules (a dualist system) where V-Dem codes the head of state as at least as powerful as the head of government over the cabinet or the monarchy as at least half the executive's power base; the Factbook's "absolute monarchy" marks the absolute ones. A republic is presidential if one directly elected person is head of state and government; parliamentary if the head of state is not directly elected and a separate head of government leads, or if a directly elected president has little power over the cabinet; semi-presidential if a directly elected president shares power with a prime minister. The semi-presidential subtype follows the definition of Shugart and Carey: president-parliamentary where the president can also dismiss the prime minister, measured by V-Dem's in-practice indicator (above 0.5), premier-presidential otherwise; France and Ukraine are set by their constitutions instead. Military, one-party, theocratic and transitional governments come first: V-Dem codes a head of state who took power by force or was appointed by the military or a ruling party, and the Factbook names communist, theocratic and transitional states.</p>
+<p><b>Territory, chambers and elections.</b> Federations are the countries the Factbook calls federal, plus Argentina and Bosnia; regionalised states are Italy, Spain and the United Kingdom; autonomous regions come from the Factbook's administrative divisions and a short list of hand additions (the Faroes and Greenland, Åland, Zanzibar and others). Chambers are V-Dem's count of sitting chambers, checked against the Factbook. The electoral system is V-Dem's thirteen-category code for the latest election to the lower or only chamber, checked against both Factbook editions; a chamber less than half directly elected is "indirect or appointed".</p>
+<p><b>Caveats.</b> Every typology flattens. A threshold on an expert-coded index decides some semi-presidential subtypes; federal and regionalised are matters of degree; the electoral system of the last election may already have been reformed. V-Dem's scores carry uncertainty (the country records show the intervals). Patterns between form and freedom are descriptive and say nothing about cause.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>Coppedge, M., Gerring, J., Knutsen, C. H. et al. (2026) V-Dem Country-Year Dataset {{meta.vdem_version|raw}}. Varieties of Democracy (V-Dem) Project. https://doi.org/{{meta.vdem_doi|raw}}. Via the vdemdata R package 16.0 (Maerz et al. 2026, https://github.com/vdeminstitute/vdemdata). Licensed CC BY-SA 4.0 (licence as listed by the Swedish National Data Service, https://researchdata.se/en/catalogue/dataset/ext0309-1); the V-Dem values in this study's data are shared under the same licence. Regimes of the World: Lührmann, Tannenberg and Lindberg (2018).</li>
+<li>Central Intelligence Agency, The World Factbook, 2026 edition and December 2024 edition (commit {{meta.fb_commit_old|raw}}), as JSON at https://github.com/factbook/factbook.json. A US government work in the public domain; the JSON is CC0.</li>
+<li>World Bank, World Development Indicators, total population (SP.POP.TOTL), {{n.pop_year|raw}}, via https://github.com/datasets/population. CC BY 4.0. Taiwan and the Holy See: Natural Earth estimates.</li>
+<li>Natural Earth 1:50m and 1:10m admin 0 countries (public domain).</li>
+<li>Constitutions and statutes cited in data/hand_decisions.csv.</li>
+<li>Base map tiles (optional layers) © Esri and its partners.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.23863540">Read the paper</a><a href="https://github.com/Tristan-Hotham/government-types">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/government-types/">Blog post</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) How the world is governed: a feature-by-feature classification of {{n.countries|int}} systems of government, cross-checked against V-Dem and the CIA World Factbook. Zenodo. <a href="https://doi.org/10.5281/zenodo.23863540">https://doi.org/10.5281/zenodo.23863540</a></p>
+<p>Data: V-Dem {{meta.vdem_version|raw}} (CC BY-SA 4.0), CIA World Factbook (public domain), World Bank (CC BY 4.0), Natural Earth (public domain). Licence: text, figures and data CC BY-SA 4.0 (because they include V-Dem values), code MIT.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const R = /*RESULTS*/;
+const SITE = /*SITE*/;
+const WORLD = /*WORLD*/;
+const REC = SITE.recs, FIELDS = SITE.fields;
+const FAMS = SITE.families, FAMI = Object.fromEntries(FAMS.map(f => [f.id, f]));
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const f1 = n => n == null ? "n/a" : n.toLocaleString("en-GB", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const f2 = n => n == null ? "n/a" : (+n).toFixed(2);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", hideTip);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const small = () => innerWidth < 900;
+const press = (row, b) => document.querySelectorAll(row + " .btn").forEach(x => x.setAttribute("aria-pressed", x === b));
+
+/* ---------- colours ---------- */
+const h2r = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+const mix = (a, b, t) => "#" + h2r(a).map((x, i) => Math.round(x + (h2r(b)[i] - x) * t).toString(16).padStart(2, "0")).join("");
+const SHADE = { Majoritarian: ["#000000", .26], Mixed: [null, 0], Proportional: ["#FFFFFF", .42], "Not elected": ["#FFFFFF", .58] };
+const SHADE_LABEL = { Majoritarian: "majority or plurality", Mixed: "mixed or semi-proportional", Proportional: "proportional", "Not elected": "no directly elected chamber" };
+const shadeKey = g => g === "Semi-proportional" ? "Mixed" : (g === "Not directly elected" || g === "No sitting chamber") ? "Not elected" : g;
+const famCol = (fid, g) => { const b = FAMI[fid].colour; if (!LY.shade || g == null) return b; const s = SHADE[shadeKey(g)]; return s[0] ? mix(b, s[0], s[1]) : b; };
+const PAL = {
+  head_of_state: [["Absolute monarchy", "#A8326B"], ["Constitutional monarchy, ruling monarch", "#7B4FA0"], ["Constitutional monarchy, ceremonial monarch", "#3C6E9E"], ["Republic", "#2E8B7A"], ["Theocratic emirate", "#3F3A6B"]],
+  executive: [["Presidential", "#B73A3A"], ["Semi-presidential: president-parliamentary", "#D9682B"], ["Semi-presidential: premier-presidential", "#D19A1E"], ["Parliamentary", "#2E8B7A"], ["Parliamentary, executive president chosen by or through the legislature", "#6A9A3A"], ["Directorial", "#A9C46A"], ["Dualist (monarch and parliament)", "#7B4FA0"], ["Royal (absolute)", "#A8326B"], ["One-party state", "#7A2E2E"], ["Military government", "#5C5A3C"], ["Theocratic", "#3F3A6B"], ["Transitional or divided authority", "#8E8A80"]],
+  electoral_system: [["First past the post", "#1F4E8C"], ["Two-round system", "#4A80C2"], ["Alternative vote", "#8FB3DE"], ["Block vote", "#2C6E73"], ["Party block vote", "#5FA3A6"], ["Borda count", "#9AC9C4"], ["Parallel", "#6B3F98"], ["Mixed-member proportional", "#B37FCB"], ["List PR", "#E08A2C"], ["Single transferable vote", "#F3C27A"], ["Single non-transferable vote", "#4F8F4A"], ["Indirect or appointed", "#BDB5A4"], ["No sitting chamber", "#7F796D"]],
+  territory: [["Federal", "#B5532F"], ["Regionalised", "#E39A3D"], ["Unitary with autonomous regions", "#7EA7C4"], ["Unitary", "#D8D0BE"]],
+  chambers: [["Bicameral", "#2F6F9F"], ["Unicameral", "#9CC3DD"], ["None sitting", "#7F796D"]],
+  vdem_regime_label: [["Liberal democracy", "#2E7D4F"], ["Electoral democracy", "#98C27A"], ["Electoral autocracy", "#E2925A"], ["Closed autocracy", "#8C2D2D"], ["Not covered by V-Dem", "#CFC7B6"]],
+  hos_hog: [["Fused (one person or body)", "#8C4A2F"], ["Separate", "#C9B48A"]],
+};
+const MODES = [["family", "System family"], ["head_of_state", "Head of state"], ["executive", "Executive"], ["electoral_system", "Electoral system"], ["territory", "Federal or unitary"], ["chambers", "Chambers"], ["vdem_regime_label", "V-Dem regime"], ["libdem", "Liberal democracy index"]];
+const LDI = [[0, "#8C2D2D"], [.2, "#D46A4A"], [.4, "#EEC27A"], [.6, "#A9C97E"], [.8, "#3E8E5A"], [.9, "#1F5E3B"]];
+const ldiCol = v => { if (v == null) return "#CFC7B6"; for (let i = 1; i < LDI.length; i++) if (v <= LDI[i][0]) { const [a, ca] = LDI[i - 1], [b, cb] = LDI[i]; return mix(ca, cb, (v - a) / (b - a)); } return LDI[LDI.length - 1][1]; };
+const LABEL = { head_of_state: "Head of state", head_of_state_detail: "How the office is filled", executive: "Executive", hos_hog: "Head of state and head of government", territory: "Territory", chambers: "Legislature", electoral_system: "Lower-house electoral system", power_sharing: "Power sharing by community", vdem_regime_label: "V-Dem regime", family: "Family", libdem: "Liberal democracy index" };
+const palCol = (mode, v) => { const p = (PAL[mode] || []).find(x => x[0] === v); return p ? p[1] : "#BBB"; };
+
+/* hero mark: a column and a crown */
+(function () {
+  const g = document.getElementById("heroMark");
+  el("rect", { x: 14, y: 100, width: 92, height: 8, fill: "currentColor" }, g);
+  el("rect", { x: 20, y: 92, width: 80, height: 6, fill: "currentColor" }, g);
+  [28, 46, 64, 82].forEach(x => el("rect", { x, y: 46, width: 10, height: 44, fill: "#FFFDF7", stroke: "currentColor", "stroke-width": 2.4 }, g));
+  el("path", { d: "M16 44 L60 18 L104 44 Z", fill: "#A8322D", stroke: "currentColor", "stroke-width": 2.4, "stroke-linejoin": "round" }, g);
+  el("path", { d: "M44 12 L48 2 L54 9 L60 0 L66 9 L72 2 L76 12 Z", fill: "#B8860B", stroke: "currentColor", "stroke-width": 1.8, "stroke-linejoin": "round" }, g);
+})();
+
+/* ---------- map ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri, GEBCO, NOAA, Garmin, HERE and other contributors';
+const LYDEF = { base: "paper", hills: false, labels: false, cnames: true, borders: true, hatch: true, shade: true, dots: true, fillK: 92 };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("gt_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("gt_layers", JSON.stringify(LY)); } catch (e) {} };
+const S = { mode: "family", sel: null, like: null, only: null };
+const HOME = () => small() ? [[22, 12], 1] : [[24, 12], 2];
+const map = L.map("map", { minZoom: 1, maxZoom: 9, maxBounds: [[-75, -220], [86, 220]], zoomSnap: .5, worldCopyJump: false, preferCanvas: false }).setView(...HOME());
+["tiles:200", "hills:250", "fill:400", "hatch:410", "labels:450", "dots:600", "names:620"].forEach(s => { const [n, z] = s.split(":"); map.createPane(n); map.getPane(n).style.zIndex = z; });
+["hills", "labels", "names", "hatch"].forEach(n => map.getPane(n).style.pointerEvents = "none");
+let base = null, hills = null, labels = null; const cnames = L.layerGroup();
+function setTiles() {
+  [base, labels, hills].forEach(l => { if (l) map.removeLayer(l); });
+  const urls = { grey: ESRI + "Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", ocean: ESRI + "Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}", satellite: ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" };
+  base = urls[LY.base] ? L.tileLayer(urls[LY.base], { pane: "tiles", maxZoom: 16, maxNativeZoom: LY.base === "satellite" ? 17 : 13, attribution: ESRI_ATT }).addTo(map) : null;
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, maxNativeZoom: 16, pane: "hills", opacity: .35, attribution: base ? "" : ESRI_ATT });
+  labels = L.tileLayer(ESRI + "Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, maxNativeZoom: 13, pane: "labels", attribution: base ? "" : ESRI_ATT });
+  applyLayers();
+}
+function applyLayers() {
+  if (LY.hills) hills.addTo(map); else map.removeLayer(hills);
+  if (LY.labels) labels.addTo(map); else map.removeLayer(labels);
+  if (LY.cnames) cnames.addTo(map); else map.removeLayer(cnames);
+  if (LY.hatch) hatch.addTo(map); else map.removeLayer(hatch);
+  if (LY.dots) dotLayer.addTo(map); else map.removeLayer(dotLayer);
+  restyle(); placeNames();
+}
+function valueOf(iso, mode = S.mode) {
+  const r = REC[iso]; if (!r) return null;
+  if (mode === "family") return r.family_id; if (mode === "libdem") return r.vdem_libdem; return r[mode];
+}
+function colOf(iso) {
+  const r = REC[iso]; if (!r) return css("--terr");
+  if (S.mode === "family") return famCol(r.family_id, r.electoral_group);
+  if (S.mode === "libdem") return ldiCol(r.vdem_libdem);
+  return palCol(S.mode, r[S.mode]);
+}
+const diffFields = (a, b) => FIELDS.filter(k => REC[a][k] !== REC[b][k]);
+function dim(iso) {           // 0 = full, 1 = near (one field away), 2 = faded
+  if (S.like) { if (iso === S.like || REC[iso].signature_id === REC[S.like].signature_id) return 0; return diffFields(iso, S.like).length === 1 ? 1 : 2; }
+  if (S.only) { const v = valueOf(iso, S.only[0]); const ok = S.only[1] instanceof Array ? S.only[1].includes(iso) : v === S.only[1]; return ok ? 0 : 2; }
+  return 0;
+}
+function cStyle(f) {
+  const iso = f.properties.iso, k = iso ? dim(iso) : 0, op = LY.fillK / 100;
+  const st = { pane: "fill", color: isDark() ? "#5A5244" : "#8A806C", weight: LY.borders ? .6 : 0, fillColor: iso ? colOf(iso) : css("--terr"), fillOpacity: iso ? op : (LY.base === "paper" ? 1 : .55) };
+  if (iso && k === 1) st.fillOpacity = op * .55;
+  if (iso && k === 2) st.fillOpacity = op * .12;
+  if (iso && S.like && k === 0) { st.weight = 1.4; st.color = isDark() ? "#FFF" : "#111"; }
+  if (iso && iso === S.sel) { st.weight = 2.4; st.color = isDark() ? "#FFF" : "#000"; }
+  return st;
+}
+const cLayer = L.geoJSON(WORLD, { style: cStyle, pane: "fill", onEachFeature: (f, l) => {
+  const iso = f.properties.iso;
+  l.on("click", () => { if (iso) pick(iso, false); });
+  l.on("mouseover", e => { l.bindTooltip(tipText(iso, f.properties.nm), { sticky: true, direction: "top", opacity: .97 }).openTooltip(e.latlng); });
+  l.on("mouseout", () => l.closeTooltip());
+} }).addTo(map);
+function tipText(iso, nm) {
+  if (!iso) return `<b>${esc(nm)}</b><br>dependent territory or unrecognised state, not classified`;
+  const r = REC[iso], v = S.mode === "family" ? FAMI[r.family_id].name : S.mode === "libdem" ? "Liberal democracy index " + f2(r.vdem_libdem) : r[S.mode];
+  return `<b>${esc(r.country)}</b><br>${esc(v ?? "not covered")}` + (S.mode === "family" ? `<br><span style="opacity:.75">${esc(r.electoral_system)} · ${esc(r.territory)}</span>` : "");
+}
+const PATS = { Federal: "url(#hFed)", Regionalised: "url(#hReg)", "Unitary with autonomous regions": "url(#hAut)" };
+const hatch = L.geoJSON({ type: "FeatureCollection", features: WORLD.features.filter(f => f.properties.iso && PATS[REC[f.properties.iso].territory]) },
+  { pane: "hatch", interactive: false, style: f => ({ stroke: false, fillColor: PATS[REC[f.properties.iso].territory], fillOpacity: dim(f.properties.iso) === 2 ? .15 : .9 }) });
+const dotLayer = L.layerGroup();
+const DOTS = SITE.dots.map(([iso, lon, lat, a]) => { const m = L.circleMarker([lat, lon], { pane: "dots", radius: 5, weight: 1.1, color: "#2B2720", fillOpacity: 1 });
+  m.on("click", () => pick(iso, false)); m.bindTooltip(() => tipText(iso), { direction: "top", opacity: .97 }); m._iso = iso; m.addTo(dotLayer); return m; });
+function restyle() {
+  cLayer.setStyle(cStyle);
+  hatch.setStyle(f => ({ stroke: false, fillColor: PATS[REC[f.properties.iso].territory], fillOpacity: dim(f.properties.iso) === 2 ? .15 : .9 }));
+  const z = map.getZoom();
+  DOTS.forEach(m => { const k = dim(m._iso); m.setStyle({ fillColor: colOf(m._iso), radius: z < 3 ? 4.2 : z < 5 ? 5.2 : 6.5, opacity: k === 2 ? .25 : 1, fillOpacity: k === 2 ? .2 : 1, weight: m._iso === S.sel ? 2.6 : 1.1, color: m._iso === S.sel ? "#000" : "#2B2720" }); });
+  legend();
+}
+function placeNames() {
+  cnames.clearLayers(); if (!LY.cnames) return;
+  const z = map.getZoom(), bb = map.getBounds().pad(.05), bxs = [];
+  const order = Object.values(REC).sort((a, b) => b.population - a.population);
+  for (const r of order) {
+    const c = SITE.centre[r.iso3]; if (!c || !bb.contains([c[1], c[0]])) continue;
+    if (z < 2.5 && r.population < 6e7) continue; if (z < 3.5 && r.population < 1.5e7) continue; if (z < 4.5 && r.population < 3e6) continue;
+    const nm = r.country.length > 18 && z < 5 ? r.iso3 : r.country, pt = map.latLngToContainerPoint([c[1], c[0]]), w = nm.length * 6.6 + 6;
+    const bx = [pt.x - w / 2, pt.y - 7, pt.x + w / 2, pt.y + 7]; if (bxs.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) continue; bxs.push(bx);
+    L.marker([c[1], c[0]], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cntL", html: esc(nm), iconSize: [w, 14], iconAnchor: [w / 2, 7] }) }).addTo(cnames);
+  }
+}
+map.on("moveend zoomend", () => { placeNames(); restyle(); });
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label style="font-weight:600">Base map</label><div class="sub"><select data-k="base" aria-label="Base map"><option value="paper">Plain paper (no tiles)</option><option value="grey">Light grey (Esri)</option><option value="ocean">Sea depth (Esri)</option><option value="satellite">Satellite (Esri)</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="hills"> Hill shading</label></div>
+ <div class="row"><label><input type="checkbox" data-k="labels"> Place names (Esri)</label></div>
+ <div class="row"><label><input type="checkbox" data-k="cnames"> Country names</label></div>
+ <div class="row"><label><input type="checkbox" data-k="borders"> Borders</label></div>
+ <div class="hd">Systems</div>
+ <div class="row"><label><input type="checkbox" data-k="shade"> Shade families by electoral system</label></div>
+ <div class="row"><label><input type="checkbox" data-k="hatch"> Patterns: federal, regional, autonomous</label></div>
+ <div class="row"><label><input type="checkbox" data-k="dots"> Small states as dots</label></div>
+ <div class="row"><label style="font-weight:600">Colour strength</label><div class="sub"><span>strength</span><input type="range" data-k="fillK" min="30" max="100" step="5" aria-label="Colour strength"></div></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    return d; } });
+  map.addControl(new Ctl());
+  const box = map.getContainer(), btn = box.querySelector(".lyrBtn"), pan = box.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+  pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+    const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : (k === "base" ? i.value : +i.value);
+    saveLY(); if (k === "base") setTiles(); else applyLayers();
+  }));
+  pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); };
+  window.syncLayers = sync; sync();
+})();
+const Note = L.Control.extend({ options: { position: "bottomleft" }, onAdd() { const d = L.DomUtil.create("div", "mapnote"); d.id = "mapnote"; L.DomEvent.disableClickPropagation(d); return d; } });
+map.addControl(new Note());
+const note = h => { document.getElementById("mapnote").innerHTML = h || ""; };
+
+/* ---------- legend ---------- */
+const PATSVG = { Federal: `<svg viewBox="0 0 18 13"><rect width="18" height="13" fill="url(#hFed)"/></svg>`, Regionalised: `<svg viewBox="0 0 18 13"><rect width="18" height="13" fill="url(#hReg)"/></svg>`, "Unitary with autonomous regions": `<svg viewBox="0 0 18 13"><rect width="18" height="13" fill="url(#hAut)"/></svg>` };
+function countBy(mode) { const c = {}; Object.values(REC).forEach(r => { const v = mode === "family" ? r.family_id : r[mode]; c[v] = (c[v] || 0) + 1; }); return c; }
+function legend() {
+  const e = document.getElementById("legend"); let h = "";
+  const on = v => !S.only || S.only[0] !== S.mode || S.only[1] === v;
+  if (S.mode === "family") {
+    h += `<div class="lh">System family${LY.shade ? ", shaded by how the lower or only chamber is elected" : ""}</div><div class="grid">`;
+    FAMS.forEach(f => { const subs = R.families.find(x => x.id === f.id).subs; const keys = [...new Set(subs.map(s => shadeKey(s.group)))].sort((a, b) => Object.keys(SHADE).indexOf(a) - Object.keys(SHADE).indexOf(b));
+      const n = R.families.find(x => x.id === f.id).n;
+      h += `<div class="item${on(f.id) ? "" : " off"}" data-v="${f.id}"><span class="sw">${(LY.shade ? keys : [null]).map(k => `<i style="background:${k ? famCol(f.id, k === "Not elected" ? "Not directly elected" : k) : f.colour}" title="${k ? esc(SHADE_LABEL[k]) : ""}"></i>`).join("")}</span><span class="tx">${esc(f.name)} (${n})${LY.shade ? `<small>${keys.map(k => SHADE_LABEL[k]).join(" · ")}</small>` : ""}</span></div>`; });
+    h += `</div>`;
+    if (LY.shade) h += `<div class="pats" style="border-top:0;padding-top:0">Shades, darkest to palest: majority or plurality, mixed or semi-proportional, proportional, no directly elected chamber.</div>`;
+  } else if (S.mode === "libdem") {
+    h += `<div class="lh">V-Dem Liberal Democracy Index, ${R.meta.vdem_year}</div><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span>0</span><span style="display:inline-block;width:min(260px,60vw);height:13px;background:linear-gradient(90deg,${[0, .1, .2, .3, .4, .5, .6, .7, .8, .9].map(v => ldiCol(v)).join(",")})"></span><span>0.9</span><span><i style="display:inline-block;width:13px;height:13px;background:#CFC7B6;vertical-align:-2px;margin-right:4px"></i>not covered</span></div>`;
+  } else {
+    const c = countBy(S.mode);
+    h += `<div class="lh">${esc(LABEL[S.mode])}</div><div class="grid">` + PAL[S.mode].filter(p => c[p[0]]).map(p => `<div class="item${on(p[0]) ? "" : " off"}" data-v="${esc(p[0])}"><span class="sw"><i style="background:${p[1]}"></i></span><span class="tx">${esc(p[0])} (${c[p[0]]})</span></div>`).join("") + `</div>`;
+  }
+  if (LY.hatch) h += `<div class="pats">${Object.keys(PATSVG).map(k => `<span>${PATSVG[k]}${esc(k === "Unitary with autonomous regions" ? "unitary, autonomous regions" : k.toLowerCase())} (${countBy("territory")[k] || 0})</span>`).join("")}<span><i style="display:inline-block;width:13px;height:13px;background:${css("--terr")};border:1px solid rgba(0,0,0,.2)"></i>territory or unrecognised state, not classified</span>${LY.dots ? `<span><i style="display:inline-block;width:11px;height:11px;border-radius:50%;border:1.3px solid #2B2720"></i>small state</span>` : ""}</div>`;
+  h += `<div class="pats" style="border-top:0;padding-top:0">Click a legend entry to show only those countries; click again to show all.</div>`;
+  e.innerHTML = h;
+  e.querySelectorAll(".item[data-v]").forEach(it => it.onclick = () => { const v = it.dataset.v; S.like = null; likeSync(); S.only = S.only && S.only[0] === S.mode && S.only[1] === v ? null : [S.mode, v]; restyle(); side(); });
+}
+
+/* ---------- side card ---------- */
+const BADGE = c => { if (!c) return ""; const k = c.startsWith("agree") ? "agree" : c.startsWith("disagree") ? "disagree" : c.startsWith("hand") ? "hand" : "one"; return `<span class="badge ${k}">${esc(c)}</span>`; };
+function side() {
+  const box = document.getElementById("side"); let h = "";
+  if (S.sel) {
+    const r = REC[S.sel], f = FAMI[r.family_id];
+    const same = r.signature_size > 1 ? Object.values(REC).filter(x => x.signature_id === r.signature_id && x.iso3 !== r.iso3).sort((a, b) => a.country.localeCompare(b.country)) : [];
+    const near = Object.values(REC).filter(x => x.iso3 !== r.iso3 && diffFields(x.iso3, r.iso3).length === 1).sort((a, b) => b.population - a.population);
+    h = `<button class="back">Back to overview</button><h4><i style="display:inline-block;width:10px;height:10px;background:${f.colour};margin-right:6px"></i>${esc(f.name)}</h4><div class="big">${esc(r.country)}</div>
+<p class="sub">System ${esc(r.signature_id)}: ${r.signature_size > 1 ? `shared exactly with ${r.signature_size - 1} other countr${r.signature_size > 2 ? "ies" : "y"}` : "no other country has exactly this system"} · population ${fmt(r.population)}</p>
+<table>${FIELDS.map(k => `<tr><td>${esc(LABEL[k])}</td><td>${esc(r[k])}${k === "electoral_system" && r.electoral_detail ? `<small>${esc(r.electoral_detail)}</small>` : ""}${k === "electoral_system" && r.vdem_last_lower_election ? `<small>last coded election ${esc(r.vdem_last_lower_election)}</small>` : ""}<br>${BADGE(r["check_" + k])}<small>${esc(r["src_" + k])}</small></td></tr>`).join("")}</table>
+<h4>V-Dem ${esc(R.meta.vdem_version)}, ${R.meta.vdem_year}</h4>${r.vdem_regime_label === "Not covered by V-Dem" ? `<p class="sub">Not covered by V-Dem.</p>` : `<table>
+<tr><td>Regime</td><td>${esc(r.vdem_regime_label)}${r.iso3 === "PSE" ? "<small>West Bank unit; V-Dem scores Gaza separately</small>" : ""}</td></tr>
+<tr><td>Liberal democracy index</td><td>${f2(r.vdem_libdem)} <small>interval ${f2(r.vdem_libdem_low)} to ${f2(r.vdem_libdem_high)}</small></td></tr>
+<tr><td>Electoral democracy index</td><td>${f2(r.vdem_polyarchy)} <small>interval ${f2(r.vdem_polyarchy_low)} to ${f2(r.vdem_polyarchy_high)}</small></td></tr></table>`}
+${r.notes ? `<h4>Notes</h4><p class="sub" style="color:var(--fg)">${esc(r.notes)}</p>` : ""}
+${r.hand_decisions ? `<h4>Hand decisions</h4><ul>${r.hand_decisions.split(" ").map(id => { const d = SITE.hand[id]; return `<li><b>${esc(id)}</b> ${esc(LABEL[d.field] || d.field)}: ${esc(d.value)}<small>${esc(d.reason)} Source: ${esc(d.citation)}. Confidence: ${esc(d.confidence)}.</small></li>`; }).join("")}</ul>` : ""}
+<h4>Same exact system</h4>${same.length ? `<div class="chips">${same.map(x => `<span class="chip" data-i="${x.iso3}">${esc(x.country)}</span>`).join("")}</div>` : `<p class="sub">None. Closest, one feature away:</p>`}
+${near.length ? `${same.length ? `<h4>One feature away</h4>` : ""}<div class="chips">${near.slice(0, 14).map(x => `<span class="chip" data-i="${x.iso3}" title="differs in ${esc(LABEL[diffFields(x.iso3, r.iso3)[0]])}">${esc(x.country)} <small style="display:inline;color:var(--muted)">${esc(LABEL[diffFields(x.iso3, r.iso3)[0]].split(" ")[0].toLowerCase())}</small></span>`).join("")}${near.length > 14 ? `<span class="sub">and ${near.length - 14} more</span>` : ""}</div>` : (same.length ? "" : `<p class="sub">No country is within one feature.</p>`)}`;
+  } else {
+    const c = S.mode === "libdem" ? null : countBy(S.mode);
+    h = `<h4>Overview</h4><div class="big">${fmt(R.n.countries)} countries</div><p class="sub">${R.n.families} families · ${R.signatures.n} exact systems · ${R.signatures.n_unique} found in one country only</p>`;
+    if (S.only) { const lab = S.only[0] === "family" ? FAMI[S.only[1]]?.name : S.only[1]; h += `<p class="sub" style="color:var(--fg)">Showing only: <b>${esc(lab || "selected countries")}</b>. <span class="go" id="clearOnly">Show all</span></p>`; }
+    if (S.mode === "family") h += `<table>` + R.families.map(f => `<tr><td><span class="go" data-f="${f.id}"><i style="display:inline-block;width:9px;height:9px;background:${f.colour};margin-right:6px"></i>${esc(f.name)}</span></td><td style="text-align:right">${f.n}<small>${f1(f.pop_pct)}% of people</small></td></tr>`).join("") + `</table>`;
+    else if (c) h += `<table>` + PAL[S.mode].filter(p => c[p[0]]).map(p => `<tr><td><i style="display:inline-block;width:9px;height:9px;background:${p[1]};margin-right:6px"></i>${esc(p[0])}</td><td style="text-align:right">${c[p[0]]}</td></tr>`).join("") + `</table>`;
+    h += `<h4>Try</h4><div class="chips">${["GBR", "FRA", "DEU", "ITA", "CHE", "IRN", "CHN", "LBN", "BIH", "AND", "IND", "USA"].map(i => `<span class="chip" data-i="${i}">${esc(REC[i].country)}</span>`).join("")}</div><p class="sub">Click any country, then "Systems like this" to light up its twins and its cousins one feature away. Base map, names and patterns are under Map layers.</p>`;
+  }
+  box.innerHTML = h;
+  const b = box.querySelector(".back"); if (b) b.onclick = () => { S.sel = null; S.like = null; likeSync(); note(""); restyle(); side(); };
+  box.querySelectorAll("[data-i]").forEach(x => x.onclick = () => pick(x.dataset.i, true));
+  box.querySelectorAll("[data-f]").forEach(x => x.onclick = () => { S.only = ["family", x.dataset.f]; restyle(); side(); });
+  const co = box.querySelector("#clearOnly"); if (co) co.onclick = () => { S.only = null; restyle(); side(); };
+}
+const likeBtn = document.getElementById("likeBtn");
+function likeSync() { likeBtn.disabled = !S.sel; likeBtn.setAttribute("aria-pressed", !!S.like); likeBtn.textContent = S.like ? "Show all systems" : "Systems like this"; }
+likeBtn.onclick = () => { if (!S.sel) return; S.like = S.like ? null : S.sel; S.only = null; likeSync(); restyle();
+  if (S.like) { const r = REC[S.like], near = Object.values(REC).filter(x => x.iso3 !== r.iso3 && diffFields(x.iso3, r.iso3).length === 1).length; note(`<b>${esc(r.country)}</b>: ${r.signature_size} with this exact system (outlined), ${near} one feature away (half colour)`); } else note(""); };
+function toMap() { if (small()) document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" }); }
+function pick(iso, move) {
+  if (!REC[iso]) return; S.sel = iso; if (S.like && S.like !== iso) S.like = iso;
+  if (move) { const c = SITE.centre[iso]; const lay = cLayer.getLayers().find(l => l.feature.properties.iso === iso);
+    if (lay) { const b = lay.getBounds(); if (b.isValid() && Math.abs(b.getEast() - b.getWest()) < 200) map.fitBounds(b, { maxZoom: 6, padding: [30, 30] }); else if (c) map.setView([c[1], c[0]], 3); } else if (c) map.setView([c[1], c[0]], 6);
+    document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); toMap(); }
+  likeSync(); note(`<b>${esc(REC[iso].country)}</b>: ${esc(FAMI[REC[iso].family_id].name)}`); restyle(); side();
+}
+(function modeRow() {
+  const row = document.getElementById("modeRow");
+  MODES.forEach(([k, n]) => { const b = document.createElement("button"); b.className = "btn"; b.textContent = n; b.dataset.m = k; b.setAttribute("aria-pressed", k === S.mode); b.onclick = () => { S.mode = k; S.only = null; press("#modeRow", b); restyle(); side(); }; row.appendChild(b); });
+})();
+(function focusRow() {
+  const row = document.getElementById("focusRow");
+  const F = [["World", null], ["Europe", [[35, -12], [66, 40]]], ["Africa", [[-35, -18], [37, 52]]], ["Middle East", [[12, 25], [42, 63]]], ["Asia", [[-10, 60], [50, 146]]], ["Americas", [[-55, -120], [55, -34]]], ["Caribbean", [[9, -86], [27, -59]]], ["Pacific", [[-25, 140], [12, 190]]]];
+  F.forEach(([n, b]) => { const e = document.createElement("button"); e.className = "btn"; e.textContent = n; e.onclick = () => { if (b) map.fitBounds(b); else map.setView(...HOME()); toMap(); }; row.appendChild(e); });
+})();
+(function search() {
+  const q = document.getElementById("q"), sug = document.getElementById("sug"); let items = [], sel = -1;
+  const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const ALT = { GBR: "uk britain england scotland", USA: "usa america united states", COD: "congo kinshasa democratic republic", COG: "congo brazzaville", CIV: "ivory coast", CZE: "czech republic", VAT: "vatican holy see", MMR: "burma", TLS: "east timor", SWZ: "swaziland", CPV: "cape verde", MKD: "macedonia", KOR: "korea", PRK: "korea dprk", TUR: "turkiye" };
+  function run() {
+    const t = norm(q.value.trim()); items = []; sel = -1; if (t.length < 2) { sug.style.display = "none"; return; }
+    Object.values(REC).forEach(r => { const n = norm(r.country), a = ALT[r.iso3] || ""; const at = n.indexOf(t); if (at >= 0 || a.includes(t) || r.iso3.toLowerCase() === t) items.push([at === 0 ? 0 : 1, r]); });
+    items.sort((a, b) => a[0] - b[0] || b[1].population - a[1].population); items = items.slice(0, 10).map(x => x[1]);
+    sug.innerHTML = items.map((r, j) => `<li role="option" data-j="${j}">${esc(r.country)} <span>${esc(FAMI[r.family_id].short)}</span></li>`).join("") || `<li>No match</li>`;
+    sug.style.display = "block"; sug.querySelectorAll("[data-j]").forEach(li => li.onclick = () => go(+li.dataset.j));
+  }
+  function go(j) { const r = items[j]; if (!r) return; sug.style.display = "none"; q.value = r.country; pick(r.iso3, true); }
+  q.addEventListener("input", run);
+  q.addEventListener("keydown", e => { if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); sel = Math.max(0, Math.min(items.length - 1, sel + (e.key === "ArrowDown" ? 1 : -1))); sug.querySelectorAll("li").forEach((li, j) => li.setAttribute("aria-selected", j === sel)); } else if (e.key === "Enter") { e.preventDefault(); if (!items.length) run(); go(sel < 0 ? 0 : sel); } else if (e.key === "Escape") sug.style.display = "none"; });
+  document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) sug.style.display = "none"; });
+})();
+
+/* ---------- charts ---------- */
+(function famChart() {
+  const box = document.getElementById("famChart"); let k = "n";
+  const order = ["Majoritarian", "Mixed", "Semi-proportional", "Proportional", "Not directly elected", "No sitting chamber"];
+  const draw = () => resp(box, (W, sm) => {
+    const lw = sm ? 128 : 300, rh = 26, H = R.families.length * rh + 10, svg = el("svg", { viewBox: `0 0 ${W} ${H}` }, box);
+    const val = f => k === "n" ? f.n : f.pop_pct, mx = Math.max(...R.families.map(val)), sx = v => (W - lw - 60) * v / mx;
+    R.families.forEach((f, i) => { const y = 4 + i * rh; lbl(svg, lw - 8, y + 15, sm ? f.short : f.name.replace("Semi-presidential, ", "Semi-pres., "), "lab", "end");
+      let x = lw; const tot = f.n;
+      order.forEach(g => { const s = f.subs.find(z => z.group === g); if (!s) return; const share = k === "n" ? s.n : f.pop_pct * (s.iso.reduce((a, i) => a + REC[i].population, 0) / f.pop);
+        const w = sx(share); const rc = el("rect", { x, y: y + 3, width: Math.max(.5, w - .6), height: rh - 8, fill: famCol(f.id, g) }, svg);
+        rc.addEventListener("mousemove", e => showTip(`<b>${esc(f.name)}</b><br>${esc(g.toLowerCase())}: ${s.n} countr${s.n > 1 ? "ies" : "y"}<br>${esc(s.iso.map(i => REC[i].country).slice(0, 12).join(", "))}${s.iso.length > 12 ? "…" : ""}`, e.clientX, e.clientY)); rc.addEventListener("mouseleave", hideTip);
+        rc.style.cursor = "pointer"; rc.addEventListener("click", () => { S.mode = "family"; press("#modeRow", document.querySelector('#modeRow [data-m="family"]')); S.only = ["family", f.id]; restyle(); side(); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); });
+        x += w; });
+      lbl(svg, x + 6, y + 15, k === "n" ? String(f.n) : f1(f.pop_pct) + "%", "lab m"); });
+  });
+  draw(); document.querySelectorAll("#famRow .btn").forEach(b => b.onclick = () => { k = b.dataset.k; press("#famRow", b); box.innerHTML = ""; draw(); });
+})();
+(function sigTable() {
+  const t = document.getElementById("sigTable"); const sh = s => s.replace("Constitutional monarchy, ", "").replace("Semi-presidential: ", "semi-pres., ").replace(" (Commonwealth realm)", "");
+  t.innerHTML = `<tr><th>System</th><th>Countries</th><th class="r">N</th><th class="r">People</th></tr>` + R.signatures.top.map(s => `<tr data-q="${s.id}"><td><b>${esc(s.id)}</b><br><small>${esc([sh(s.head_of_state), sh(s.head_of_state_detail), sh(s.executive), s.territory, s.chambers, s.electoral_system].join(" · ").toLowerCase())}${s.power_sharing !== "No" ? " · " + esc(s.power_sharing.toLowerCase()) + " power sharing" : ""}</small></td><td>${esc(s.names.join(", "))}</td><td class="r">${s.n}</td><td class="r">${f1(s.pop_pct)}%</td></tr>`).join("");
+  t.querySelectorAll("tr[data-q]").forEach(tr => tr.onclick = () => { const s = R.signatures.top.find(x => x.id === tr.dataset.q); S.like = null; likeSync(); S.only = ["sig", s.iso]; S.sel = null; restyle(); side(); note(`<b>${esc(s.id)}</b>: ${esc(s.names.join(", "))}`); document.getElementById("atlas").scrollIntoView({ behavior: "smooth" }); });
+})();
+(function uniq() {
+  const box = document.getElementById("uniqList"); let h = "";
+  R.families.forEach(f => { const u = R.signatures.unique_by_family[f.id]; if (!u.length) return; h += `<div style="margin:0 0 6px"><span class="ctl-l"><i style="display:inline-block;width:9px;height:9px;background:${f.colour};margin-right:6px"></i>${esc(f.name)} (${u.length})</span><div class="chips">${u.map(n => { const r = Object.values(REC).find(x => x.country === n); return `<span class="chip" data-i="${r.iso3}">${esc(n)}</span>`; }).join("")}</div></div>`; });
+  box.innerHTML = h; box.querySelectorAll("[data-i]").forEach(x => x.onclick = () => pick(x.dataset.i, true));
+})();
+(function xChart() {
+  const box = document.getElementById("xChart"), X = R.x_elec_regime; let k = "n";
+  const RC = PAL.vdem_regime_label.reduce((a, p) => (a[p[0]] = p[1], a), {});
+  const draw = () => resp(box, (W, sm) => {
+    const lw = sm ? 112 : 170, th = sm ? 54 : 40, cw = (W - lw) / X.cols.length, rh = 34, H = th + X.rows.length * rh + 4, svg = el("svg", { viewBox: `0 0 ${W} ${H}` }, box);
+    const M = X[k], mx = Math.max(...M.flat());
+    X.cols.forEach((c, j) => { const words = (sm ? c.replace("Not covered by V-Dem", "Not in V-Dem") : c).split(" "); const half = Math.ceil(words.length / 2);
+      lbl(svg, lw + cw * j + cw / 2, th - 22, words.slice(0, half).join(" "), "lab s b", "middle"); lbl(svg, lw + cw * j + cw / 2, th - 8, words.slice(half).join(" "), "lab s b", "middle");
+      el("rect", { x: lw + cw * j + 3, y: th - 3, width: cw - 6, height: 3, fill: RC[c] }, svg); });
+    X.rows.forEach((r, i) => { const y = th + i * rh; lbl(svg, lw - 8, y + rh / 2 + 4, sm ? r.replace("Not directly elected", "Not elected").replace("No sitting chamber", "No chamber").replace("Semi-proportional", "Semi-prop.") : r, "lab", "end");
+      X.cols.forEach((c, j) => { const v = M[i][j], t = mx ? Math.sqrt(v / mx) : 0;
+        const cell = el("rect", { x: lw + cw * j + 2, y: y + 2, width: cw - 4, height: rh - 4, fill: v ? mix(css("--card") || "#FFFDF7", RC[c], .15 + .85 * t) : css("--card"), stroke: css("--rule") }, svg);
+        lbl(svg, lw + cw * j + cw / 2, y + rh / 2 + 4, v ? (k === "n" ? String(v) : fmt(v)) : "", t > .55 ? "lab b" : "lab", "middle").setAttribute("style", t > .55 ? "fill:#fff" : "");
+        cell.addEventListener("mousemove", e => showTip(`<b>${esc(r)}</b> · ${esc(c)}<br>${X.n[i][j]} countries, ${fmt(X.pop[i][j])} million people`, e.clientX, e.clientY)); cell.addEventListener("mouseleave", hideTip); }); });
+  });
+  draw(); document.querySelectorAll("#xRow .btn").forEach(b => b.onclick = () => { k = b.dataset.k; press("#xRow", b); box.innerHTML = ""; draw(); });
+})();
+(function ldiChart() {
+  const box = document.getElementById("ldiChart");
+  resp(box, (W, sm) => {
+    const fam = R.fam_libdem.filter(f => f.n), lw = sm ? 112 : 290, rh = 28, H = fam.length * rh + 30, svg = el("svg", { viewBox: `0 0 ${W} ${H}` }, box);
+    const sx = v => lw + (W - lw - 14) * v;
+    [0, .2, .4, .6, .8, 1].forEach(v => { el("line", { x1: sx(v), x2: sx(v), y1: 0, y2: H - 22, stroke: css("--rule") }, svg); lbl(svg, sx(v), H - 6, v.toFixed(1), "lab m s", "middle"); });
+    fam.forEach((f, i) => { const y = 6 + i * rh + rh / 2; lbl(svg, lw - 8, y + 4, (sm ? f.short : f.name.replace("Semi-presidential, ", "Semi-pres., ")) + ` (${f.n})`, "lab", "end");
+      f.pts.forEach(([iso, nm, v], j) => { const c = el("circle", { cx: sx(v), cy: y + ((j % 3) - 1) * 4, r: sm ? 3.2 : 4, fill: f.colour, "fill-opacity": .75, stroke: css("--card"), "stroke-width": .8 }, svg);
+        c.style.cursor = "pointer"; c.addEventListener("mousemove", e => showTip(`<b>${esc(nm)}</b><br>${esc(f.name)}<br>Liberal democracy index ${f2(v)}`, e.clientX, e.clientY)); c.addEventListener("mouseleave", hideTip); c.addEventListener("click", () => pick(iso, true)); });
+      if (f.median != null) el("line", { x1: sx(f.median), x2: sx(f.median), y1: y - 10, y2: y + 10, stroke: css("--fg"), "stroke-width": 2.2 }, svg); });
+  });
+})();
+(function hard() {
+  const t = document.getElementById("hardTable");
+  t.innerHTML = `<tr><th>Country</th><th>Classified as</th><th>The decision</th></tr>` + R.tricky.map(c => { const ids = c.hand ? c.hand.split(" ") : [];
+    const why = ids.length ? ids.map(id => `<b>${esc(id)}</b> ${esc(SITE.hand[id].reason)} <small>${esc(SITE.hand[id].citation)}</small>`).join("<br>") : `<small>By rule, both sources agreeing.</small>`;
+    return `<tr data-q="${c.iso}"><td><b>${esc(c.country)}</b><br><small>${esc(FAMI[c.family_id].short)}</small></td><td><small>${esc([c.head_of_state, c.head_of_state_detail, c.executive, c.territory, c.chambers, c.electoral_system].join("; "))}${c.power_sharing !== "No" ? "; " + esc(c.power_sharing.toLowerCase()) + " power sharing" : ""}</small></td><td>${why}${c.notes ? `<br><small>${esc(c.notes)}</small>` : ""}</td></tr>`; }).join("");
+  t.querySelectorAll("tr[data-q]").forEach(tr => tr.onclick = () => pick(tr.dataset.q, true));
+  const h = document.getElementById("handTable");
+  h.innerHTML = `<tr><th>Id</th><th>Country</th><th>Field and value</th><th>Reason and source</th><th>Conf.</th></tr>` + R.hand.rows.map(d => `<tr data-q="${d.iso3}"><td>${esc(d.id)}</td><td>${esc(REC[d.iso3].country)}</td><td>${esc(LABEL[d.field] || d.field)}: <b>${esc(d.value)}</b></td><td>${esc(d.reason)}<br><small>${esc(d.citation)}</small></td><td>${esc(d.confidence)}</td></tr>`).join("");
+  h.querySelectorAll("tr[data-q]").forEach(tr => tr.onclick = () => pick(tr.dataset.q, true));
+})();
+(function checks() {
+  const t = document.getElementById("checkTable"), K = ["agree", "disagree", "one source", "hand decision", "not applicable", "follows head of state", "hand-coded field"];
+  t.innerHTML = `<tr><th>Field</th>${["Agree", "Disagree", "One source", "Hand decision", "Other"].map(x => `<th class="r">${x}</th>`).join("")}</tr>` + FIELDS.map(f => { const c = R.checks[f];
+    const other = (c["not applicable"] || 0) + (c["follows head of state"] || 0) + (c["hand-coded field"] || 0);
+    return `<tr><td>${esc(LABEL[f])}</td><td class="r">${c.agree || ""}</td><td class="r">${c.disagree || ""}</td><td class="r">${c["one source"] || ""}</td><td class="r">${c["hand decision"] || ""}</td><td class="r">${other || ""}</td></tr>`; }).join("");
+  const d = document.getElementById("disTable");
+  d.innerHTML = `<tr><th>Country</th><th>Field</th><th>Classified as</th><th>Sources</th></tr>` + R.disagreements.map(x => `<tr data-q="${x.iso}"><td>${esc(x.country)}</td><td>${esc(LABEL[x.field])}</td><td>${esc(x.value)}</td><td><small>${esc(REC[x.iso]["src_" + x.field])}</small></td></tr>`).join("");
+  d.querySelectorAll("tr[data-q]").forEach(tr => tr.onclick = () => pick(tr.dataset.q, true));
+})();
+
+/* ---------- theme ---------- */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; redraws.forEach(f => f()); restyle(); };
+setTiles(); side(); likeSync();
+</script>
+/*FULLSCREEN*/
+</body>
+</html>

@@ -1,0 +1,52 @@
+level,family_id,family,subfamily,colour,countries,population,population_pct,exact_signatures,unique_signatures,mean_vdem_libdem,iso3
+family,PM,Parliamentary monarchies,,#3C6E9E,29,514233773,6.3,20,16,0.635,AND ATG AUS BEL BHS BLZ BTN CAN DNK ESP GBR GRD JAM JPN KHM KNA LCA LSO LUX MYS NLD NOR NZL PNG SLB SWE THA TUV VCT
+family,RM,Ruling monarchies,,#7B4FA0,7,56600225,0.7,7,7,0.178,BHR JOR KWT LIE MAR MCO TON
+family,AM,Absolute monarchies,,#A8326B,6,58676114,0.7,5,4,0.09,ARE BRN OMN QAT SAU SWZ
+family,PR,Parliamentary republics,,#2E8B7A,45,2264015063,27.6,22,17,0.502,ALB ARM AUT BGR BIH BRB CPV CZE DEU DMA EST ETH FIN FJI GEO GRC HRV HUN IND IRL IRQ ISL ISR ITA KOS LBN LVA MDA MKD MLT MNE MUS NPL PAK POL SGP SMR SOM SRB SVK SVN TGO TTO VUT WSM
+family,AE,Assembly-chosen executives,,#6A9A3A,7,78003421,1.0,6,5,0.59,BWA CHE FSM GUY NRU SUR ZAF
+family,SP,"Semi-presidential, premier-presidential",,#D19A1E,9,152126815,1.9,6,3,0.504,COG FRA LTU MNG PRT ROU STP TLS UKR
+family,SR,"Semi-presidential, president-parliamentary",,#D9682B,18,641739122,7.8,9,5,0.166,AZE BDI BLR CAF CIV CMR COD DJI DZA EGY KAZ MRT RUS RWA SEN TCD TUN TWN
+family,PS,Presidential republics,,#B73A3A,52,2229701072,27.2,20,10,0.377,AGO ARG BEN BOL BRA CHL COL COM CRI CYP DOM ECU GAB GHA GMB GNQ GTM HND IDN KEN KGZ KIR KOR LBR LKA MDV MEX MHL MOZ MWI NAM NGA NIC PAN PER PHL PLW PRY SLE SLV SYC TJK TKM TUR TZA UGA URY USA UZB VEN ZMB ZWE
+family,OP,One-party states,,#7A2E2E,6,1557171815,19.0,4,3,0.055,CHN CUB ERI LAO PRK VNM
+family,MI,Military governments,,#5C5A3C,8,233793947,2.9,4,2,0.107,BFA GIN GNB MDG MLI MMR NER SDN
+family,TH,Theocracies,,#3F3A6B,3,136262617,1.7,3,3,0.06,AFG IRN VAT
+family,TR,Transitional or divided authority,,#8E8A80,7,280048238,3.4,6,5,0.084,BGD HTI LBY PSE SSD SYR YEM
+subfamily,PM,Parliamentary monarchies,Parliamentary monarchies: Majoritarian,#3C6E9E,16,191340079,2.3,,,,ATG AUS BHS BLZ BTN CAN GBR GRD JAM KNA LCA MYS PNG SLB TUV VCT
+subfamily,PM,Parliamentary monarchies,Parliamentary monarchies: Mixed,#3C6E9E,5,202757526,2.5,,,,AND JPN LSO NZL THA
+subfamily,PM,Parliamentary monarchies,Parliamentary monarchies: Proportional,#3C6E9E,8,120136168,1.5,,,,BEL DNK ESP KHM LUX NLD NOR SWE
+subfamily,RM,Ruling monarchies,Ruling monarchies: Majoritarian,#7B4FA0,2,1704108,0.0,,,,BHR TON
+subfamily,RM,Ruling monarchies,Ruling monarchies: Mixed,#7B4FA0,2,11559025,0.1,,,,JOR MCO
+subfamily,RM,Ruling monarchies,Ruling monarchies: No sitting chamber,#7B4FA0,1,4865298,0.1,,,,KWT
+subfamily,RM,Ruling monarchies,Ruling monarchies: Proportional,#7B4FA0,2,38471794,0.5,,,,LIE MAR
+subfamily,AM,Absolute monarchies,Absolute monarchies: Majoritarian,#A8326B,2,6750865,0.1,,,,OMN SWZ
+subfamily,AM,Absolute monarchies,Absolute monarchies: Not directly elected,#A8326B,4,51925249,0.6,,,,ARE BRN QAT SAU
+subfamily,PR,Parliamentary republics,Parliamentary republics: Majoritarian,#2E8B7A,9,1863847610,22.7,,,,BRB DMA ETH IND MUS PAK SGP TTO WSM
+subfamily,PR,Parliamentary republics,Parliamentary republics: Mixed,#2E8B7A,4,181539274,2.2,,,,DEU HUN ITA NPL
+subfamily,PR,Parliamentary republics,Parliamentary republics: Not directly elected,#2E8B7A,1,19654739,0.2,,,,SOM
+subfamily,PR,Parliamentary republics,Parliamentary republics: Proportional,#2E8B7A,29,151617497,1.8,,,,ALB ARM AUT BGR BIH CPV CZE EST FIN FJI GEO GRC HRV IRL ISL ISR KOS LBN LVA MDA MKD MLT MNE POL SMR SRB SVK SVN TGO
+subfamily,PR,Parliamentary republics,Parliamentary republics: Semi-proportional,#2E8B7A,2,47355943,0.6,,,,IRQ VUT
+subfamily,AE,Assembly-chosen executives,Assembly-chosen executives: Majoritarian,#6A9A3A,3,2687830,0.0,,,,BWA FSM NRU
+subfamily,AE,Assembly-chosen executives,Assembly-chosen executives: Proportional,#6A9A3A,4,75315591,0.9,,,,CHE GUY SUR ZAF
+subfamily,SP,"Semi-presidential, premier-presidential","Semi-presidential, premier-presidential: Majoritarian",#D19A1E,2,75204774,0.9,,,,COG FRA
+subfamily,SP,"Semi-presidential, premier-presidential","Semi-presidential, premier-presidential: Mixed",#D19A1E,3,45438128,0.6,,,,LTU MNG UKR
+subfamily,SP,"Semi-presidential, premier-presidential","Semi-presidential, premier-presidential: Proportional",#D19A1E,4,31483913,0.4,,,,PRT ROU STP TLS
+subfamily,SR,"Semi-presidential, president-parliamentary","Semi-presidential, president-parliamentary: Majoritarian",#D9682B,6,99785726,1.2,,,,AZE BLR CAF CIV CMR TUN
+subfamily,SR,"Semi-presidential, president-parliamentary","Semi-presidential, president-parliamentary: Mixed",#D9682B,8,352726267,4.3,,,,DJI EGY KAZ MRT RUS SEN TCD TWN
+subfamily,SR,"Semi-presidential, president-parliamentary","Semi-presidential, president-parliamentary: Proportional",#D9682B,4,189227129,2.3,,,,BDI COD DZA RWA
+subfamily,PS,Presidential republics,Presidential republics: Majoritarian,#B73A3A,17,858338389,10.5,,,,COM GAB GHA GMB KEN KIR LBR MDV MHL MWI NGA PLW TKM TZA UGA USA ZMB
+subfamily,PS,Presidential republics,Presidential republics: Mixed,#B73A3A,10,411002041,5.0,,,,BOL KOR MEX PAN PHL SYC TJK UZB VEN ZWE
+subfamily,PS,Presidential republics,Presidential republics: Proportional,#B73A3A,24,953017578,11.6,,,,AGO ARG BEN BRA CHL COL CRI CYP DOM ECU GNQ GTM HND IDN LKA MOZ NAM NIC PER PRY SLE SLV TUR URY
+subfamily,PS,Presidential republics,Presidential republics: Semi-proportional,#B73A3A,1,7343064,0.1,,,,KGZ
+subfamily,OP,One-party states,One-party states: Majoritarian,#7A2E2E,4,146979812,1.8,,,,CUB LAO PRK VNM
+subfamily,OP,One-party states,One-party states: No sitting chamber,#7A2E2E,1,3607003,0.0,,,,ERI
+subfamily,OP,One-party states,One-party states: Not directly elected,#7A2E2E,1,1406585000,17.1,,,,CHN
+subfamily,MI,Military governments,Military governments: Mixed,#5C5A3C,1,32740678,0.4,,,,MDG
+subfamily,MI,Military governments,Military governments: No sitting chamber,#5C5A3C,3,108762310,1.3,,,,GNB MMR SDN
+subfamily,MI,Military governments,Military governments: Not directly elected,#5C5A3C,4,92290959,1.1,,,,BFA GIN MLI NER
+subfamily,TH,Theocracies,Theocracies: Majoritarian,#3F3A6B,1,92417681,1.1,,,,IRN
+subfamily,TH,Theocracies,Theocracies: No sitting chamber,#3F3A6B,1,43844111,0.5,,,,AFG
+subfamily,TH,Theocracies,Theocracies: Not directly elected,#3F3A6B,1,825,0.0,,,,VAT
+subfamily,TR,Transitional or divided authority,Transitional or divided authority: Majoritarian,#8E8A80,1,41773878,0.5,,,,YEM
+subfamily,TR,Transitional or divided authority,Transitional or divided authority: Mixed,#8E8A80,1,7458555,0.1,,,,LBY
+subfamily,TR,Transitional or divided authority,Transitional or divided authority: No sitting chamber,#8E8A80,3,193006590,2.4,,,,BGD HTI PSE
+subfamily,TR,Transitional or divided authority,Transitional or divided authority: Not directly elected,#8E8A80,2,37809215,0.5,,,,SSD SYR

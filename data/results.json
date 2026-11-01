@@ -1,0 +1,10768 @@
+{
+ "meta": {
+  "page": "https://maps.tristanhotham.com/government-types/",
+  "repo": "https://github.com/Tristan-Hotham/government-types",
+  "vdem_version": "v16",
+  "vdem_year": 2025,
+  "vdem_doi": "10.23696/vdemds26",
+  "ref_year": 2026,
+  "fb_commit_old": "379131b4",
+  "n_fields": 8
+ },
+ "n": {
+  "countries": 197,
+  "in_vdem": 175,
+  "not_vdem": 22,
+  "pop_world": 8202372222,
+  "pop_world_bn": 8.2,
+  "un_members": 193,
+  "pop_wb": 195,
+  "pop_year": 2025,
+  "not_vdem_list": [
+   "Andorra",
+   "Antigua and Barbuda",
+   "Bahamas",
+   "Belize",
+   "Brunei",
+   "Dominica",
+   "Grenada",
+   "Holy See (Vatican City)",
+   "Kiribati",
+   "Liechtenstein",
+   "Marshall Islands",
+   "Micronesia",
+   "Monaco",
+   "Nauru",
+   "Palau",
+   "Saint Kitts and Nevis",
+   "Saint Lucia",
+   "Saint Vincent and the Grenadines",
+   "Samoa",
+   "San Marino",
+   "Tonga",
+   "Tuvalu"
+  ],
+  "families": 12,
+  "subfamilies": 39,
+  "disagree_cells": 51,
+  "disagree_countries": 48
+ },
+ "families": [
+  {
+   "id": "PM",
+   "name": "Parliamentary monarchies",
+   "short": "Parl. monarchy",
+   "colour": "#3C6E9E",
+   "n": 29,
+   "pop": 514233773,
+   "pop_pct": 6.3,
+   "n_sig": 20,
+   "n_unique": 16,
+   "libdem_mean": 0.635,
+   "libdem_median": 0.735,
+   "n_scored": 20,
+   "regimes": {
+    "Closed autocracy": 0,
+    "Electoral autocracy": 3,
+    "Electoral democracy": 7,
+    "Liberal democracy": 10
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 16,
+     "iso": [
+      "ATG",
+      "AUS",
+      "BHS",
+      "BLZ",
+      "BTN",
+      "CAN",
+      "GBR",
+      "GRD",
+      "JAM",
+      "KNA",
+      "LCA",
+      "MYS",
+      "PNG",
+      "SLB",
+      "TUV",
+      "VCT"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 5,
+     "iso": [
+      "AND",
+      "JPN",
+      "LSO",
+      "NZL",
+      "THA"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 8,
+     "iso": [
+      "BEL",
+      "DNK",
+      "ESP",
+      "KHM",
+      "LUX",
+      "NLD",
+      "NOR",
+      "SWE"
+     ]
+    }
+   ],
+   "iso": [
+    "AND",
+    "ATG",
+    "AUS",
+    "BEL",
+    "BHS",
+    "BLZ",
+    "BTN",
+    "CAN",
+    "DNK",
+    "ESP",
+    "GBR",
+    "GRD",
+    "JAM",
+    "JPN",
+    "KHM",
+    "KNA",
+    "LCA",
+    "LSO",
+    "LUX",
+    "MYS",
+    "NLD",
+    "NOR",
+    "NZL",
+    "PNG",
+    "SLB",
+    "SWE",
+    "THA",
+    "TUV",
+    "VCT"
+   ],
+   "largest": [
+    "Japan",
+    "Thailand",
+    "United Kingdom",
+    "Spain"
+   ]
+  },
+  {
+   "id": "RM",
+   "name": "Ruling monarchies",
+   "short": "Ruling monarchy",
+   "colour": "#7B4FA0",
+   "n": 7,
+   "pop": 56600225,
+   "pop_pct": 0.7,
+   "n_sig": 7,
+   "n_unique": 7,
+   "libdem_mean": 0.178,
+   "libdem_median": 0.189,
+   "n_scored": 4,
+   "regimes": {
+    "Closed autocracy": 4,
+    "Electoral autocracy": 0,
+    "Electoral democracy": 0,
+    "Liberal democracy": 0
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 2,
+     "iso": [
+      "BHR",
+      "TON"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 2,
+     "iso": [
+      "JOR",
+      "MCO"
+     ]
+    },
+    {
+     "group": "No sitting chamber",
+     "n": 1,
+     "iso": [
+      "KWT"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 2,
+     "iso": [
+      "LIE",
+      "MAR"
+     ]
+    }
+   ],
+   "iso": [
+    "BHR",
+    "JOR",
+    "KWT",
+    "LIE",
+    "MAR",
+    "MCO",
+    "TON"
+   ],
+   "largest": [
+    "Morocco",
+    "Jordan",
+    "Kuwait",
+    "Bahrain"
+   ]
+  },
+  {
+   "id": "AM",
+   "name": "Absolute monarchies",
+   "short": "Absolute monarchy",
+   "colour": "#A8326B",
+   "n": 6,
+   "pop": 58676114,
+   "pop_pct": 0.7,
+   "n_sig": 5,
+   "n_unique": 4,
+   "libdem_mean": 0.09,
+   "libdem_median": 0.091,
+   "n_scored": 5,
+   "regimes": {
+    "Closed autocracy": 5,
+    "Electoral autocracy": 0,
+    "Electoral democracy": 0,
+    "Liberal democracy": 0
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 2,
+     "iso": [
+      "OMN",
+      "SWZ"
+     ]
+    },
+    {
+     "group": "Not directly elected",
+     "n": 4,
+     "iso": [
+      "ARE",
+      "BRN",
+      "QAT",
+      "SAU"
+     ]
+    }
+   ],
+   "iso": [
+    "ARE",
+    "BRN",
+    "OMN",
+    "QAT",
+    "SAU",
+    "SWZ"
+   ],
+   "largest": [
+    "Saudi Arabia",
+    "United Arab Emirates",
+    "Oman",
+    "Qatar"
+   ]
+  },
+  {
+   "id": "PR",
+   "name": "Parliamentary republics",
+   "short": "Parl. republic",
+   "colour": "#2E8B7A",
+   "n": 45,
+   "pop": 2264015063,
+   "pop_pct": 27.6,
+   "n_sig": 22,
+   "n_unique": 17,
+   "libdem_mean": 0.502,
+   "libdem_median": 0.536,
+   "n_scored": 42,
+   "regimes": {
+    "Closed autocracy": 1,
+    "Electoral autocracy": 12,
+    "Electoral democracy": 18,
+    "Liberal democracy": 11
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 9,
+     "iso": [
+      "BRB",
+      "DMA",
+      "ETH",
+      "IND",
+      "MUS",
+      "PAK",
+      "SGP",
+      "TTO",
+      "WSM"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 4,
+     "iso": [
+      "DEU",
+      "HUN",
+      "ITA",
+      "NPL"
+     ]
+    },
+    {
+     "group": "Not directly elected",
+     "n": 1,
+     "iso": [
+      "SOM"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 29,
+     "iso": [
+      "ALB",
+      "ARM",
+      "AUT",
+      "BGR",
+      "BIH",
+      "CPV",
+      "CZE",
+      "EST",
+      "FIN",
+      "FJI",
+      "GEO",
+      "GRC",
+      "HRV",
+      "IRL",
+      "ISL",
+      "ISR",
+      "KOS",
+      "LBN",
+      "LVA",
+      "MDA",
+      "MKD",
+      "MLT",
+      "MNE",
+      "POL",
+      "SMR",
+      "SRB",
+      "SVK",
+      "SVN",
+      "TGO"
+     ]
+    },
+    {
+     "group": "Semi-proportional",
+     "n": 2,
+     "iso": [
+      "IRQ",
+      "VUT"
+     ]
+    }
+   ],
+   "iso": [
+    "ALB",
+    "ARM",
+    "AUT",
+    "BGR",
+    "BIH",
+    "BRB",
+    "CPV",
+    "CZE",
+    "DEU",
+    "DMA",
+    "EST",
+    "ETH",
+    "FIN",
+    "FJI",
+    "GEO",
+    "GRC",
+    "HRV",
+    "HUN",
+    "IND",
+    "IRL",
+    "IRQ",
+    "ISL",
+    "ISR",
+    "ITA",
+    "KOS",
+    "LBN",
+    "LVA",
+    "MDA",
+    "MKD",
+    "MLT",
+    "MNE",
+    "MUS",
+    "NPL",
+    "PAK",
+    "POL",
+    "SGP",
+    "SMR",
+    "SOM",
+    "SRB",
+    "SVK",
+    "SVN",
+    "TGO",
+    "TTO",
+    "VUT",
+    "WSM"
+   ],
+   "largest": [
+    "India",
+    "Pakistan",
+    "Ethiopia",
+    "Germany"
+   ]
+  },
+  {
+   "id": "AE",
+   "name": "Assembly-chosen executives",
+   "short": "Assembly-chosen",
+   "colour": "#6A9A3A",
+   "n": 7,
+   "pop": 78003421,
+   "pop_pct": 1.0,
+   "n_sig": 6,
+   "n_unique": 5,
+   "libdem_mean": 0.59,
+   "libdem_median": 0.626,
+   "n_scored": 5,
+   "regimes": {
+    "Closed autocracy": 0,
+    "Electoral autocracy": 0,
+    "Electoral democracy": 4,
+    "Liberal democracy": 1
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 3,
+     "iso": [
+      "BWA",
+      "FSM",
+      "NRU"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 4,
+     "iso": [
+      "CHE",
+      "GUY",
+      "SUR",
+      "ZAF"
+     ]
+    }
+   ],
+   "iso": [
+    "BWA",
+    "CHE",
+    "FSM",
+    "GUY",
+    "NRU",
+    "SUR",
+    "ZAF"
+   ],
+   "largest": [
+    "South Africa",
+    "Switzerland",
+    "Botswana",
+    "Guyana"
+   ]
+  },
+  {
+   "id": "SP",
+   "name": "Semi-presidential, premier-presidential",
+   "short": "Premier-pres.",
+   "colour": "#D19A1E",
+   "n": 9,
+   "pop": 152126815,
+   "pop_pct": 1.9,
+   "n_sig": 6,
+   "n_unique": 3,
+   "libdem_mean": 0.504,
+   "libdem_median": 0.519,
+   "n_scored": 9,
+   "regimes": {
+    "Closed autocracy": 0,
+    "Electoral autocracy": 2,
+    "Electoral democracy": 5,
+    "Liberal democracy": 2
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 2,
+     "iso": [
+      "COG",
+      "FRA"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 3,
+     "iso": [
+      "LTU",
+      "MNG",
+      "UKR"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 4,
+     "iso": [
+      "PRT",
+      "ROU",
+      "STP",
+      "TLS"
+     ]
+    }
+   ],
+   "iso": [
+    "COG",
+    "FRA",
+    "LTU",
+    "MNG",
+    "PRT",
+    "ROU",
+    "STP",
+    "TLS",
+    "UKR"
+   ],
+   "largest": [
+    "France",
+    "Ukraine",
+    "Romania",
+    "Portugal"
+   ]
+  },
+  {
+   "id": "SR",
+   "name": "Semi-presidential, president-parliamentary",
+   "short": "President-parl.",
+   "colour": "#D9682B",
+   "n": 18,
+   "pop": 641739122,
+   "pop_pct": 7.8,
+   "n_sig": 9,
+   "n_unique": 5,
+   "libdem_mean": 0.166,
+   "libdem_median": 0.115,
+   "n_scored": 18,
+   "regimes": {
+    "Closed autocracy": 1,
+    "Electoral autocracy": 15,
+    "Electoral democracy": 1,
+    "Liberal democracy": 1
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 6,
+     "iso": [
+      "AZE",
+      "BLR",
+      "CAF",
+      "CIV",
+      "CMR",
+      "TUN"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 8,
+     "iso": [
+      "DJI",
+      "EGY",
+      "KAZ",
+      "MRT",
+      "RUS",
+      "SEN",
+      "TCD",
+      "TWN"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 4,
+     "iso": [
+      "BDI",
+      "COD",
+      "DZA",
+      "RWA"
+     ]
+    }
+   ],
+   "iso": [
+    "AZE",
+    "BDI",
+    "BLR",
+    "CAF",
+    "CIV",
+    "CMR",
+    "COD",
+    "DJI",
+    "DZA",
+    "EGY",
+    "KAZ",
+    "MRT",
+    "RUS",
+    "RWA",
+    "SEN",
+    "TCD",
+    "TUN",
+    "TWN"
+   ],
+   "largest": [
+    "Russia",
+    "Egypt",
+    "DR Congo",
+    "Algeria"
+   ]
+  },
+  {
+   "id": "PS",
+   "name": "Presidential republics",
+   "short": "Presidential",
+   "colour": "#B73A3A",
+   "n": 52,
+   "pop": 2229701072,
+   "pop_pct": 27.2,
+   "n_sig": 20,
+   "n_unique": 10,
+   "libdem_mean": 0.377,
+   "libdem_median": 0.376,
+   "n_scored": 49,
+   "regimes": {
+    "Closed autocracy": 2,
+    "Electoral autocracy": 20,
+    "Electoral democracy": 21,
+    "Liberal democracy": 6
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 17,
+     "iso": [
+      "COM",
+      "GAB",
+      "GHA",
+      "GMB",
+      "KEN",
+      "KIR",
+      "LBR",
+      "MDV",
+      "MHL",
+      "MWI",
+      "NGA",
+      "PLW",
+      "TKM",
+      "TZA",
+      "UGA",
+      "USA",
+      "ZMB"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 10,
+     "iso": [
+      "BOL",
+      "KOR",
+      "MEX",
+      "PAN",
+      "PHL",
+      "SYC",
+      "TJK",
+      "UZB",
+      "VEN",
+      "ZWE"
+     ]
+    },
+    {
+     "group": "Proportional",
+     "n": 24,
+     "iso": [
+      "AGO",
+      "ARG",
+      "BEN",
+      "BRA",
+      "CHL",
+      "COL",
+      "CRI",
+      "CYP",
+      "DOM",
+      "ECU",
+      "GNQ",
+      "GTM",
+      "HND",
+      "IDN",
+      "LKA",
+      "MOZ",
+      "NAM",
+      "NIC",
+      "PER",
+      "PRY",
+      "SLE",
+      "SLV",
+      "TUR",
+      "URY"
+     ]
+    },
+    {
+     "group": "Semi-proportional",
+     "n": 1,
+     "iso": [
+      "KGZ"
+     ]
+    }
+   ],
+   "iso": [
+    "AGO",
+    "ARG",
+    "BEN",
+    "BOL",
+    "BRA",
+    "CHL",
+    "COL",
+    "COM",
+    "CRI",
+    "CYP",
+    "DOM",
+    "ECU",
+    "GAB",
+    "GHA",
+    "GMB",
+    "GNQ",
+    "GTM",
+    "HND",
+    "IDN",
+    "KEN",
+    "KGZ",
+    "KIR",
+    "KOR",
+    "LBR",
+    "LKA",
+    "MDV",
+    "MEX",
+    "MHL",
+    "MOZ",
+    "MWI",
+    "NAM",
+    "NGA",
+    "NIC",
+    "PAN",
+    "PER",
+    "PHL",
+    "PLW",
+    "PRY",
+    "SLE",
+    "SLV",
+    "SYC",
+    "TJK",
+    "TKM",
+    "TUR",
+    "TZA",
+    "UGA",
+    "URY",
+    "USA",
+    "UZB",
+    "VEN",
+    "ZMB",
+    "ZWE"
+   ],
+   "largest": [
+    "United States",
+    "Indonesia",
+    "Nigeria",
+    "Brazil"
+   ]
+  },
+  {
+   "id": "OP",
+   "name": "One-party states",
+   "short": "One-party",
+   "colour": "#7A2E2E",
+   "n": 6,
+   "pop": 1557171815,
+   "pop_pct": 19.0,
+   "n_sig": 4,
+   "n_unique": 3,
+   "libdem_mean": 0.055,
+   "libdem_median": 0.048,
+   "n_scored": 6,
+   "regimes": {
+    "Closed autocracy": 6,
+    "Electoral autocracy": 0,
+    "Electoral democracy": 0,
+    "Liberal democracy": 0
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 4,
+     "iso": [
+      "CUB",
+      "LAO",
+      "PRK",
+      "VNM"
+     ]
+    },
+    {
+     "group": "No sitting chamber",
+     "n": 1,
+     "iso": [
+      "ERI"
+     ]
+    },
+    {
+     "group": "Not directly elected",
+     "n": 1,
+     "iso": [
+      "CHN"
+     ]
+    }
+   ],
+   "iso": [
+    "CHN",
+    "CUB",
+    "ERI",
+    "LAO",
+    "PRK",
+    "VNM"
+   ],
+   "largest": [
+    "China",
+    "Vietnam",
+    "North Korea",
+    "Cuba"
+   ]
+  },
+  {
+   "id": "MI",
+   "name": "Military governments",
+   "short": "Military",
+   "colour": "#5C5A3C",
+   "n": 8,
+   "pop": 233793947,
+   "pop_pct": 2.9,
+   "n_sig": 4,
+   "n_unique": 2,
+   "libdem_mean": 0.107,
+   "libdem_median": 0.099,
+   "n_scored": 8,
+   "regimes": {
+    "Closed autocracy": 7,
+    "Electoral autocracy": 1,
+    "Electoral democracy": 0,
+    "Liberal democracy": 0
+   },
+   "subs": [
+    {
+     "group": "Mixed",
+     "n": 1,
+     "iso": [
+      "MDG"
+     ]
+    },
+    {
+     "group": "No sitting chamber",
+     "n": 3,
+     "iso": [
+      "GNB",
+      "MMR",
+      "SDN"
+     ]
+    },
+    {
+     "group": "Not directly elected",
+     "n": 4,
+     "iso": [
+      "BFA",
+      "GIN",
+      "MLI",
+      "NER"
+     ]
+    }
+   ],
+   "iso": [
+    "BFA",
+    "GIN",
+    "GNB",
+    "MDG",
+    "MLI",
+    "MMR",
+    "NER",
+    "SDN"
+   ],
+   "largest": [
+    "Myanmar",
+    "Sudan",
+    "Madagascar",
+    "Niger"
+   ]
+  },
+  {
+   "id": "TH",
+   "name": "Theocracies",
+   "short": "Theocracy",
+   "colour": "#3F3A6B",
+   "n": 3,
+   "pop": 136262617,
+   "pop_pct": 1.7,
+   "n_sig": 3,
+   "n_unique": 3,
+   "libdem_mean": 0.06,
+   "libdem_median": 0.06,
+   "n_scored": 2,
+   "regimes": {
+    "Closed autocracy": 1,
+    "Electoral autocracy": 1,
+    "Electoral democracy": 0,
+    "Liberal democracy": 0
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 1,
+     "iso": [
+      "IRN"
+     ]
+    },
+    {
+     "group": "No sitting chamber",
+     "n": 1,
+     "iso": [
+      "AFG"
+     ]
+    },
+    {
+     "group": "Not directly elected",
+     "n": 1,
+     "iso": [
+      "VAT"
+     ]
+    }
+   ],
+   "iso": [
+    "AFG",
+    "IRN",
+    "VAT"
+   ],
+   "largest": [
+    "Iran",
+    "Afghanistan",
+    "Holy See (Vatican City)"
+   ]
+  },
+  {
+   "id": "TR",
+   "name": "Transitional or divided authority",
+   "short": "Transitional",
+   "colour": "#8E8A80",
+   "n": 7,
+   "pop": 280048238,
+   "pop_pct": 3.4,
+   "n_sig": 6,
+   "n_unique": 5,
+   "libdem_mean": 0.084,
+   "libdem_median": 0.098,
+   "n_scored": 7,
+   "regimes": {
+    "Closed autocracy": 6,
+    "Electoral autocracy": 1,
+    "Electoral democracy": 0,
+    "Liberal democracy": 0
+   },
+   "subs": [
+    {
+     "group": "Majoritarian",
+     "n": 1,
+     "iso": [
+      "YEM"
+     ]
+    },
+    {
+     "group": "Mixed",
+     "n": 1,
+     "iso": [
+      "LBY"
+     ]
+    },
+    {
+     "group": "No sitting chamber",
+     "n": 3,
+     "iso": [
+      "BGD",
+      "HTI",
+      "PSE"
+     ]
+    },
+    {
+     "group": "Not directly elected",
+     "n": 2,
+     "iso": [
+      "SSD",
+      "SYR"
+     ]
+    }
+   ],
+   "iso": [
+    "BGD",
+    "HTI",
+    "LBY",
+    "PSE",
+    "SSD",
+    "SYR",
+    "YEM"
+   ],
+   "largest": [
+    "Bangladesh",
+    "Yemen",
+    "Syria",
+    "South Sudan"
+   ]
+  }
+ ],
+ "signatures": {
+  "n": 112,
+  "n_unique": 80,
+  "unique_pct": 40.6,
+  "n_shared": 32,
+  "countries_shared": 117,
+  "pop_unique": 3410295502,
+  "pop_unique_pct": 41.6,
+  "top": [
+   {
+    "id": "S001",
+    "n": 14,
+    "pop": 40370453,
+    "pop_pct": 0.5,
+    "family_id": "PR",
+    "iso": [
+     "ALB",
+     "ARM",
+     "BGR",
+     "CPV",
+     "EST",
+     "FJI",
+     "HRV",
+     "ISL",
+     "ISR",
+     "KOS",
+     "LVA",
+     "MKD",
+     "MNE",
+     "SVK"
+    ],
+    "names": [
+     "Albania",
+     "Armenia",
+     "Bulgaria",
+     "Cabo Verde",
+     "Croatia",
+     "Estonia",
+     "Fiji",
+     "Iceland",
+     "Israel",
+     "Kosovo",
+     "Latvia",
+     "Montenegro",
+     "North Macedonia",
+     "Slovakia"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Unitary",
+    "chambers": "Unicameral",
+    "electoral_system": "List PR",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S002",
+    "n": 13,
+    "pop": 301390001,
+    "pop_pct": 3.7,
+    "family_id": "PS",
+    "iso": [
+     "AGO",
+     "BEN",
+     "CRI",
+     "CYP",
+     "ECU",
+     "GTM",
+     "HND",
+     "LKA",
+     "MOZ",
+     "PER",
+     "SLE",
+     "SLV",
+     "TUR"
+    ],
+    "names": [
+     "Angola",
+     "Benin",
+     "Costa Rica",
+     "Cyprus",
+     "Ecuador",
+     "El Salvador",
+     "Guatemala",
+     "Honduras",
+     "Mozambique",
+     "Peru",
+     "Sierra Leone",
+     "Sri Lanka",
+     "Turkey"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Presidential",
+    "hos_hog": "Fused (one person or body)",
+    "territory": "Unitary",
+    "chambers": "Unicameral",
+    "electoral_system": "List PR",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S003",
+    "n": 7,
+    "pop": 100235056,
+    "pop_pct": 1.2,
+    "family_id": "PS",
+    "iso": [
+     "CHL",
+     "COL",
+     "DOM",
+     "GNQ",
+     "NAM",
+     "PRY",
+     "URY"
+    ],
+    "names": [
+     "Chile",
+     "Colombia",
+     "Dominican Republic",
+     "Equatorial Guinea",
+     "Namibia",
+     "Paraguay",
+     "Uruguay"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Presidential",
+    "hos_hog": "Fused (one person or body)",
+    "territory": "Unitary",
+    "chambers": "Bicameral",
+    "electoral_system": "List PR",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S005",
+    "n": 6,
+    "pop": 133930929,
+    "pop_pct": 1.6,
+    "family_id": "PS",
+    "iso": [
+     "GHA",
+     "GMB",
+     "MDV",
+     "MWI",
+     "UGA",
+     "ZMB"
+    ],
+    "names": [
+     "Gambia",
+     "Ghana",
+     "Malawi",
+     "Maldives",
+     "Uganda",
+     "Zambia"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Presidential",
+    "hos_hog": "Fused (one person or body)",
+    "territory": "Unitary",
+    "chambers": "Unicameral",
+    "electoral_system": "First past the post",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S004",
+    "n": 6,
+    "pop": 4054695,
+    "pop_pct": 0.0,
+    "family_id": "PM",
+    "iso": [
+     "ATG",
+     "BHS",
+     "BLZ",
+     "GRD",
+     "JAM",
+     "LCA"
+    ],
+    "names": [
+     "Antigua and Barbuda",
+     "Bahamas",
+     "Belize",
+     "Grenada",
+     "Jamaica",
+     "Saint Lucia"
+    ],
+    "head_of_state": "Constitutional monarchy, ceremonial monarch",
+    "head_of_state_detail": "Monarch abroad (Commonwealth realm)",
+    "executive": "Parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Unitary",
+    "chambers": "Bicameral",
+    "electoral_system": "First past the post",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S006",
+    "n": 5,
+    "pop": 28905834,
+    "pop_pct": 0.4,
+    "family_id": "PR",
+    "iso": [
+     "FIN",
+     "GEO",
+     "GRC",
+     "MDA",
+     "SRB"
+    ],
+    "names": [
+     "Finland",
+     "Georgia",
+     "Greece",
+     "Moldova",
+     "Serbia"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Unitary with autonomous regions",
+    "chambers": "Unicameral",
+    "electoral_system": "List PR",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S007",
+    "n": 4,
+    "pop": 92290959,
+    "pop_pct": 1.1,
+    "family_id": "MI",
+    "iso": [
+     "BFA",
+     "GIN",
+     "MLI",
+     "NER"
+    ],
+    "names": [
+     "Burkina Faso",
+     "Guinea",
+     "Mali",
+     "Niger"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Military government",
+    "hos_hog": "Separate",
+    "territory": "Unitary",
+    "chambers": "Unicameral",
+    "electoral_system": "Indirect or appointed",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S009",
+    "n": 4,
+    "pop": 84025448,
+    "pop_pct": 1.0,
+    "family_id": "SR",
+    "iso": [
+     "BLR",
+     "CIV",
+     "CMR",
+     "TUN"
+    ],
+    "names": [
+     "Belarus",
+     "Cameroon",
+     "Côte d'Ivoire",
+     "Tunisia"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Semi-presidential: president-parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Unitary",
+    "chambers": "Bicameral",
+    "electoral_system": "Two-round system",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S008",
+    "n": 4,
+    "pop": 58045351,
+    "pop_pct": 0.7,
+    "family_id": "PR",
+    "iso": [
+     "CZE",
+     "POL",
+     "SVN",
+     "TGO"
+    ],
+    "names": [
+     "Czechia",
+     "Poland",
+     "Slovenia",
+     "Togo"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Unitary",
+    "chambers": "Bicameral",
+    "electoral_system": "List PR",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S012",
+    "n": 3,
+    "pop": 1854557130,
+    "pop_pct": 22.6,
+    "family_id": "PR",
+    "iso": [
+     "ETH",
+     "IND",
+     "PAK"
+    ],
+    "names": [
+     "Ethiopia",
+     "India",
+     "Pakistan"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Federal",
+    "chambers": "Bicameral",
+    "electoral_system": "First past the post",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S015",
+    "n": 3,
+    "pop": 174837126,
+    "pop_pct": 2.1,
+    "family_id": "SR",
+    "iso": [
+     "COD",
+     "DZA",
+     "RWA"
+    ],
+    "names": [
+     "Algeria",
+     "DR Congo",
+     "Rwanda"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Semi-presidential: president-parliamentary",
+    "hos_hog": "Separate",
+    "territory": "Unitary",
+    "chambers": "Bicameral",
+    "electoral_system": "List PR",
+    "power_sharing": "No"
+   },
+   {
+    "id": "S013",
+    "n": 3,
+    "pop": 164627124,
+    "pop_pct": 2.0,
+    "family_id": "PS",
+    "iso": [
+     "PHL",
+     "TJK",
+     "UZB"
+    ],
+    "names": [
+     "Philippines",
+     "Tajikistan",
+     "Uzbekistan"
+    ],
+    "head_of_state": "Republic",
+    "head_of_state_detail": "President",
+    "executive": "Presidential",
+    "hos_hog": "Fused (one person or body)",
+    "territory": "Unitary with autonomous regions",
+    "chambers": "Bicameral",
+    "electoral_system": "Parallel",
+    "power_sharing": "No"
+   }
+  ],
+  "size_hist": {
+   "1": 80,
+   "2": 15,
+   "3": 8,
+   "4": 3,
+   "5": 1,
+   "6": 2,
+   "7": 1,
+   "13": 1,
+   "14": 1
+  },
+  "unique_by_family": {
+   "PM": [
+    "Andorra",
+    "Australia",
+    "Belgium",
+    "Bhutan",
+    "Cambodia",
+    "Canada",
+    "Denmark",
+    "Japan",
+    "Malaysia",
+    "Netherlands",
+    "New Zealand",
+    "Papua New Guinea",
+    "Saint Kitts and Nevis",
+    "Spain",
+    "Tuvalu",
+    "United Kingdom"
+   ],
+   "RM": [
+    "Bahrain",
+    "Jordan",
+    "Kuwait",
+    "Liechtenstein",
+    "Monaco",
+    "Morocco",
+    "Tonga"
+   ],
+   "AM": [
+    "Brunei",
+    "Eswatini",
+    "Oman",
+    "United Arab Emirates"
+   ],
+   "PR": [
+    "Austria",
+    "Barbados",
+    "Bosnia and Herzegovina",
+    "Germany",
+    "Hungary",
+    "Iraq",
+    "Ireland",
+    "Italy",
+    "Lebanon",
+    "Malta",
+    "Mauritius",
+    "Nepal",
+    "San Marino",
+    "Singapore",
+    "Somalia",
+    "Trinidad and Tobago",
+    "Vanuatu"
+   ],
+   "AE": [
+    "Botswana",
+    "Micronesia",
+    "Nauru",
+    "South Africa",
+    "Switzerland"
+   ],
+   "SP": [
+    "Romania",
+    "Timor-Leste",
+    "Ukraine"
+   ],
+   "SR": [
+    "Azerbaijan",
+    "Burundi",
+    "Central African Republic",
+    "Djibouti",
+    "Russia"
+   ],
+   "PS": [
+    "Comoros",
+    "Gabon",
+    "Indonesia",
+    "Kyrgyzstan",
+    "Marshall Islands",
+    "Mexico",
+    "Nicaragua",
+    "South Korea",
+    "Tanzania",
+    "Venezuela"
+   ],
+   "OP": [
+    "China",
+    "Eritrea",
+    "Laos"
+   ],
+   "MI": [
+    "Madagascar",
+    "Sudan"
+   ],
+   "TH": [
+    "Afghanistan",
+    "Holy See (Vatican City)",
+    "Iran"
+   ],
+   "TR": [
+    "Haiti",
+    "Libya",
+    "South Sudan",
+    "Syria",
+    "Yemen"
+   ]
+  },
+  "biggest_unique": [
+   {
+    "country": "China",
+    "iso3": "CHN",
+    "population": 1406585000,
+    "family_id": "OP"
+   },
+   {
+    "country": "Indonesia",
+    "iso3": "IDN",
+    "population": 285721236,
+    "family_id": "PS"
+   },
+   {
+    "country": "Russia",
+    "iso3": "RUS",
+    "population": 143513328,
+    "family_id": "SR"
+   },
+   {
+    "country": "Mexico",
+    "iso3": "MEX",
+    "population": 131946900,
+    "family_id": "PS"
+   },
+   {
+    "country": "Japan",
+    "iso3": "JPN",
+    "population": 123366734,
+    "family_id": "PM"
+   },
+   {
+    "country": "Iran",
+    "iso3": "IRN",
+    "population": 92417681,
+    "family_id": "TH"
+   },
+   {
+    "country": "Germany",
+    "iso3": "DEU",
+    "population": 83491249,
+    "family_id": "PR"
+   },
+   {
+    "country": "Tanzania",
+    "iso3": "TZA",
+    "population": 70545865,
+    "family_id": "PS"
+   }
+  ],
+  "largest": {
+   "id": "S001",
+   "n": 14,
+   "pop": 40370453,
+   "pop_pct": 0.5,
+   "family_id": "PR",
+   "iso": [
+    "ALB",
+    "ARM",
+    "BGR",
+    "CPV",
+    "EST",
+    "FJI",
+    "HRV",
+    "ISL",
+    "ISR",
+    "KOS",
+    "LVA",
+    "MKD",
+    "MNE",
+    "SVK"
+   ],
+   "names": [
+    "Albania",
+    "Armenia",
+    "Bulgaria",
+    "Cabo Verde",
+    "Croatia",
+    "Estonia",
+    "Fiji",
+    "Iceland",
+    "Israel",
+    "Kosovo",
+    "Latvia",
+    "Montenegro",
+    "North Macedonia",
+    "Slovakia"
+   ],
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No"
+  },
+  "second": {
+   "id": "S002",
+   "n": 13,
+   "pop": 301390001,
+   "pop_pct": 3.7,
+   "family_id": "PS",
+   "iso": [
+    "AGO",
+    "BEN",
+    "CRI",
+    "CYP",
+    "ECU",
+    "GTM",
+    "HND",
+    "LKA",
+    "MOZ",
+    "PER",
+    "SLE",
+    "SLV",
+    "TUR"
+   ],
+   "names": [
+    "Angola",
+    "Benin",
+    "Costa Rica",
+    "Cyprus",
+    "Ecuador",
+    "El Salvador",
+    "Guatemala",
+    "Honduras",
+    "Mozambique",
+    "Peru",
+    "Sierra Leone",
+    "Sri Lanka",
+    "Turkey"
+   ],
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Presidential",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No"
+  }
+ },
+ "fields": {
+  "head_of_state": [
+   {
+    "value": "Republic",
+    "n": 153,
+    "pop": 7529017174,
+    "pop_pct": 91.8,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "AZE",
+     "BDI",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BIH",
+     "BLR",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BWA",
+     "CAF",
+     "CHE",
+     "CHL",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRL",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "KOS",
+     "LAO",
+     "LBN",
+     "LBR",
+     "LBY",
+     "LKA",
+     "LTU",
+     "LVA",
+     "MDA",
+     "MDG",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "NAM",
+     "NER",
+     "NGA",
+     "NIC",
+     "NPL",
+     "NRU",
+     "PAK",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "POL",
+     "PRK",
+     "PRT",
+     "PRY",
+     "PSE",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SOM",
+     "SRB",
+     "SSD",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "TJK",
+     "TKM",
+     "TLS",
+     "TTO",
+     "TUN",
+     "TUR",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Constitutional monarchy, ceremonial monarch",
+    "n": 29,
+    "pop": 514233773,
+    "pop_pct": 6.3,
+    "iso": [
+     "AND",
+     "ATG",
+     "AUS",
+     "BEL",
+     "BHS",
+     "BLZ",
+     "BTN",
+     "CAN",
+     "DNK",
+     "ESP",
+     "GBR",
+     "GRD",
+     "JAM",
+     "JPN",
+     "KHM",
+     "KNA",
+     "LCA",
+     "LSO",
+     "LUX",
+     "MYS",
+     "NLD",
+     "NOR",
+     "NZL",
+     "PNG",
+     "SLB",
+     "SWE",
+     "THA",
+     "TUV",
+     "VCT"
+    ]
+   },
+   {
+    "value": "Absolute monarchy",
+    "n": 7,
+    "pop": 58676939,
+    "pop_pct": 0.7,
+    "iso": [
+     "ARE",
+     "BRN",
+     "OMN",
+     "QAT",
+     "SAU",
+     "SWZ",
+     "VAT"
+    ]
+   },
+   {
+    "value": "Constitutional monarchy, ruling monarch",
+    "n": 7,
+    "pop": 56600225,
+    "pop_pct": 0.7,
+    "iso": [
+     "BHR",
+     "JOR",
+     "KWT",
+     "LIE",
+     "MAR",
+     "MCO",
+     "TON"
+    ]
+   },
+   {
+    "value": "Theocratic emirate",
+    "n": 1,
+    "pop": 43844111,
+    "pop_pct": 0.5,
+    "iso": [
+     "AFG"
+    ]
+   }
+  ],
+  "head_of_state_detail": [
+   {
+    "value": "President",
+    "n": 145,
+    "pop": 7311532178,
+    "pop_pct": 89.1,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "AZE",
+     "BDI",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BLR",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BWA",
+     "CAF",
+     "CHL",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRL",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "KOS",
+     "LAO",
+     "LBN",
+     "LBR",
+     "LKA",
+     "LTU",
+     "LVA",
+     "MDA",
+     "MDG",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "NAM",
+     "NER",
+     "NGA",
+     "NIC",
+     "NPL",
+     "NRU",
+     "PAK",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "POL",
+     "PRK",
+     "PRT",
+     "PRY",
+     "PSE",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SEN",
+     "SGP",
+     "SLE",
+     "SLV",
+     "SOM",
+     "SRB",
+     "SSD",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "TJK",
+     "TKM",
+     "TLS",
+     "TTO",
+     "TUN",
+     "TUR",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Hereditary monarch",
+    "n": 24,
+    "pop": 473684980,
+    "pop_pct": 5.8,
+    "iso": [
+     "BEL",
+     "BHR",
+     "BRN",
+     "BTN",
+     "DNK",
+     "ESP",
+     "GBR",
+     "JOR",
+     "JPN",
+     "KWT",
+     "LIE",
+     "LSO",
+     "LUX",
+     "MAR",
+     "MCO",
+     "NLD",
+     "NOR",
+     "OMN",
+     "QAT",
+     "SAU",
+     "SWE",
+     "SWZ",
+     "THA",
+     "TON"
+    ]
+   },
+   {
+    "value": "Monarch abroad (Commonwealth realm)",
+    "n": 14,
+    "pop": 90403259,
+    "pop_pct": 1.1,
+    "iso": [
+     "ATG",
+     "AUS",
+     "BHS",
+     "BLZ",
+     "CAN",
+     "GRD",
+     "JAM",
+     "KNA",
+     "LCA",
+     "NZL",
+     "PNG",
+     "SLB",
+     "TUV",
+     "VCT"
+    ]
+   },
+   {
+    "value": "Collective presidency",
+    "n": 7,
+    "pop": 125067315,
+    "pop_pct": 1.5,
+    "iso": [
+     "BIH",
+     "CHE",
+     "HTI",
+     "LBY",
+     "SDN",
+     "SMR",
+     "YEM"
+    ]
+   },
+   {
+    "value": "Elective monarch",
+    "n": 4,
+    "pop": 65339794,
+    "pop_pct": 0.8,
+    "iso": [
+     "ARE",
+     "KHM",
+     "MYS",
+     "VAT"
+    ]
+   },
+   {
+    "value": "Co-princes",
+    "n": 1,
+    "pop": 82904,
+    "pop_pct": 0.0,
+    "iso": [
+     "AND"
+    ]
+   },
+   {
+    "value": "Emir (religious leader)",
+    "n": 1,
+    "pop": 43844111,
+    "pop_pct": 0.5,
+    "iso": [
+     "AFG"
+    ]
+   },
+   {
+    "value": "Supreme Leader",
+    "n": 1,
+    "pop": 92417681,
+    "pop_pct": 1.1,
+    "iso": [
+     "IRN"
+    ]
+   }
+  ],
+  "executive": [
+   {
+    "value": "Parliamentary",
+    "n": 74,
+    "pop": 2778248836,
+    "pop_pct": 33.9,
+    "iso": [
+     "ALB",
+     "AND",
+     "ARM",
+     "ATG",
+     "AUS",
+     "AUT",
+     "BEL",
+     "BGR",
+     "BHS",
+     "BIH",
+     "BLZ",
+     "BRB",
+     "BTN",
+     "CAN",
+     "CPV",
+     "CZE",
+     "DEU",
+     "DMA",
+     "DNK",
+     "ESP",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "GBR",
+     "GEO",
+     "GRC",
+     "GRD",
+     "HRV",
+     "HUN",
+     "IND",
+     "IRL",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "JAM",
+     "JPN",
+     "KHM",
+     "KNA",
+     "KOS",
+     "LBN",
+     "LCA",
+     "LSO",
+     "LUX",
+     "LVA",
+     "MDA",
+     "MKD",
+     "MLT",
+     "MNE",
+     "MUS",
+     "MYS",
+     "NLD",
+     "NOR",
+     "NPL",
+     "NZL",
+     "PAK",
+     "PNG",
+     "POL",
+     "SGP",
+     "SLB",
+     "SMR",
+     "SOM",
+     "SRB",
+     "SVK",
+     "SVN",
+     "SWE",
+     "TGO",
+     "THA",
+     "TTO",
+     "TUV",
+     "VCT",
+     "VUT",
+     "WSM"
+    ]
+   },
+   {
+    "value": "Presidential",
+    "n": 52,
+    "pop": 2229701072,
+    "pop_pct": 27.2,
+    "iso": [
+     "AGO",
+     "ARG",
+     "BEN",
+     "BOL",
+     "BRA",
+     "CHL",
+     "COL",
+     "COM",
+     "CRI",
+     "CYP",
+     "DOM",
+     "ECU",
+     "GAB",
+     "GHA",
+     "GMB",
+     "GNQ",
+     "GTM",
+     "HND",
+     "IDN",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "LBR",
+     "LKA",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MOZ",
+     "MWI",
+     "NAM",
+     "NGA",
+     "NIC",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "PRY",
+     "SLE",
+     "SLV",
+     "SYC",
+     "TJK",
+     "TKM",
+     "TUR",
+     "TZA",
+     "UGA",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Semi-presidential: president-parliamentary",
+    "n": 18,
+    "pop": 641739122,
+    "pop_pct": 7.8,
+    "iso": [
+     "AZE",
+     "BDI",
+     "BLR",
+     "CAF",
+     "CIV",
+     "CMR",
+     "COD",
+     "DJI",
+     "DZA",
+     "EGY",
+     "KAZ",
+     "MRT",
+     "RUS",
+     "RWA",
+     "SEN",
+     "TCD",
+     "TUN",
+     "TWN"
+    ]
+   },
+   {
+    "value": "Semi-presidential: premier-presidential",
+    "n": 9,
+    "pop": 152126815,
+    "pop_pct": 1.9,
+    "iso": [
+     "COG",
+     "FRA",
+     "LTU",
+     "MNG",
+     "PRT",
+     "ROU",
+     "STP",
+     "TLS",
+     "UKR"
+    ]
+   },
+   {
+    "value": "Military government",
+    "n": 8,
+    "pop": 233793947,
+    "pop_pct": 2.9,
+    "iso": [
+     "BFA",
+     "GIN",
+     "GNB",
+     "MDG",
+     "MLI",
+     "MMR",
+     "NER",
+     "SDN"
+    ]
+   },
+   {
+    "value": "Transitional or divided authority",
+    "n": 7,
+    "pop": 280048238,
+    "pop_pct": 3.4,
+    "iso": [
+     "BGD",
+     "HTI",
+     "LBY",
+     "PSE",
+     "SSD",
+     "SYR",
+     "YEM"
+    ]
+   },
+   {
+    "value": "Dualist (monarch and parliament)",
+    "n": 7,
+    "pop": 56600225,
+    "pop_pct": 0.7,
+    "iso": [
+     "BHR",
+     "JOR",
+     "KWT",
+     "LIE",
+     "MAR",
+     "MCO",
+     "TON"
+    ]
+   },
+   {
+    "value": "One-party state",
+    "n": 6,
+    "pop": 1557171815,
+    "pop_pct": 19.0,
+    "iso": [
+     "CHN",
+     "CUB",
+     "ERI",
+     "LAO",
+     "PRK",
+     "VNM"
+    ]
+   },
+   {
+    "value": "Royal (absolute)",
+    "n": 6,
+    "pop": 58676114,
+    "pop_pct": 0.7,
+    "iso": [
+     "ARE",
+     "BRN",
+     "OMN",
+     "QAT",
+     "SAU",
+     "SWZ"
+    ]
+   },
+   {
+    "value": "Parliamentary, executive president chosen by or through the legislature",
+    "n": 6,
+    "pop": 68910985,
+    "pop_pct": 0.8,
+    "iso": [
+     "BWA",
+     "FSM",
+     "GUY",
+     "NRU",
+     "SUR",
+     "ZAF"
+    ]
+   },
+   {
+    "value": "Theocratic",
+    "n": 3,
+    "pop": 136262617,
+    "pop_pct": 1.7,
+    "iso": [
+     "AFG",
+     "IRN",
+     "VAT"
+    ]
+   },
+   {
+    "value": "Directorial",
+    "n": 1,
+    "pop": 9092436,
+    "pop_pct": 0.1,
+    "iso": [
+     "CHE"
+    ]
+   }
+  ],
+  "hos_hog": [
+   {
+    "value": "Separate",
+    "n": 133,
+    "pop": 5847290490,
+    "pop_pct": 71.3,
+    "iso": [
+     "AFG",
+     "ALB",
+     "AND",
+     "ARE",
+     "ARM",
+     "ATG",
+     "AUS",
+     "AUT",
+     "AZE",
+     "BDI",
+     "BEL",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BHR",
+     "BHS",
+     "BIH",
+     "BLR",
+     "BLZ",
+     "BRB",
+     "BTN",
+     "CAF",
+     "CAN",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "CPV",
+     "CUB",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DNK",
+     "DZA",
+     "EGY",
+     "ESP",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "GBR",
+     "GEO",
+     "GIN",
+     "GNB",
+     "GRC",
+     "GRD",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IND",
+     "IRL",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KHM",
+     "KNA",
+     "KOS",
+     "KWT",
+     "LAO",
+     "LBN",
+     "LBY",
+     "LCA",
+     "LIE",
+     "LSO",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MCO",
+     "MDA",
+     "MDG",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MRT",
+     "MUS",
+     "MYS",
+     "NER",
+     "NLD",
+     "NOR",
+     "NPL",
+     "NZL",
+     "PAK",
+     "PNG",
+     "POL",
+     "PRK",
+     "PRT",
+     "PSE",
+     "QAT",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SAU",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SMR",
+     "SOM",
+     "SRB",
+     "STP",
+     "SVK",
+     "SVN",
+     "SWE",
+     "SWZ",
+     "TCD",
+     "TGO",
+     "THA",
+     "TLS",
+     "TON",
+     "TTO",
+     "TUN",
+     "TUV",
+     "TWN",
+     "UKR",
+     "VAT",
+     "VCT",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM"
+    ]
+   },
+   {
+    "value": "Fused (one person or body)",
+    "n": 64,
+    "pop": 2355081732,
+    "pop_pct": 28.7,
+    "iso": [
+     "AGO",
+     "ARG",
+     "BEN",
+     "BOL",
+     "BRA",
+     "BRN",
+     "BWA",
+     "CHE",
+     "CHL",
+     "COL",
+     "COM",
+     "CRI",
+     "CYP",
+     "DOM",
+     "ECU",
+     "ERI",
+     "FSM",
+     "GAB",
+     "GHA",
+     "GMB",
+     "GNQ",
+     "GTM",
+     "GUY",
+     "HND",
+     "IDN",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "LBR",
+     "LKA",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MOZ",
+     "MWI",
+     "NAM",
+     "NGA",
+     "NIC",
+     "NRU",
+     "OMN",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "PRY",
+     "SLE",
+     "SLV",
+     "SSD",
+     "SUR",
+     "SYC",
+     "SYR",
+     "TJK",
+     "TKM",
+     "TUR",
+     "TZA",
+     "UGA",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   }
+  ],
+  "territory": [
+   {
+    "value": "Unitary",
+    "n": 148,
+    "pop": 2635999707,
+    "pop_pct": 32.1,
+    "iso": [
+     "AFG",
+     "AGO",
+     "ALB",
+     "AND",
+     "ARM",
+     "ATG",
+     "BDI",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BHR",
+     "BHS",
+     "BLR",
+     "BLZ",
+     "BOL",
+     "BRB",
+     "BRN",
+     "BTN",
+     "BWA",
+     "CAF",
+     "CHL",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DJI",
+     "DMA",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "EST",
+     "FJI",
+     "FRA",
+     "GAB",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRD",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IRL",
+     "IRN",
+     "ISL",
+     "ISR",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KHM",
+     "KIR",
+     "KOR",
+     "KOS",
+     "KWT",
+     "LAO",
+     "LBN",
+     "LBR",
+     "LBY",
+     "LCA",
+     "LIE",
+     "LKA",
+     "LSO",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MCO",
+     "MDG",
+     "MDV",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MWI",
+     "NAM",
+     "NER",
+     "NOR",
+     "NRU",
+     "NZL",
+     "OMN",
+     "PAN",
+     "PER",
+     "PLW",
+     "POL",
+     "PRK",
+     "PRY",
+     "PSE",
+     "QAT",
+     "ROU",
+     "RWA",
+     "SAU",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SSD",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "SWZ",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "THA",
+     "TKM",
+     "TLS",
+     "TON",
+     "TUN",
+     "TUR",
+     "TUV",
+     "TWN",
+     "UGA",
+     "URY",
+     "VAT",
+     "VCT",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Federal",
+    "n": 25,
+    "pop": 3327478534,
+    "pop_pct": 40.6,
+    "iso": [
+     "ARE",
+     "ARG",
+     "AUS",
+     "AUT",
+     "BEL",
+     "BIH",
+     "BRA",
+     "CAN",
+     "CHE",
+     "COM",
+     "DEU",
+     "ETH",
+     "FSM",
+     "IND",
+     "IRQ",
+     "KNA",
+     "MEX",
+     "MYS",
+     "NGA",
+     "NPL",
+     "PAK",
+     "RUS",
+     "SOM",
+     "USA",
+     "VEN"
+    ]
+   },
+   {
+    "value": "Unitary with autonomous regions",
+    "n": 21,
+    "pop": 2061136182,
+    "pop_pct": 25.1,
+    "iso": [
+     "AZE",
+     "CHN",
+     "DNK",
+     "FIN",
+     "GEO",
+     "GRC",
+     "IDN",
+     "MDA",
+     "MUS",
+     "NIC",
+     "NLD",
+     "PHL",
+     "PNG",
+     "PRT",
+     "SRB",
+     "STP",
+     "TJK",
+     "TTO",
+     "TZA",
+     "UKR",
+     "UZB"
+    ]
+   },
+   {
+    "value": "Regionalised",
+    "n": 3,
+    "pop": 177757799,
+    "pop_pct": 2.2,
+    "iso": [
+     "ESP",
+     "GBR",
+     "ITA"
+    ]
+   }
+  ],
+  "chambers": [
+   {
+    "value": "Unicameral",
+    "n": 107,
+    "pop": 2744392859,
+    "pop_pct": 33.5,
+    "iso": [
+     "AGO",
+     "ALB",
+     "AND",
+     "ARE",
+     "ARM",
+     "AZE",
+     "BEN",
+     "BFA",
+     "BGR",
+     "BRN",
+     "BWA",
+     "CAF",
+     "CHN",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "DJI",
+     "DMA",
+     "DNK",
+     "ECU",
+     "EST",
+     "FIN",
+     "FJI",
+     "FSM",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HUN",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "KGZ",
+     "KIR",
+     "KNA",
+     "KOR",
+     "KOS",
+     "LAO",
+     "LBN",
+     "LBY",
+     "LIE",
+     "LKA",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MCO",
+     "MDA",
+     "MDV",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "NER",
+     "NIC",
+     "NOR",
+     "NRU",
+     "NZL",
+     "PAN",
+     "PER",
+     "PNG",
+     "PRK",
+     "PRT",
+     "QAT",
+     "SAU",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SRB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SWE",
+     "SYC",
+     "SYR",
+     "TKM",
+     "TLS",
+     "TON",
+     "TUR",
+     "TUV",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "VAT",
+     "VCT",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "ZMB"
+    ]
+   },
+   {
+    "value": "Bicameral",
+    "n": 81,
+    "pop": 5103894051,
+    "pop_pct": 62.2,
+    "iso": [
+     "ARG",
+     "ATG",
+     "AUS",
+     "AUT",
+     "BDI",
+     "BEL",
+     "BHR",
+     "BHS",
+     "BIH",
+     "BLR",
+     "BLZ",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BTN",
+     "CAN",
+     "CHE",
+     "CHL",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "CZE",
+     "DEU",
+     "DOM",
+     "DZA",
+     "EGY",
+     "ESP",
+     "ETH",
+     "FRA",
+     "GAB",
+     "GBR",
+     "GNQ",
+     "GRD",
+     "IDN",
+     "IND",
+     "IRL",
+     "ITA",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KEN",
+     "KHM",
+     "LBR",
+     "LCA",
+     "LSO",
+     "MAR",
+     "MDG",
+     "MEX",
+     "MYS",
+     "NAM",
+     "NGA",
+     "NLD",
+     "NPL",
+     "OMN",
+     "PAK",
+     "PHL",
+     "PLW",
+     "POL",
+     "PRY",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SOM",
+     "SSD",
+     "SVN",
+     "SWZ",
+     "TCD",
+     "TGO",
+     "THA",
+     "TJK",
+     "TTO",
+     "TUN",
+     "URY",
+     "USA",
+     "UZB",
+     "YEM",
+     "ZAF",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "None sitting",
+    "n": 9,
+    "pop": 354085312,
+    "pop_pct": 4.3,
+    "iso": [
+     "AFG",
+     "BGD",
+     "ERI",
+     "GNB",
+     "HTI",
+     "KWT",
+     "MMR",
+     "PSE",
+     "SDN"
+    ]
+   }
+  ],
+  "electoral_system": [
+   {
+    "value": "List PR",
+    "n": 73,
+    "pop": 1553205599,
+    "pop_pct": 18.9,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "BDI",
+     "BEL",
+     "BEN",
+     "BGR",
+     "BIH",
+     "BRA",
+     "CHE",
+     "CHL",
+     "COD",
+     "COL",
+     "CPV",
+     "CRI",
+     "CYP",
+     "CZE",
+     "DNK",
+     "DOM",
+     "DZA",
+     "ECU",
+     "ESP",
+     "EST",
+     "FIN",
+     "FJI",
+     "GEO",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "IDN",
+     "ISL",
+     "ISR",
+     "KHM",
+     "KOS",
+     "LBN",
+     "LIE",
+     "LKA",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MDA",
+     "MKD",
+     "MNE",
+     "MOZ",
+     "NAM",
+     "NIC",
+     "NLD",
+     "NOR",
+     "PER",
+     "POL",
+     "PRT",
+     "PRY",
+     "ROU",
+     "RWA",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SRB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "TGO",
+     "TLS",
+     "TUR",
+     "URY",
+     "ZAF"
+    ]
+   },
+   {
+    "value": "First past the post",
+    "n": 38,
+    "pop": 2917271452,
+    "pop_pct": 35.6,
+    "iso": [
+     "ATG",
+     "AZE",
+     "BHS",
+     "BLZ",
+     "BRB",
+     "BWA",
+     "CAN",
+     "DMA",
+     "ETH",
+     "FSM",
+     "GBR",
+     "GHA",
+     "GMB",
+     "GRD",
+     "IND",
+     "JAM",
+     "KEN",
+     "KNA",
+     "LBR",
+     "LCA",
+     "MDV",
+     "MWI",
+     "MYS",
+     "NGA",
+     "OMN",
+     "PAK",
+     "PLW",
+     "SLB",
+     "SWZ",
+     "TON",
+     "TTO",
+     "TZA",
+     "UGA",
+     "USA",
+     "VCT",
+     "WSM",
+     "YEM",
+     "ZMB"
+    ]
+   },
+   {
+    "value": "Parallel",
+    "n": 24,
+    "pop": 858559928,
+    "pop_pct": 10.5,
+    "iso": [
+     "AND",
+     "EGY",
+     "ITA",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "LBY",
+     "LTU",
+     "MCO",
+     "MDG",
+     "MNG",
+     "MRT",
+     "NPL",
+     "PAN",
+     "PHL",
+     "RUS",
+     "SEN",
+     "SYC",
+     "TCD",
+     "TJK",
+     "TWN",
+     "UKR",
+     "UZB",
+     "VEN"
+    ]
+   },
+   {
+    "value": "Two-round system",
+    "n": 17,
+    "pop": 409896311,
+    "pop_pct": 5.0,
+    "iso": [
+     "BHR",
+     "BLR",
+     "BTN",
+     "CAF",
+     "CIV",
+     "CMR",
+     "COG",
+     "COM",
+     "CUB",
+     "FRA",
+     "GAB",
+     "IRN",
+     "KIR",
+     "PRK",
+     "TKM",
+     "TUN",
+     "VNM"
+    ]
+   },
+   {
+    "value": "Indirect or appointed",
+    "n": 13,
+    "pop": 1608265987,
+    "pop_pct": 19.6,
+    "iso": [
+     "ARE",
+     "BFA",
+     "BRN",
+     "CHN",
+     "GIN",
+     "MLI",
+     "NER",
+     "QAT",
+     "SAU",
+     "SOM",
+     "SSD",
+     "SYR",
+     "VAT"
+    ]
+   },
+   {
+    "value": "Mixed-member proportional",
+    "n": 10,
+    "pop": 386661566,
+    "pop_pct": 4.7,
+    "iso": [
+     "BOL",
+     "DEU",
+     "DJI",
+     "HUN",
+     "KOR",
+     "LSO",
+     "MEX",
+     "NZL",
+     "THA",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "No sitting chamber",
+    "n": 9,
+    "pop": 354085312,
+    "pop_pct": 4.3,
+    "iso": [
+     "AFG",
+     "BGD",
+     "ERI",
+     "GNB",
+     "HTI",
+     "KWT",
+     "MMR",
+     "PSE",
+     "SDN"
+    ]
+   },
+   {
+    "value": "Block vote",
+    "n": 4,
+    "pop": 9162561,
+    "pop_pct": 0.1,
+    "iso": [
+     "LAO",
+     "MHL",
+     "MUS",
+     "TUV"
+    ]
+   },
+   {
+    "value": "Single non-transferable vote",
+    "n": 3,
+    "pop": 54699007,
+    "pop_pct": 0.7,
+    "iso": [
+     "IRQ",
+     "KGZ",
+     "VUT"
+    ]
+   },
+   {
+    "value": "Single transferable vote",
+    "n": 2,
+    "pop": 6064071,
+    "pop_pct": 0.1,
+    "iso": [
+     "IRL",
+     "MLT"
+    ]
+   },
+   {
+    "value": "Alternative vote",
+    "n": 2,
+    "pop": 38377228,
+    "pop_pct": 0.5,
+    "iso": [
+     "AUS",
+     "PNG"
+    ]
+   },
+   {
+    "value": "Borda count",
+    "n": 1,
+    "pop": 12025,
+    "pop_pct": 0.0,
+    "iso": [
+     "NRU"
+    ]
+   },
+   {
+    "value": "Party block vote",
+    "n": 1,
+    "pop": 6111175,
+    "pop_pct": 0.1,
+    "iso": [
+     "SGP"
+    ]
+   }
+  ],
+  "power_sharing": [
+   {
+    "value": "No",
+    "n": 193,
+    "pop": 8167050922,
+    "pop_pct": 99.6,
+    "iso": [
+     "AFG",
+     "AGO",
+     "ALB",
+     "AND",
+     "ARE",
+     "ARG",
+     "ARM",
+     "ATG",
+     "AUS",
+     "AUT",
+     "AZE",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BHR",
+     "BHS",
+     "BLR",
+     "BLZ",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BRN",
+     "BTN",
+     "BWA",
+     "CAF",
+     "CAN",
+     "CHE",
+     "CHL",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DNK",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "ESP",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GBR",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRC",
+     "GRD",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRL",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KHM",
+     "KIR",
+     "KNA",
+     "KOR",
+     "KOS",
+     "KWT",
+     "LAO",
+     "LBR",
+     "LBY",
+     "LCA",
+     "LIE",
+     "LKA",
+     "LSO",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MCO",
+     "MDA",
+     "MDG",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "MYS",
+     "NAM",
+     "NER",
+     "NGA",
+     "NIC",
+     "NLD",
+     "NOR",
+     "NPL",
+     "NRU",
+     "NZL",
+     "OMN",
+     "PAK",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "PNG",
+     "POL",
+     "PRK",
+     "PRT",
+     "PRY",
+     "PSE",
+     "QAT",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SAU",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SOM",
+     "SRB",
+     "SSD",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "SWZ",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "THA",
+     "TJK",
+     "TKM",
+     "TLS",
+     "TON",
+     "TTO",
+     "TUN",
+     "TUR",
+     "TUV",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "URY",
+     "USA",
+     "UZB",
+     "VAT",
+     "VCT",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Ethnic",
+    "n": 2,
+    "pop": 17530098,
+    "pop_pct": 0.2,
+    "iso": [
+     "BDI",
+     "BIH"
+    ]
+   },
+   {
+    "value": "Confessional",
+    "n": 1,
+    "pop": 5849421,
+    "pop_pct": 0.1,
+    "iso": [
+     "LBN"
+    ]
+   },
+   {
+    "value": "Linguistic",
+    "n": 1,
+    "pop": 11941781,
+    "pop_pct": 0.1,
+    "iso": [
+     "BEL"
+    ]
+   }
+  ],
+  "electoral_group": [
+   {
+    "value": "Proportional",
+    "n": 75,
+    "pop": 1559269670,
+    "pop_pct": 19.0,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "BDI",
+     "BEL",
+     "BEN",
+     "BGR",
+     "BIH",
+     "BRA",
+     "CHE",
+     "CHL",
+     "COD",
+     "COL",
+     "CPV",
+     "CRI",
+     "CYP",
+     "CZE",
+     "DNK",
+     "DOM",
+     "DZA",
+     "ECU",
+     "ESP",
+     "EST",
+     "FIN",
+     "FJI",
+     "GEO",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "IDN",
+     "IRL",
+     "ISL",
+     "ISR",
+     "KHM",
+     "KOS",
+     "LBN",
+     "LIE",
+     "LKA",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MDA",
+     "MKD",
+     "MLT",
+     "MNE",
+     "MOZ",
+     "NAM",
+     "NIC",
+     "NLD",
+     "NOR",
+     "PER",
+     "POL",
+     "PRT",
+     "PRY",
+     "ROU",
+     "RWA",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SRB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "TGO",
+     "TLS",
+     "TUR",
+     "URY",
+     "ZAF"
+    ]
+   },
+   {
+    "value": "Majoritarian",
+    "n": 63,
+    "pop": 3380830752,
+    "pop_pct": 41.2,
+    "iso": [
+     "ATG",
+     "AUS",
+     "AZE",
+     "BHR",
+     "BHS",
+     "BLR",
+     "BLZ",
+     "BRB",
+     "BTN",
+     "BWA",
+     "CAF",
+     "CAN",
+     "CIV",
+     "CMR",
+     "COG",
+     "COM",
+     "CUB",
+     "DMA",
+     "ETH",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GBR",
+     "GHA",
+     "GMB",
+     "GRD",
+     "IND",
+     "IRN",
+     "JAM",
+     "KEN",
+     "KIR",
+     "KNA",
+     "LAO",
+     "LBR",
+     "LCA",
+     "MDV",
+     "MHL",
+     "MUS",
+     "MWI",
+     "MYS",
+     "NGA",
+     "NRU",
+     "OMN",
+     "PAK",
+     "PLW",
+     "PNG",
+     "PRK",
+     "SGP",
+     "SLB",
+     "SWZ",
+     "TKM",
+     "TON",
+     "TTO",
+     "TUN",
+     "TUV",
+     "TZA",
+     "UGA",
+     "USA",
+     "VCT",
+     "VNM",
+     "WSM",
+     "YEM",
+     "ZMB"
+    ]
+   },
+   {
+    "value": "Mixed",
+    "n": 34,
+    "pop": 1245221494,
+    "pop_pct": 15.2,
+    "iso": [
+     "AND",
+     "BOL",
+     "DEU",
+     "DJI",
+     "EGY",
+     "HUN",
+     "ITA",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KOR",
+     "LBY",
+     "LSO",
+     "LTU",
+     "MCO",
+     "MDG",
+     "MEX",
+     "MNG",
+     "MRT",
+     "NPL",
+     "NZL",
+     "PAN",
+     "PHL",
+     "RUS",
+     "SEN",
+     "SYC",
+     "TCD",
+     "THA",
+     "TJK",
+     "TWN",
+     "UKR",
+     "UZB",
+     "VEN",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Not directly elected",
+    "n": 13,
+    "pop": 1608265987,
+    "pop_pct": 19.6,
+    "iso": [
+     "ARE",
+     "BFA",
+     "BRN",
+     "CHN",
+     "GIN",
+     "MLI",
+     "NER",
+     "QAT",
+     "SAU",
+     "SOM",
+     "SSD",
+     "SYR",
+     "VAT"
+    ]
+   },
+   {
+    "value": "No sitting chamber",
+    "n": 9,
+    "pop": 354085312,
+    "pop_pct": 4.3,
+    "iso": [
+     "AFG",
+     "BGD",
+     "ERI",
+     "GNB",
+     "HTI",
+     "KWT",
+     "MMR",
+     "PSE",
+     "SDN"
+    ]
+   },
+   {
+    "value": "Semi-proportional",
+    "n": 3,
+    "pop": 54699007,
+    "pop_pct": 0.7,
+    "iso": [
+     "IRQ",
+     "KGZ",
+     "VUT"
+    ]
+   }
+  ],
+  "vdem_regime_label": [
+   {
+    "value": "Electoral democracy",
+    "n": 56,
+    "pop": 1552648253,
+    "pop_pct": 18.9,
+    "iso": [
+     "ARG",
+     "ARM",
+     "BGR",
+     "BOL",
+     "BRA",
+     "BTN",
+     "BWA",
+     "CAN",
+     "COL",
+     "CPV",
+     "DOM",
+     "ECU",
+     "FJI",
+     "GBR",
+     "GHA",
+     "GMB",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "ISR",
+     "JAM",
+     "KEN",
+     "KOS",
+     "LBR",
+     "LKA",
+     "LSO",
+     "MDA",
+     "MDV",
+     "MKD",
+     "MLT",
+     "MNE",
+     "MNG",
+     "MUS",
+     "MWI",
+     "MYS",
+     "NAM",
+     "NGA",
+     "NPL",
+     "PAN",
+     "PER",
+     "POL",
+     "PRT",
+     "PRY",
+     "ROU",
+     "SEN",
+     "SLB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "TLS",
+     "USA",
+     "VUT",
+     "ZAF"
+    ]
+   },
+   {
+    "value": "Electoral autocracy",
+    "n": 55,
+    "pop": 3758908313,
+    "pop_pct": 45.8,
+    "iso": [
+     "AGO",
+     "ALB",
+     "AZE",
+     "BDI",
+     "BEN",
+     "BIH",
+     "CAF",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COM",
+     "DJI",
+     "DZA",
+     "EGY",
+     "ETH",
+     "GAB",
+     "GEO",
+     "GNQ",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRN",
+     "IRQ",
+     "KAZ",
+     "KGZ",
+     "KHM",
+     "LBN",
+     "MDG",
+     "MEX",
+     "MOZ",
+     "MRT",
+     "NIC",
+     "PAK",
+     "PHL",
+     "PNG",
+     "PSE",
+     "RUS",
+     "RWA",
+     "SGP",
+     "SLE",
+     "SLV",
+     "SRB",
+     "TCD",
+     "TGO",
+     "THA",
+     "TJK",
+     "TUN",
+     "TUR",
+     "TZA",
+     "UGA",
+     "UKR",
+     "VEN",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   {
+    "value": "Closed autocracy",
+    "n": 33,
+    "pop": 2264743744,
+    "pop_pct": 27.6,
+    "iso": [
+     "AFG",
+     "ARE",
+     "BFA",
+     "BGD",
+     "BHR",
+     "BLR",
+     "CHN",
+     "CUB",
+     "ERI",
+     "GIN",
+     "GNB",
+     "HTI",
+     "JOR",
+     "KWT",
+     "LAO",
+     "LBY",
+     "MAR",
+     "MLI",
+     "MMR",
+     "NER",
+     "OMN",
+     "PRK",
+     "QAT",
+     "SAU",
+     "SDN",
+     "SOM",
+     "SSD",
+     "SWZ",
+     "SYR",
+     "TKM",
+     "UZB",
+     "VNM",
+     "YEM"
+    ]
+   },
+   {
+    "value": "Liberal democracy",
+    "n": 31,
+    "pop": 623329363,
+    "pop_pct": 7.6,
+    "iso": [
+     "AUS",
+     "AUT",
+     "BEL",
+     "BRB",
+     "CHE",
+     "CHL",
+     "CRI",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DNK",
+     "ESP",
+     "EST",
+     "FIN",
+     "FRA",
+     "IRL",
+     "ISL",
+     "ITA",
+     "JPN",
+     "KOR",
+     "LTU",
+     "LUX",
+     "LVA",
+     "NLD",
+     "NOR",
+     "NZL",
+     "SWE",
+     "SYC",
+     "TTO",
+     "TWN",
+     "URY"
+    ]
+   },
+   {
+    "value": "Not covered by V-Dem",
+    "n": 22,
+    "pop": 2742549,
+    "pop_pct": 0.0,
+    "iso": [
+     "AND",
+     "ATG",
+     "BHS",
+     "BLZ",
+     "BRN",
+     "DMA",
+     "FSM",
+     "GRD",
+     "KIR",
+     "KNA",
+     "LCA",
+     "LIE",
+     "MCO",
+     "MHL",
+     "NRU",
+     "PLW",
+     "SMR",
+     "TON",
+     "TUV",
+     "VAT",
+     "VCT",
+     "WSM"
+    ]
+   }
+  ]
+ },
+ "f": {
+  "head_of_state": {
+   "Republic": {
+    "value": "Republic",
+    "n": 153,
+    "pop": 7529017174,
+    "pop_pct": 91.8,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "AZE",
+     "BDI",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BIH",
+     "BLR",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BWA",
+     "CAF",
+     "CHE",
+     "CHL",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRL",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "KOS",
+     "LAO",
+     "LBN",
+     "LBR",
+     "LBY",
+     "LKA",
+     "LTU",
+     "LVA",
+     "MDA",
+     "MDG",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "NAM",
+     "NER",
+     "NGA",
+     "NIC",
+     "NPL",
+     "NRU",
+     "PAK",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "POL",
+     "PRK",
+     "PRT",
+     "PRY",
+     "PSE",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SOM",
+     "SRB",
+     "SSD",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "TJK",
+     "TKM",
+     "TLS",
+     "TTO",
+     "TUN",
+     "TUR",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   "Constitutional monarchy, ceremonial monarch": {
+    "value": "Constitutional monarchy, ceremonial monarch",
+    "n": 29,
+    "pop": 514233773,
+    "pop_pct": 6.3,
+    "iso": [
+     "AND",
+     "ATG",
+     "AUS",
+     "BEL",
+     "BHS",
+     "BLZ",
+     "BTN",
+     "CAN",
+     "DNK",
+     "ESP",
+     "GBR",
+     "GRD",
+     "JAM",
+     "JPN",
+     "KHM",
+     "KNA",
+     "LCA",
+     "LSO",
+     "LUX",
+     "MYS",
+     "NLD",
+     "NOR",
+     "NZL",
+     "PNG",
+     "SLB",
+     "SWE",
+     "THA",
+     "TUV",
+     "VCT"
+    ]
+   },
+   "Absolute monarchy": {
+    "value": "Absolute monarchy",
+    "n": 7,
+    "pop": 58676939,
+    "pop_pct": 0.7,
+    "iso": [
+     "ARE",
+     "BRN",
+     "OMN",
+     "QAT",
+     "SAU",
+     "SWZ",
+     "VAT"
+    ]
+   },
+   "Constitutional monarchy, ruling monarch": {
+    "value": "Constitutional monarchy, ruling monarch",
+    "n": 7,
+    "pop": 56600225,
+    "pop_pct": 0.7,
+    "iso": [
+     "BHR",
+     "JOR",
+     "KWT",
+     "LIE",
+     "MAR",
+     "MCO",
+     "TON"
+    ]
+   },
+   "Theocratic emirate": {
+    "value": "Theocratic emirate",
+    "n": 1,
+    "pop": 43844111,
+    "pop_pct": 0.5,
+    "iso": [
+     "AFG"
+    ]
+   }
+  },
+  "head_of_state_detail": {
+   "President": {
+    "value": "President",
+    "n": 145,
+    "pop": 7311532178,
+    "pop_pct": 89.1,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "AZE",
+     "BDI",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BLR",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BWA",
+     "CAF",
+     "CHL",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRL",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "KOS",
+     "LAO",
+     "LBN",
+     "LBR",
+     "LKA",
+     "LTU",
+     "LVA",
+     "MDA",
+     "MDG",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "NAM",
+     "NER",
+     "NGA",
+     "NIC",
+     "NPL",
+     "NRU",
+     "PAK",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "POL",
+     "PRK",
+     "PRT",
+     "PRY",
+     "PSE",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SEN",
+     "SGP",
+     "SLE",
+     "SLV",
+     "SOM",
+     "SRB",
+     "SSD",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "TJK",
+     "TKM",
+     "TLS",
+     "TTO",
+     "TUN",
+     "TUR",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   "Hereditary monarch": {
+    "value": "Hereditary monarch",
+    "n": 24,
+    "pop": 473684980,
+    "pop_pct": 5.8,
+    "iso": [
+     "BEL",
+     "BHR",
+     "BRN",
+     "BTN",
+     "DNK",
+     "ESP",
+     "GBR",
+     "JOR",
+     "JPN",
+     "KWT",
+     "LIE",
+     "LSO",
+     "LUX",
+     "MAR",
+     "MCO",
+     "NLD",
+     "NOR",
+     "OMN",
+     "QAT",
+     "SAU",
+     "SWE",
+     "SWZ",
+     "THA",
+     "TON"
+    ]
+   },
+   "Monarch abroad (Commonwealth realm)": {
+    "value": "Monarch abroad (Commonwealth realm)",
+    "n": 14,
+    "pop": 90403259,
+    "pop_pct": 1.1,
+    "iso": [
+     "ATG",
+     "AUS",
+     "BHS",
+     "BLZ",
+     "CAN",
+     "GRD",
+     "JAM",
+     "KNA",
+     "LCA",
+     "NZL",
+     "PNG",
+     "SLB",
+     "TUV",
+     "VCT"
+    ]
+   },
+   "Collective presidency": {
+    "value": "Collective presidency",
+    "n": 7,
+    "pop": 125067315,
+    "pop_pct": 1.5,
+    "iso": [
+     "BIH",
+     "CHE",
+     "HTI",
+     "LBY",
+     "SDN",
+     "SMR",
+     "YEM"
+    ]
+   },
+   "Elective monarch": {
+    "value": "Elective monarch",
+    "n": 4,
+    "pop": 65339794,
+    "pop_pct": 0.8,
+    "iso": [
+     "ARE",
+     "KHM",
+     "MYS",
+     "VAT"
+    ]
+   },
+   "Co-princes": {
+    "value": "Co-princes",
+    "n": 1,
+    "pop": 82904,
+    "pop_pct": 0.0,
+    "iso": [
+     "AND"
+    ]
+   },
+   "Emir (religious leader)": {
+    "value": "Emir (religious leader)",
+    "n": 1,
+    "pop": 43844111,
+    "pop_pct": 0.5,
+    "iso": [
+     "AFG"
+    ]
+   },
+   "Supreme Leader": {
+    "value": "Supreme Leader",
+    "n": 1,
+    "pop": 92417681,
+    "pop_pct": 1.1,
+    "iso": [
+     "IRN"
+    ]
+   }
+  },
+  "executive": {
+   "Parliamentary": {
+    "value": "Parliamentary",
+    "n": 74,
+    "pop": 2778248836,
+    "pop_pct": 33.9,
+    "iso": [
+     "ALB",
+     "AND",
+     "ARM",
+     "ATG",
+     "AUS",
+     "AUT",
+     "BEL",
+     "BGR",
+     "BHS",
+     "BIH",
+     "BLZ",
+     "BRB",
+     "BTN",
+     "CAN",
+     "CPV",
+     "CZE",
+     "DEU",
+     "DMA",
+     "DNK",
+     "ESP",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "GBR",
+     "GEO",
+     "GRC",
+     "GRD",
+     "HRV",
+     "HUN",
+     "IND",
+     "IRL",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "JAM",
+     "JPN",
+     "KHM",
+     "KNA",
+     "KOS",
+     "LBN",
+     "LCA",
+     "LSO",
+     "LUX",
+     "LVA",
+     "MDA",
+     "MKD",
+     "MLT",
+     "MNE",
+     "MUS",
+     "MYS",
+     "NLD",
+     "NOR",
+     "NPL",
+     "NZL",
+     "PAK",
+     "PNG",
+     "POL",
+     "SGP",
+     "SLB",
+     "SMR",
+     "SOM",
+     "SRB",
+     "SVK",
+     "SVN",
+     "SWE",
+     "TGO",
+     "THA",
+     "TTO",
+     "TUV",
+     "VCT",
+     "VUT",
+     "WSM"
+    ]
+   },
+   "Presidential": {
+    "value": "Presidential",
+    "n": 52,
+    "pop": 2229701072,
+    "pop_pct": 27.2,
+    "iso": [
+     "AGO",
+     "ARG",
+     "BEN",
+     "BOL",
+     "BRA",
+     "CHL",
+     "COL",
+     "COM",
+     "CRI",
+     "CYP",
+     "DOM",
+     "ECU",
+     "GAB",
+     "GHA",
+     "GMB",
+     "GNQ",
+     "GTM",
+     "HND",
+     "IDN",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "LBR",
+     "LKA",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MOZ",
+     "MWI",
+     "NAM",
+     "NGA",
+     "NIC",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "PRY",
+     "SLE",
+     "SLV",
+     "SYC",
+     "TJK",
+     "TKM",
+     "TUR",
+     "TZA",
+     "UGA",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   "Semi-presidential: president-parliamentary": {
+    "value": "Semi-presidential: president-parliamentary",
+    "n": 18,
+    "pop": 641739122,
+    "pop_pct": 7.8,
+    "iso": [
+     "AZE",
+     "BDI",
+     "BLR",
+     "CAF",
+     "CIV",
+     "CMR",
+     "COD",
+     "DJI",
+     "DZA",
+     "EGY",
+     "KAZ",
+     "MRT",
+     "RUS",
+     "RWA",
+     "SEN",
+     "TCD",
+     "TUN",
+     "TWN"
+    ]
+   },
+   "Semi-presidential: premier-presidential": {
+    "value": "Semi-presidential: premier-presidential",
+    "n": 9,
+    "pop": 152126815,
+    "pop_pct": 1.9,
+    "iso": [
+     "COG",
+     "FRA",
+     "LTU",
+     "MNG",
+     "PRT",
+     "ROU",
+     "STP",
+     "TLS",
+     "UKR"
+    ]
+   },
+   "Military government": {
+    "value": "Military government",
+    "n": 8,
+    "pop": 233793947,
+    "pop_pct": 2.9,
+    "iso": [
+     "BFA",
+     "GIN",
+     "GNB",
+     "MDG",
+     "MLI",
+     "MMR",
+     "NER",
+     "SDN"
+    ]
+   },
+   "Transitional or divided authority": {
+    "value": "Transitional or divided authority",
+    "n": 7,
+    "pop": 280048238,
+    "pop_pct": 3.4,
+    "iso": [
+     "BGD",
+     "HTI",
+     "LBY",
+     "PSE",
+     "SSD",
+     "SYR",
+     "YEM"
+    ]
+   },
+   "Dualist (monarch and parliament)": {
+    "value": "Dualist (monarch and parliament)",
+    "n": 7,
+    "pop": 56600225,
+    "pop_pct": 0.7,
+    "iso": [
+     "BHR",
+     "JOR",
+     "KWT",
+     "LIE",
+     "MAR",
+     "MCO",
+     "TON"
+    ]
+   },
+   "One-party state": {
+    "value": "One-party state",
+    "n": 6,
+    "pop": 1557171815,
+    "pop_pct": 19.0,
+    "iso": [
+     "CHN",
+     "CUB",
+     "ERI",
+     "LAO",
+     "PRK",
+     "VNM"
+    ]
+   },
+   "Royal (absolute)": {
+    "value": "Royal (absolute)",
+    "n": 6,
+    "pop": 58676114,
+    "pop_pct": 0.7,
+    "iso": [
+     "ARE",
+     "BRN",
+     "OMN",
+     "QAT",
+     "SAU",
+     "SWZ"
+    ]
+   },
+   "Parliamentary, executive president chosen by or through the legislature": {
+    "value": "Parliamentary, executive president chosen by or through the legislature",
+    "n": 6,
+    "pop": 68910985,
+    "pop_pct": 0.8,
+    "iso": [
+     "BWA",
+     "FSM",
+     "GUY",
+     "NRU",
+     "SUR",
+     "ZAF"
+    ]
+   },
+   "Theocratic": {
+    "value": "Theocratic",
+    "n": 3,
+    "pop": 136262617,
+    "pop_pct": 1.7,
+    "iso": [
+     "AFG",
+     "IRN",
+     "VAT"
+    ]
+   },
+   "Directorial": {
+    "value": "Directorial",
+    "n": 1,
+    "pop": 9092436,
+    "pop_pct": 0.1,
+    "iso": [
+     "CHE"
+    ]
+   }
+  },
+  "hos_hog": {
+   "Separate": {
+    "value": "Separate",
+    "n": 133,
+    "pop": 5847290490,
+    "pop_pct": 71.3,
+    "iso": [
+     "AFG",
+     "ALB",
+     "AND",
+     "ARE",
+     "ARM",
+     "ATG",
+     "AUS",
+     "AUT",
+     "AZE",
+     "BDI",
+     "BEL",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BHR",
+     "BHS",
+     "BIH",
+     "BLR",
+     "BLZ",
+     "BRB",
+     "BTN",
+     "CAF",
+     "CAN",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "CPV",
+     "CUB",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DNK",
+     "DZA",
+     "EGY",
+     "ESP",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "GBR",
+     "GEO",
+     "GIN",
+     "GNB",
+     "GRC",
+     "GRD",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IND",
+     "IRL",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KHM",
+     "KNA",
+     "KOS",
+     "KWT",
+     "LAO",
+     "LBN",
+     "LBY",
+     "LCA",
+     "LIE",
+     "LSO",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MCO",
+     "MDA",
+     "MDG",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MRT",
+     "MUS",
+     "MYS",
+     "NER",
+     "NLD",
+     "NOR",
+     "NPL",
+     "NZL",
+     "PAK",
+     "PNG",
+     "POL",
+     "PRK",
+     "PRT",
+     "PSE",
+     "QAT",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SAU",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SMR",
+     "SOM",
+     "SRB",
+     "STP",
+     "SVK",
+     "SVN",
+     "SWE",
+     "SWZ",
+     "TCD",
+     "TGO",
+     "THA",
+     "TLS",
+     "TON",
+     "TTO",
+     "TUN",
+     "TUV",
+     "TWN",
+     "UKR",
+     "VAT",
+     "VCT",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM"
+    ]
+   },
+   "Fused (one person or body)": {
+    "value": "Fused (one person or body)",
+    "n": 64,
+    "pop": 2355081732,
+    "pop_pct": 28.7,
+    "iso": [
+     "AGO",
+     "ARG",
+     "BEN",
+     "BOL",
+     "BRA",
+     "BRN",
+     "BWA",
+     "CHE",
+     "CHL",
+     "COL",
+     "COM",
+     "CRI",
+     "CYP",
+     "DOM",
+     "ECU",
+     "ERI",
+     "FSM",
+     "GAB",
+     "GHA",
+     "GMB",
+     "GNQ",
+     "GTM",
+     "GUY",
+     "HND",
+     "IDN",
+     "KEN",
+     "KGZ",
+     "KIR",
+     "KOR",
+     "LBR",
+     "LKA",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MOZ",
+     "MWI",
+     "NAM",
+     "NGA",
+     "NIC",
+     "NRU",
+     "OMN",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "PRY",
+     "SLE",
+     "SLV",
+     "SSD",
+     "SUR",
+     "SYC",
+     "SYR",
+     "TJK",
+     "TKM",
+     "TUR",
+     "TZA",
+     "UGA",
+     "URY",
+     "USA",
+     "UZB",
+     "VEN",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   }
+  },
+  "territory": {
+   "Unitary": {
+    "value": "Unitary",
+    "n": 148,
+    "pop": 2635999707,
+    "pop_pct": 32.1,
+    "iso": [
+     "AFG",
+     "AGO",
+     "ALB",
+     "AND",
+     "ARM",
+     "ATG",
+     "BDI",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BHR",
+     "BHS",
+     "BLR",
+     "BLZ",
+     "BOL",
+     "BRB",
+     "BRN",
+     "BTN",
+     "BWA",
+     "CAF",
+     "CHL",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DJI",
+     "DMA",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "EST",
+     "FJI",
+     "FRA",
+     "GAB",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRD",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IRL",
+     "IRN",
+     "ISL",
+     "ISR",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KHM",
+     "KIR",
+     "KOR",
+     "KOS",
+     "KWT",
+     "LAO",
+     "LBN",
+     "LBR",
+     "LBY",
+     "LCA",
+     "LIE",
+     "LKA",
+     "LSO",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MCO",
+     "MDG",
+     "MDV",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MWI",
+     "NAM",
+     "NER",
+     "NOR",
+     "NRU",
+     "NZL",
+     "OMN",
+     "PAN",
+     "PER",
+     "PLW",
+     "POL",
+     "PRK",
+     "PRY",
+     "PSE",
+     "QAT",
+     "ROU",
+     "RWA",
+     "SAU",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SSD",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "SWZ",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "THA",
+     "TKM",
+     "TLS",
+     "TON",
+     "TUN",
+     "TUR",
+     "TUV",
+     "TWN",
+     "UGA",
+     "URY",
+     "VAT",
+     "VCT",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   "Federal": {
+    "value": "Federal",
+    "n": 25,
+    "pop": 3327478534,
+    "pop_pct": 40.6,
+    "iso": [
+     "ARE",
+     "ARG",
+     "AUS",
+     "AUT",
+     "BEL",
+     "BIH",
+     "BRA",
+     "CAN",
+     "CHE",
+     "COM",
+     "DEU",
+     "ETH",
+     "FSM",
+     "IND",
+     "IRQ",
+     "KNA",
+     "MEX",
+     "MYS",
+     "NGA",
+     "NPL",
+     "PAK",
+     "RUS",
+     "SOM",
+     "USA",
+     "VEN"
+    ]
+   },
+   "Unitary with autonomous regions": {
+    "value": "Unitary with autonomous regions",
+    "n": 21,
+    "pop": 2061136182,
+    "pop_pct": 25.1,
+    "iso": [
+     "AZE",
+     "CHN",
+     "DNK",
+     "FIN",
+     "GEO",
+     "GRC",
+     "IDN",
+     "MDA",
+     "MUS",
+     "NIC",
+     "NLD",
+     "PHL",
+     "PNG",
+     "PRT",
+     "SRB",
+     "STP",
+     "TJK",
+     "TTO",
+     "TZA",
+     "UKR",
+     "UZB"
+    ]
+   },
+   "Regionalised": {
+    "value": "Regionalised",
+    "n": 3,
+    "pop": 177757799,
+    "pop_pct": 2.2,
+    "iso": [
+     "ESP",
+     "GBR",
+     "ITA"
+    ]
+   }
+  },
+  "chambers": {
+   "Unicameral": {
+    "value": "Unicameral",
+    "n": 107,
+    "pop": 2744392859,
+    "pop_pct": 33.5,
+    "iso": [
+     "AGO",
+     "ALB",
+     "AND",
+     "ARE",
+     "ARM",
+     "AZE",
+     "BEN",
+     "BFA",
+     "BGR",
+     "BRN",
+     "BWA",
+     "CAF",
+     "CHN",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "DJI",
+     "DMA",
+     "DNK",
+     "ECU",
+     "EST",
+     "FIN",
+     "FJI",
+     "FSM",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HUN",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "KGZ",
+     "KIR",
+     "KNA",
+     "KOR",
+     "KOS",
+     "LAO",
+     "LBN",
+     "LBY",
+     "LIE",
+     "LKA",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MCO",
+     "MDA",
+     "MDV",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "NER",
+     "NIC",
+     "NOR",
+     "NRU",
+     "NZL",
+     "PAN",
+     "PER",
+     "PNG",
+     "PRK",
+     "PRT",
+     "QAT",
+     "SAU",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SRB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SWE",
+     "SYC",
+     "SYR",
+     "TKM",
+     "TLS",
+     "TON",
+     "TUR",
+     "TUV",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "VAT",
+     "VCT",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "ZMB"
+    ]
+   },
+   "Bicameral": {
+    "value": "Bicameral",
+    "n": 81,
+    "pop": 5103894051,
+    "pop_pct": 62.2,
+    "iso": [
+     "ARG",
+     "ATG",
+     "AUS",
+     "AUT",
+     "BDI",
+     "BEL",
+     "BHR",
+     "BHS",
+     "BIH",
+     "BLR",
+     "BLZ",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BTN",
+     "CAN",
+     "CHE",
+     "CHL",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "CZE",
+     "DEU",
+     "DOM",
+     "DZA",
+     "EGY",
+     "ESP",
+     "ETH",
+     "FRA",
+     "GAB",
+     "GBR",
+     "GNQ",
+     "GRD",
+     "IDN",
+     "IND",
+     "IRL",
+     "ITA",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KEN",
+     "KHM",
+     "LBR",
+     "LCA",
+     "LSO",
+     "MAR",
+     "MDG",
+     "MEX",
+     "MYS",
+     "NAM",
+     "NGA",
+     "NLD",
+     "NPL",
+     "OMN",
+     "PAK",
+     "PHL",
+     "PLW",
+     "POL",
+     "PRY",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SOM",
+     "SSD",
+     "SVN",
+     "SWZ",
+     "TCD",
+     "TGO",
+     "THA",
+     "TJK",
+     "TTO",
+     "TUN",
+     "URY",
+     "USA",
+     "UZB",
+     "YEM",
+     "ZAF",
+     "ZWE"
+    ]
+   },
+   "None sitting": {
+    "value": "None sitting",
+    "n": 9,
+    "pop": 354085312,
+    "pop_pct": 4.3,
+    "iso": [
+     "AFG",
+     "BGD",
+     "ERI",
+     "GNB",
+     "HTI",
+     "KWT",
+     "MMR",
+     "PSE",
+     "SDN"
+    ]
+   }
+  },
+  "electoral_system": {
+   "List PR": {
+    "value": "List PR",
+    "n": 73,
+    "pop": 1553205599,
+    "pop_pct": 18.9,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "BDI",
+     "BEL",
+     "BEN",
+     "BGR",
+     "BIH",
+     "BRA",
+     "CHE",
+     "CHL",
+     "COD",
+     "COL",
+     "CPV",
+     "CRI",
+     "CYP",
+     "CZE",
+     "DNK",
+     "DOM",
+     "DZA",
+     "ECU",
+     "ESP",
+     "EST",
+     "FIN",
+     "FJI",
+     "GEO",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "IDN",
+     "ISL",
+     "ISR",
+     "KHM",
+     "KOS",
+     "LBN",
+     "LIE",
+     "LKA",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MDA",
+     "MKD",
+     "MNE",
+     "MOZ",
+     "NAM",
+     "NIC",
+     "NLD",
+     "NOR",
+     "PER",
+     "POL",
+     "PRT",
+     "PRY",
+     "ROU",
+     "RWA",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SRB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "TGO",
+     "TLS",
+     "TUR",
+     "URY",
+     "ZAF"
+    ]
+   },
+   "First past the post": {
+    "value": "First past the post",
+    "n": 38,
+    "pop": 2917271452,
+    "pop_pct": 35.6,
+    "iso": [
+     "ATG",
+     "AZE",
+     "BHS",
+     "BLZ",
+     "BRB",
+     "BWA",
+     "CAN",
+     "DMA",
+     "ETH",
+     "FSM",
+     "GBR",
+     "GHA",
+     "GMB",
+     "GRD",
+     "IND",
+     "JAM",
+     "KEN",
+     "KNA",
+     "LBR",
+     "LCA",
+     "MDV",
+     "MWI",
+     "MYS",
+     "NGA",
+     "OMN",
+     "PAK",
+     "PLW",
+     "SLB",
+     "SWZ",
+     "TON",
+     "TTO",
+     "TZA",
+     "UGA",
+     "USA",
+     "VCT",
+     "WSM",
+     "YEM",
+     "ZMB"
+    ]
+   },
+   "Parallel": {
+    "value": "Parallel",
+    "n": 24,
+    "pop": 858559928,
+    "pop_pct": 10.5,
+    "iso": [
+     "AND",
+     "EGY",
+     "ITA",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "LBY",
+     "LTU",
+     "MCO",
+     "MDG",
+     "MNG",
+     "MRT",
+     "NPL",
+     "PAN",
+     "PHL",
+     "RUS",
+     "SEN",
+     "SYC",
+     "TCD",
+     "TJK",
+     "TWN",
+     "UKR",
+     "UZB",
+     "VEN"
+    ]
+   },
+   "Two-round system": {
+    "value": "Two-round system",
+    "n": 17,
+    "pop": 409896311,
+    "pop_pct": 5.0,
+    "iso": [
+     "BHR",
+     "BLR",
+     "BTN",
+     "CAF",
+     "CIV",
+     "CMR",
+     "COG",
+     "COM",
+     "CUB",
+     "FRA",
+     "GAB",
+     "IRN",
+     "KIR",
+     "PRK",
+     "TKM",
+     "TUN",
+     "VNM"
+    ]
+   },
+   "Indirect or appointed": {
+    "value": "Indirect or appointed",
+    "n": 13,
+    "pop": 1608265987,
+    "pop_pct": 19.6,
+    "iso": [
+     "ARE",
+     "BFA",
+     "BRN",
+     "CHN",
+     "GIN",
+     "MLI",
+     "NER",
+     "QAT",
+     "SAU",
+     "SOM",
+     "SSD",
+     "SYR",
+     "VAT"
+    ]
+   },
+   "Mixed-member proportional": {
+    "value": "Mixed-member proportional",
+    "n": 10,
+    "pop": 386661566,
+    "pop_pct": 4.7,
+    "iso": [
+     "BOL",
+     "DEU",
+     "DJI",
+     "HUN",
+     "KOR",
+     "LSO",
+     "MEX",
+     "NZL",
+     "THA",
+     "ZWE"
+    ]
+   },
+   "No sitting chamber": {
+    "value": "No sitting chamber",
+    "n": 9,
+    "pop": 354085312,
+    "pop_pct": 4.3,
+    "iso": [
+     "AFG",
+     "BGD",
+     "ERI",
+     "GNB",
+     "HTI",
+     "KWT",
+     "MMR",
+     "PSE",
+     "SDN"
+    ]
+   },
+   "Block vote": {
+    "value": "Block vote",
+    "n": 4,
+    "pop": 9162561,
+    "pop_pct": 0.1,
+    "iso": [
+     "LAO",
+     "MHL",
+     "MUS",
+     "TUV"
+    ]
+   },
+   "Single non-transferable vote": {
+    "value": "Single non-transferable vote",
+    "n": 3,
+    "pop": 54699007,
+    "pop_pct": 0.7,
+    "iso": [
+     "IRQ",
+     "KGZ",
+     "VUT"
+    ]
+   },
+   "Single transferable vote": {
+    "value": "Single transferable vote",
+    "n": 2,
+    "pop": 6064071,
+    "pop_pct": 0.1,
+    "iso": [
+     "IRL",
+     "MLT"
+    ]
+   },
+   "Alternative vote": {
+    "value": "Alternative vote",
+    "n": 2,
+    "pop": 38377228,
+    "pop_pct": 0.5,
+    "iso": [
+     "AUS",
+     "PNG"
+    ]
+   },
+   "Borda count": {
+    "value": "Borda count",
+    "n": 1,
+    "pop": 12025,
+    "pop_pct": 0.0,
+    "iso": [
+     "NRU"
+    ]
+   },
+   "Party block vote": {
+    "value": "Party block vote",
+    "n": 1,
+    "pop": 6111175,
+    "pop_pct": 0.1,
+    "iso": [
+     "SGP"
+    ]
+   }
+  },
+  "power_sharing": {
+   "No": {
+    "value": "No",
+    "n": 193,
+    "pop": 8167050922,
+    "pop_pct": 99.6,
+    "iso": [
+     "AFG",
+     "AGO",
+     "ALB",
+     "AND",
+     "ARE",
+     "ARG",
+     "ARM",
+     "ATG",
+     "AUS",
+     "AUT",
+     "AZE",
+     "BEN",
+     "BFA",
+     "BGD",
+     "BGR",
+     "BHR",
+     "BHS",
+     "BLR",
+     "BLZ",
+     "BOL",
+     "BRA",
+     "BRB",
+     "BRN",
+     "BTN",
+     "BWA",
+     "CAF",
+     "CAN",
+     "CHE",
+     "CHL",
+     "CHN",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COL",
+     "COM",
+     "CPV",
+     "CRI",
+     "CUB",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DJI",
+     "DMA",
+     "DNK",
+     "DOM",
+     "DZA",
+     "ECU",
+     "EGY",
+     "ERI",
+     "ESP",
+     "EST",
+     "ETH",
+     "FIN",
+     "FJI",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GBR",
+     "GEO",
+     "GHA",
+     "GIN",
+     "GMB",
+     "GNB",
+     "GNQ",
+     "GRC",
+     "GRD",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "HTI",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRL",
+     "IRN",
+     "IRQ",
+     "ISL",
+     "ISR",
+     "ITA",
+     "JAM",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KEN",
+     "KGZ",
+     "KHM",
+     "KIR",
+     "KNA",
+     "KOR",
+     "KOS",
+     "KWT",
+     "LAO",
+     "LBR",
+     "LBY",
+     "LCA",
+     "LIE",
+     "LKA",
+     "LSO",
+     "LTU",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MCO",
+     "MDA",
+     "MDG",
+     "MDV",
+     "MEX",
+     "MHL",
+     "MKD",
+     "MLI",
+     "MLT",
+     "MMR",
+     "MNE",
+     "MNG",
+     "MOZ",
+     "MRT",
+     "MUS",
+     "MWI",
+     "MYS",
+     "NAM",
+     "NER",
+     "NGA",
+     "NIC",
+     "NLD",
+     "NOR",
+     "NPL",
+     "NRU",
+     "NZL",
+     "OMN",
+     "PAK",
+     "PAN",
+     "PER",
+     "PHL",
+     "PLW",
+     "PNG",
+     "POL",
+     "PRK",
+     "PRT",
+     "PRY",
+     "PSE",
+     "QAT",
+     "ROU",
+     "RUS",
+     "RWA",
+     "SAU",
+     "SDN",
+     "SEN",
+     "SGP",
+     "SLB",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SOM",
+     "SRB",
+     "SSD",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "SWZ",
+     "SYC",
+     "SYR",
+     "TCD",
+     "TGO",
+     "THA",
+     "TJK",
+     "TKM",
+     "TLS",
+     "TON",
+     "TTO",
+     "TUN",
+     "TUR",
+     "TUV",
+     "TWN",
+     "TZA",
+     "UGA",
+     "UKR",
+     "URY",
+     "USA",
+     "UZB",
+     "VAT",
+     "VCT",
+     "VEN",
+     "VNM",
+     "VUT",
+     "WSM",
+     "YEM",
+     "ZAF",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   "Ethnic": {
+    "value": "Ethnic",
+    "n": 2,
+    "pop": 17530098,
+    "pop_pct": 0.2,
+    "iso": [
+     "BDI",
+     "BIH"
+    ]
+   },
+   "Confessional": {
+    "value": "Confessional",
+    "n": 1,
+    "pop": 5849421,
+    "pop_pct": 0.1,
+    "iso": [
+     "LBN"
+    ]
+   },
+   "Linguistic": {
+    "value": "Linguistic",
+    "n": 1,
+    "pop": 11941781,
+    "pop_pct": 0.1,
+    "iso": [
+     "BEL"
+    ]
+   }
+  },
+  "electoral_group": {
+   "Proportional": {
+    "value": "Proportional",
+    "n": 75,
+    "pop": 1559269670,
+    "pop_pct": 19.0,
+    "iso": [
+     "AGO",
+     "ALB",
+     "ARG",
+     "ARM",
+     "AUT",
+     "BDI",
+     "BEL",
+     "BEN",
+     "BGR",
+     "BIH",
+     "BRA",
+     "CHE",
+     "CHL",
+     "COD",
+     "COL",
+     "CPV",
+     "CRI",
+     "CYP",
+     "CZE",
+     "DNK",
+     "DOM",
+     "DZA",
+     "ECU",
+     "ESP",
+     "EST",
+     "FIN",
+     "FJI",
+     "GEO",
+     "GNQ",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "IDN",
+     "IRL",
+     "ISL",
+     "ISR",
+     "KHM",
+     "KOS",
+     "LBN",
+     "LIE",
+     "LKA",
+     "LUX",
+     "LVA",
+     "MAR",
+     "MDA",
+     "MKD",
+     "MLT",
+     "MNE",
+     "MOZ",
+     "NAM",
+     "NIC",
+     "NLD",
+     "NOR",
+     "PER",
+     "POL",
+     "PRT",
+     "PRY",
+     "ROU",
+     "RWA",
+     "SLE",
+     "SLV",
+     "SMR",
+     "SRB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "SWE",
+     "TGO",
+     "TLS",
+     "TUR",
+     "URY",
+     "ZAF"
+    ]
+   },
+   "Majoritarian": {
+    "value": "Majoritarian",
+    "n": 63,
+    "pop": 3380830752,
+    "pop_pct": 41.2,
+    "iso": [
+     "ATG",
+     "AUS",
+     "AZE",
+     "BHR",
+     "BHS",
+     "BLR",
+     "BLZ",
+     "BRB",
+     "BTN",
+     "BWA",
+     "CAF",
+     "CAN",
+     "CIV",
+     "CMR",
+     "COG",
+     "COM",
+     "CUB",
+     "DMA",
+     "ETH",
+     "FRA",
+     "FSM",
+     "GAB",
+     "GBR",
+     "GHA",
+     "GMB",
+     "GRD",
+     "IND",
+     "IRN",
+     "JAM",
+     "KEN",
+     "KIR",
+     "KNA",
+     "LAO",
+     "LBR",
+     "LCA",
+     "MDV",
+     "MHL",
+     "MUS",
+     "MWI",
+     "MYS",
+     "NGA",
+     "NRU",
+     "OMN",
+     "PAK",
+     "PLW",
+     "PNG",
+     "PRK",
+     "SGP",
+     "SLB",
+     "SWZ",
+     "TKM",
+     "TON",
+     "TTO",
+     "TUN",
+     "TUV",
+     "TZA",
+     "UGA",
+     "USA",
+     "VCT",
+     "VNM",
+     "WSM",
+     "YEM",
+     "ZMB"
+    ]
+   },
+   "Mixed": {
+    "value": "Mixed",
+    "n": 34,
+    "pop": 1245221494,
+    "pop_pct": 15.2,
+    "iso": [
+     "AND",
+     "BOL",
+     "DEU",
+     "DJI",
+     "EGY",
+     "HUN",
+     "ITA",
+     "JOR",
+     "JPN",
+     "KAZ",
+     "KOR",
+     "LBY",
+     "LSO",
+     "LTU",
+     "MCO",
+     "MDG",
+     "MEX",
+     "MNG",
+     "MRT",
+     "NPL",
+     "NZL",
+     "PAN",
+     "PHL",
+     "RUS",
+     "SEN",
+     "SYC",
+     "TCD",
+     "THA",
+     "TJK",
+     "TWN",
+     "UKR",
+     "UZB",
+     "VEN",
+     "ZWE"
+    ]
+   },
+   "Not directly elected": {
+    "value": "Not directly elected",
+    "n": 13,
+    "pop": 1608265987,
+    "pop_pct": 19.6,
+    "iso": [
+     "ARE",
+     "BFA",
+     "BRN",
+     "CHN",
+     "GIN",
+     "MLI",
+     "NER",
+     "QAT",
+     "SAU",
+     "SOM",
+     "SSD",
+     "SYR",
+     "VAT"
+    ]
+   },
+   "No sitting chamber": {
+    "value": "No sitting chamber",
+    "n": 9,
+    "pop": 354085312,
+    "pop_pct": 4.3,
+    "iso": [
+     "AFG",
+     "BGD",
+     "ERI",
+     "GNB",
+     "HTI",
+     "KWT",
+     "MMR",
+     "PSE",
+     "SDN"
+    ]
+   },
+   "Semi-proportional": {
+    "value": "Semi-proportional",
+    "n": 3,
+    "pop": 54699007,
+    "pop_pct": 0.7,
+    "iso": [
+     "IRQ",
+     "KGZ",
+     "VUT"
+    ]
+   }
+  },
+  "vdem_regime_label": {
+   "Electoral democracy": {
+    "value": "Electoral democracy",
+    "n": 56,
+    "pop": 1552648253,
+    "pop_pct": 18.9,
+    "iso": [
+     "ARG",
+     "ARM",
+     "BGR",
+     "BOL",
+     "BRA",
+     "BTN",
+     "BWA",
+     "CAN",
+     "COL",
+     "CPV",
+     "DOM",
+     "ECU",
+     "FJI",
+     "GBR",
+     "GHA",
+     "GMB",
+     "GRC",
+     "GTM",
+     "GUY",
+     "HND",
+     "HRV",
+     "ISR",
+     "JAM",
+     "KEN",
+     "KOS",
+     "LBR",
+     "LKA",
+     "LSO",
+     "MDA",
+     "MDV",
+     "MKD",
+     "MLT",
+     "MNE",
+     "MNG",
+     "MUS",
+     "MWI",
+     "MYS",
+     "NAM",
+     "NGA",
+     "NPL",
+     "PAN",
+     "PER",
+     "POL",
+     "PRT",
+     "PRY",
+     "ROU",
+     "SEN",
+     "SLB",
+     "STP",
+     "SUR",
+     "SVK",
+     "SVN",
+     "TLS",
+     "USA",
+     "VUT",
+     "ZAF"
+    ]
+   },
+   "Electoral autocracy": {
+    "value": "Electoral autocracy",
+    "n": 55,
+    "pop": 3758908313,
+    "pop_pct": 45.8,
+    "iso": [
+     "AGO",
+     "ALB",
+     "AZE",
+     "BDI",
+     "BEN",
+     "BIH",
+     "CAF",
+     "CIV",
+     "CMR",
+     "COD",
+     "COG",
+     "COM",
+     "DJI",
+     "DZA",
+     "EGY",
+     "ETH",
+     "GAB",
+     "GEO",
+     "GNQ",
+     "HUN",
+     "IDN",
+     "IND",
+     "IRN",
+     "IRQ",
+     "KAZ",
+     "KGZ",
+     "KHM",
+     "LBN",
+     "MDG",
+     "MEX",
+     "MOZ",
+     "MRT",
+     "NIC",
+     "PAK",
+     "PHL",
+     "PNG",
+     "PSE",
+     "RUS",
+     "RWA",
+     "SGP",
+     "SLE",
+     "SLV",
+     "SRB",
+     "TCD",
+     "TGO",
+     "THA",
+     "TJK",
+     "TUN",
+     "TUR",
+     "TZA",
+     "UGA",
+     "UKR",
+     "VEN",
+     "ZMB",
+     "ZWE"
+    ]
+   },
+   "Closed autocracy": {
+    "value": "Closed autocracy",
+    "n": 33,
+    "pop": 2264743744,
+    "pop_pct": 27.6,
+    "iso": [
+     "AFG",
+     "ARE",
+     "BFA",
+     "BGD",
+     "BHR",
+     "BLR",
+     "CHN",
+     "CUB",
+     "ERI",
+     "GIN",
+     "GNB",
+     "HTI",
+     "JOR",
+     "KWT",
+     "LAO",
+     "LBY",
+     "MAR",
+     "MLI",
+     "MMR",
+     "NER",
+     "OMN",
+     "PRK",
+     "QAT",
+     "SAU",
+     "SDN",
+     "SOM",
+     "SSD",
+     "SWZ",
+     "SYR",
+     "TKM",
+     "UZB",
+     "VNM",
+     "YEM"
+    ]
+   },
+   "Liberal democracy": {
+    "value": "Liberal democracy",
+    "n": 31,
+    "pop": 623329363,
+    "pop_pct": 7.6,
+    "iso": [
+     "AUS",
+     "AUT",
+     "BEL",
+     "BRB",
+     "CHE",
+     "CHL",
+     "CRI",
+     "CYP",
+     "CZE",
+     "DEU",
+     "DNK",
+     "ESP",
+     "EST",
+     "FIN",
+     "FRA",
+     "IRL",
+     "ISL",
+     "ITA",
+     "JPN",
+     "KOR",
+     "LTU",
+     "LUX",
+     "LVA",
+     "NLD",
+     "NOR",
+     "NZL",
+     "SWE",
+     "SYC",
+     "TTO",
+     "TWN",
+     "URY"
+    ]
+   },
+   "Not covered by V-Dem": {
+    "value": "Not covered by V-Dem",
+    "n": 22,
+    "pop": 2742549,
+    "pop_pct": 0.0,
+    "iso": [
+     "AND",
+     "ATG",
+     "BHS",
+     "BLZ",
+     "BRN",
+     "DMA",
+     "FSM",
+     "GRD",
+     "KIR",
+     "KNA",
+     "LCA",
+     "LIE",
+     "MCO",
+     "MHL",
+     "NRU",
+     "PLW",
+     "SMR",
+     "TON",
+     "TUV",
+     "VAT",
+     "VCT",
+     "WSM"
+    ]
+   }
+  }
+ },
+ "h": {
+  "monarchies": 43,
+  "monarchies_pop_pct": 7.7,
+  "realms": 14,
+  "republics": 153,
+  "pres_semi_n": 79,
+  "pres_semi_pop_pct": 36.9,
+  "parl_n": 81,
+  "parl_pop_pct": 34.8,
+  "presidential_n": 52,
+  "semi_n": 27,
+  "semi_prp_n": 18,
+  "semi_pp_n": 9,
+  "no_election_exec_n": 30,
+  "no_election_exec_pop_pct": 27.6,
+  "federal_n": 25,
+  "federal_pop_pct": 40.6,
+  "bicameral_n": 81,
+  "unicameral_n": 107,
+  "none_sitting_n": 9,
+  "fused_n": 64,
+  "dem_n": 87,
+  "dem_pop_pct": 26.5,
+  "autoc_pop_pct": 73.4,
+  "closed_pop_pct": 27.6,
+  "elec_autoc_pop_pct": 45.8,
+  "lib_pop_pct": 7.6,
+  "lib_n": 31,
+  "eldem_n": 56,
+  "elaut_n": 55,
+  "closed_n": 33,
+  "listpr_n": 73,
+  "listpr_pop_pct": 18.9,
+  "fptp_n": 38,
+  "fptp_pop_pct": 35.6,
+  "maj_n": 63,
+  "maj_pop_pct": 41.2,
+  "pr_n": 75,
+  "pr_pop_pct": 19.0,
+  "mixed_n": 34,
+  "mixed_pop_pct": 15.2,
+  "parallel_n": 24,
+  "mmp_n": 10,
+  "not_elected_n": 22,
+  "not_elected_pop_pct": 23.9,
+  "top_pop": [
+   {
+    "country": "India",
+    "iso3": "IND",
+    "population": 1463865525,
+    "family_id": "PR",
+    "signature_size": 3
+   },
+   {
+    "country": "China",
+    "iso3": "CHN",
+    "population": 1406585000,
+    "family_id": "OP",
+    "signature_size": 1
+   },
+   {
+    "country": "United States",
+    "iso3": "USA",
+    "population": 341784857,
+    "family_id": "PS",
+    "signature_size": 2
+   },
+   {
+    "country": "Indonesia",
+    "iso3": "IDN",
+    "population": 285721236,
+    "family_id": "PS",
+    "signature_size": 1
+   },
+   {
+    "country": "Pakistan",
+    "iso3": "PAK",
+    "population": 255219554,
+    "family_id": "PR",
+    "signature_size": 3
+   },
+   {
+    "country": "Nigeria",
+    "iso3": "NGA",
+    "population": 237527782,
+    "family_id": "PS",
+    "signature_size": 2
+   },
+   {
+    "country": "Brazil",
+    "iso3": "BRA",
+    "population": 212812405,
+    "family_id": "PS",
+    "signature_size": 2
+   },
+   {
+    "country": "Bangladesh",
+    "iso3": "BGD",
+    "population": 175686899,
+    "family_id": "TR",
+    "signature_size": 2
+   },
+   {
+    "country": "Russia",
+    "iso3": "RUS",
+    "population": 143513328,
+    "family_id": "SR",
+    "signature_size": 1
+   },
+   {
+    "country": "Ethiopia",
+    "iso3": "ETH",
+    "population": 135472051,
+    "family_id": "PR",
+    "signature_size": 3
+   }
+  ],
+  "fptp_big": [
+   "India",
+   "United States",
+   "Pakistan",
+   "Nigeria",
+   "Ethiopia"
+  ],
+  "fptp_ind_usa_share": 61.9
+ },
+ "x_elec_regime": {
+  "rows": [
+   "Majoritarian",
+   "Mixed",
+   "Proportional",
+   "Semi-proportional",
+   "Not directly elected",
+   "No sitting chamber"
+  ],
+  "cols": [
+   "Closed autocracy",
+   "Electoral autocracy",
+   "Electoral democracy",
+   "Liberal democracy",
+   "Not covered by V-Dem"
+  ],
+  "n": [
+   [
+    10,
+    17,
+    16,
+    4,
+    16
+   ],
+   [
+    3,
+    15,
+    6,
+    8,
+    2
+   ],
+   [
+    1,
+    20,
+    33,
+    19,
+    2
+   ],
+   [
+    0,
+    2,
+    1,
+    0,
+    0
+   ],
+   [
+    11,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    8,
+    1,
+    0,
+    0,
+    0
+   ]
+  ],
+  "pop": [
+   [
+    213.8,
+    2208.4,
+    858.6,
+    98.0,
+    2.1
+   ],
+   [
+    56.0,
+    768.1,
+    71.6,
+    349.4,
+    0.1
+   ],
+   [
+    38.4,
+    722.7,
+    622.1,
+    176.0,
+    0.1
+   ],
+   [
+    0.0,
+    54.4,
+    0.3,
+    0.0,
+    0.0
+   ],
+   [
+    1607.8,
+    0.0,
+    0.0,
+    0.0,
+    0.5
+   ],
+   [
+    348.7,
+    5.4,
+    0.0,
+    0.0,
+    0.0
+   ]
+  ],
+  "dem_share": {
+   "Majoritarian": 42.6,
+   "Mixed": 43.8,
+   "Proportional": 71.2,
+   "Semi-proportional": 33.3,
+   "Not directly elected": 0.0,
+   "No sitting chamber": 0.0
+  },
+  "lib_share": {
+   "Majoritarian": 8.5,
+   "Mixed": 25.0,
+   "Proportional": 26.0,
+   "Semi-proportional": 0.0,
+   "Not directly elected": 0.0,
+   "No sitting chamber": 0.0
+  },
+  "scored_n": {
+   "Majoritarian": 47,
+   "Mixed": 32,
+   "Proportional": 73,
+   "Semi-proportional": 3,
+   "Not directly elected": 11,
+   "No sitting chamber": 9
+  }
+ },
+ "lib_dem_systems": {
+  "Proportional": 19,
+  "Mixed": 8,
+  "Majoritarian": 4
+ },
+ "lib_dem_pr_pct": 61.3,
+ "lib_dem_mixed_pct": 25.8,
+ "lib_dem_maj_pct": 12.9,
+ "hos_libdem": [
+  {
+   "value": "Constitutional monarchy, ceremonial monarch",
+   "n": 20,
+   "mean": 0.635,
+   "median": 0.735,
+   "lib_pct": 50.0,
+   "dem_pct": 85.0,
+   "pts": [
+    [
+     "DNK",
+     "Denmark",
+     0.884
+    ],
+    [
+     "SWE",
+     "Sweden",
+     0.853
+    ],
+    [
+     "NOR",
+     "Norway",
+     0.847
+    ],
+    [
+     "BEL",
+     "Belgium",
+     0.794
+    ],
+    [
+     "AUS",
+     "Australia",
+     0.793
+    ],
+    [
+     "NZL",
+     "New Zealand",
+     0.787
+    ],
+    [
+     "LUX",
+     "Luxembourg",
+     0.777
+    ],
+    [
+     "NLD",
+     "Netherlands",
+     0.774
+    ],
+    [
+     "ESP",
+     "Spain",
+     0.741
+    ],
+    [
+     "CAN",
+     "Canada",
+     0.736
+    ],
+    [
+     "JPN",
+     "Japan",
+     0.734
+    ],
+    [
+     "GBR",
+     "United Kingdom",
+     0.689
+    ],
+    [
+     "JAM",
+     "Jamaica",
+     0.679
+    ],
+    [
+     "SLB",
+     "Solomon Islands",
+     0.539
+    ],
+    [
+     "LSO",
+     "Lesotho",
+     0.512
+    ],
+    [
+     "BTN",
+     "Bhutan",
+     0.457
+    ],
+    [
+     "PNG",
+     "Papua New Guinea",
+     0.384
+    ],
+    [
+     "MYS",
+     "Malaysia",
+     0.355
+    ],
+    [
+     "THA",
+     "Thailand",
+     0.314
+    ],
+    [
+     "KHM",
+     "Cambodia",
+     0.051
+    ]
+   ]
+  },
+  {
+   "value": "Republic",
+   "n": 145,
+   "mean": 0.358,
+   "median": 0.339,
+   "lib_pct": 14.5,
+   "dem_pct": 48.3,
+   "pts": [
+    [
+     "CHE",
+     "Switzerland",
+     0.843
+    ],
+    [
+     "EST",
+     "Estonia",
+     0.837
+    ],
+    [
+     "IRL",
+     "Ireland",
+     0.822
+    ],
+    [
+     "CRI",
+     "Costa Rica",
+     0.809
+    ],
+    [
+     "FIN",
+     "Finland",
+     0.808
+    ],
+    [
+     "FRA",
+     "France",
+     0.8
+    ],
+    [
+     "CZE",
+     "Czechia",
+     0.794
+    ],
+    [
+     "URY",
+     "Uruguay",
+     0.79
+    ],
+    [
+     "DEU",
+     "Germany",
+     0.782
+    ],
+    [
+     "CHL",
+     "Chile",
+     0.781
+    ],
+    [
+     "AUT",
+     "Austria",
+     0.757
+    ],
+    [
+     "LVA",
+     "Latvia",
+     0.751
+    ],
+    [
+     "KOR",
+     "South Korea",
+     0.739
+    ],
+    [
+     "ISL",
+     "Iceland",
+     0.72
+    ],
+    [
+     "PRT",
+     "Portugal",
+     0.717
+    ],
+    [
+     "LTU",
+     "Lithuania",
+     0.712
+    ],
+    [
+     "BRA",
+     "Brazil",
+     0.704
+    ],
+    [
+     "TWN",
+     "Taiwan",
+     0.704
+    ],
+    [
+     "SYC",
+     "Seychelles",
+     0.68
+    ],
+    [
+     "BRB",
+     "Barbados",
+     0.679
+    ],
+    [
+     "TTO",
+     "Trinidad and Tobago",
+     0.668
+    ],
+    [
+     "CYP",
+     "Cyprus",
+     0.664
+    ],
+    [
+     "POL",
+     "Poland",
+     0.645
+    ],
+    [
+     "ITA",
+     "Italy",
+     0.642
+    ],
+    [
+     "MUS",
+     "Mauritius",
+     0.639
+    ],
+    [
+     "ZAF",
+     "South Africa",
+     0.633
+    ],
+    [
+     "CPV",
+     "Cabo Verde",
+     0.631
+    ],
+    [
+     "SUR",
+     "Suriname",
+     0.626
+    ],
+    [
+     "VUT",
+     "Vanuatu",
+     0.623
+    ],
+    [
+     "MLT",
+     "Malta",
+     0.621
+    ],
+    [
+     "LKA",
+     "Sri Lanka",
+     0.613
+    ],
+    [
+     "GHA",
+     "Ghana",
+     0.606
+    ],
+    [
+     "HRV",
+     "Croatia",
+     0.593
+    ],
+    [
+     "SVN",
+     "Slovenia",
+     0.589
+    ],
+    [
+     "ISR",
+     "Israel",
+     0.588
+    ],
+    [
+     "PAN",
+     "Panama",
+     0.575
+    ],
+    [
+     "SVK",
+     "Slovakia",
+     0.573
+    ],
+    [
+     "USA",
+     "United States",
+     0.571
+    ],
+    [
+     "GRC",
+     "Greece",
+     0.568
+    ],
+    [
+     "COL",
+     "Colombia",
+     0.555
+    ],
+    [
+     "TLS",
+     "Timor-Leste",
+     0.549
+    ],
+    [
+     "ARG",
+     "Argentina",
+     0.524
+    ],
+    [
+     "GTM",
+     "Guatemala",
+     0.523
+    ],
+    [
+     "GMB",
+     "Gambia",
+     0.522
+    ],
+    [
+     "BWA",
+     "Botswana",
+     0.52
+    ],
+    [
+     "NAM",
+     "Namibia",
+     0.519
+    ],
+    [
+     "STP",
+     "São Tomé and Príncipe",
+     0.519
+    ],
+    [
+     "PER",
+     "Peru",
+     0.506
+    ],
+    [
+     "DOM",
+     "Dominican Republic",
+     0.505
+    ],
+    [
+     "NPL",
+     "Nepal",
+     0.505
+    ],
+    [
+     "MNE",
+     "Montenegro",
+     0.5
+    ],
+    [
+     "BGR",
+     "Bulgaria",
+     0.499
+    ],
+    [
+     "SEN",
+     "Senegal",
+     0.484
+    ],
+    [
+     "ROU",
+     "Romania",
+     0.464
+    ],
+    [
+     "MWI",
+     "Malawi",
+     0.462
+    ],
+    [
+     "KOS",
+     "Kosovo",
+     0.457
+    ],
+    [
+     "MDA",
+     "Moldova",
+     0.449
+    ],
+    [
+     "KEN",
+     "Kenya",
+     0.446
+    ],
+    [
+     "MNG",
+     "Mongolia",
+     0.424
+    ],
+    [
+     "LBR",
+     "Liberia",
+     0.417
+    ],
+    [
+     "MDV",
+     "Maldives",
+     0.416
+    ],
+    [
+     "FJI",
+     "Fiji",
+     0.398
+    ],
+    [
+     "ECU",
+     "Ecuador",
+     0.386
+    ],
+    [
+     "ALB",
+     "Albania",
+     0.382
+    ],
+    [
+     "HND",
+     "Honduras",
+     0.38
+    ],
+    [
+     "PRY",
+     "Paraguay",
+     0.376
+    ],
+    [
+     "ZMB",
+     "Zambia",
+     0.375
+    ],
+    [
+     "MKD",
+     "North Macedonia",
+     0.374
+    ],
+    [
+     "ARM",
+     "Armenia",
+     0.371
+    ],
+    [
+     "SGP",
+     "Singapore",
+     0.36
+    ],
+    [
+     "BOL",
+     "Bolivia",
+     0.352
+    ],
+    [
+     "SLE",
+     "Sierra Leone",
+     0.348
+    ],
+    [
+     "BIH",
+     "Bosnia and Herzegovina",
+     0.339
+    ],
+    [
+     "GUY",
+     "Guyana",
+     0.328
+    ],
+    [
+     "BEN",
+     "Benin",
+     0.323
+    ],
+    [
+     "HUN",
+     "Hungary",
+     0.315
+    ],
+    [
+     "NGA",
+     "Nigeria",
+     0.311
+    ],
+    [
+     "TZA",
+     "Tanzania",
+     0.297
+    ],
+    [
+     "IDN",
+     "Indonesia",
+     0.296
+    ],
+    [
+     "PHL",
+     "Philippines",
+     0.291
+    ],
+    [
+     "GEO",
+     "Georgia",
+     0.275
+    ],
+    [
+     "LBN",
+     "Lebanon",
+     0.267
+    ],
+    [
+     "TUN",
+     "Tunisia",
+     0.265
+    ],
+    [
+     "IND",
+     "India",
+     0.26
+    ],
+    [
+     "UKR",
+     "Ukraine",
+     0.24
+    ],
+    [
+     "CIV",
+     "Côte d'Ivoire",
+     0.228
+    ],
+    [
+     "MEX",
+     "Mexico",
+     0.221
+    ],
+    [
+     "IRQ",
+     "Iraq",
+     0.22
+    ],
+    [
+     "SRB",
+     "Serbia",
+     0.208
+    ],
+    [
+     "MDG",
+     "Madagascar",
+     0.187
+    ],
+    [
+     "GAB",
+     "Gabon",
+     0.178
+    ],
+    [
+     "KGZ",
+     "Kyrgyzstan",
+     0.178
+    ],
+    [
+     "NER",
+     "Niger",
+     0.177
+    ],
+    [
+     "PAK",
+     "Pakistan",
+     0.176
+    ],
+    [
+     "MOZ",
+     "Mozambique",
+     0.175
+    ],
+    [
+     "UGA",
+     "Uganda",
+     0.165
+    ],
+    [
+     "AGO",
+     "Angola",
+     0.163
+    ],
+    [
+     "TGO",
+     "Togo",
+     0.157
+    ],
+    [
+     "MLI",
+     "Mali",
+     0.15
+    ],
+    [
+     "ZWE",
+     "Zimbabwe",
+     0.147
+    ],
+    [
+     "COM",
+     "Comoros",
+     0.132
+    ],
+    [
+     "KAZ",
+     "Kazakhstan",
+     0.131
+    ],
+    [
+     "SOM",
+     "Somalia",
+     0.128
+    ],
+    [
+     "MRT",
+     "Mauritania",
+     0.127
+    ],
+    [
+     "DZA",
+     "Algeria",
+     0.126
+    ],
+    [
+     "DJI",
+     "Djibouti",
+     0.118
+    ],
+    [
+     "BGD",
+     "Bangladesh",
+     0.116
+    ],
+    [
+     "COG",
+     "Congo (Republic)",
+     0.115
+    ],
+    [
+     "COD",
+     "DR Congo",
+     0.115
+    ],
+    [
+     "EGY",
+     "Egypt",
+     0.115
+    ],
+    [
+     "CMR",
+     "Cameroon",
+     0.114
+    ],
+    [
+     "PSE",
+     "Palestine",
+     0.114
+    ],
+    [
+     "LAO",
+     "Laos",
+     0.11
+    ],
+    [
+     "TUR",
+     "Turkey",
+     0.11
+    ],
+    [
+     "BFA",
+     "Burkina Faso",
+     0.103
+    ],
+    [
+     "IRN",
+     "Iran",
+     0.103
+    ],
+    [
+     "CAF",
+     "Central African Republic",
+     0.102
+    ],
+    [
+     "VNM",
+     "Vietnam",
+     0.102
+    ],
+    [
+     "ETH",
+     "Ethiopia",
+     0.1
+    ],
+    [
+     "HTI",
+     "Haiti",
+     0.098
+    ],
+    [
+     "LBY",
+     "Libya",
+     0.098
+    ],
+    [
+     "GIN",
+     "Guinea",
+     0.095
+    ],
+    [
+     "GNB",
+     "Guinea-Bissau",
+     0.095
+    ],
+    [
+     "SLV",
+     "El Salvador",
+     0.09
+    ],
+    [
+     "RWA",
+     "Rwanda",
+     0.09
+    ],
+    [
+     "UZB",
+     "Uzbekistan",
+     0.079
+    ],
+    [
+     "SSD",
+     "South Sudan",
+     0.064
+    ],
+    [
+     "TCD",
+     "Chad",
+     0.062
+    ],
+    [
+     "BDI",
+     "Burundi",
+     0.06
+    ],
+    [
+     "CUB",
+     "Cuba",
+     0.057
+    ],
+    [
+     "RUS",
+     "Russia",
+     0.056
+    ],
+    [
+     "SYR",
+     "Syria",
+     0.054
+    ],
+    [
+     "AZE",
+     "Azerbaijan",
+     0.053
+    ],
+    [
+     "GNQ",
+     "Equatorial Guinea",
+     0.047
+    ],
+    [
+     "TJK",
+     "Tajikistan",
+     0.043
+    ],
+    [
+     "YEM",
+     "Yemen",
+     0.043
+    ],
+    [
+     "VEN",
+     "Venezuela",
+     0.042
+    ],
+    [
+     "CHN",
+     "China",
+     0.039
+    ],
+    [
+     "BLR",
+     "Belarus",
+     0.038
+    ],
+    [
+     "SDN",
+     "Sudan",
+     0.034
+    ],
+    [
+     "TKM",
+     "Turkmenistan",
+     0.034
+    ],
+    [
+     "NIC",
+     "Nicaragua",
+     0.019
+    ],
+    [
+     "MMR",
+     "Myanmar",
+     0.015
+    ],
+    [
+     "PRK",
+     "North Korea",
+     0.014
+    ],
+    [
+     "ERI",
+     "Eritrea",
+     0.009
+    ]
+   ]
+  },
+  {
+   "value": "Constitutional monarchy, ruling monarch",
+   "n": 4,
+   "mean": 0.178,
+   "median": 0.189,
+   "lib_pct": 0.0,
+   "dem_pct": 0.0,
+   "pts": [
+    [
+     "JOR",
+     "Jordan",
+     0.274
+    ],
+    [
+     "MAR",
+     "Morocco",
+     0.251
+    ],
+    [
+     "KWT",
+     "Kuwait",
+     0.127
+    ],
+    [
+     "BHR",
+     "Bahrain",
+     0.062
+    ]
+   ]
+  },
+  {
+   "value": "Absolute monarchy",
+   "n": 5,
+   "mean": 0.09,
+   "median": 0.091,
+   "lib_pct": 0.0,
+   "dem_pct": 0.0,
+   "pts": [
+    [
+     "OMN",
+     "Oman",
+     0.14
+    ],
+    [
+     "SWZ",
+     "Eswatini",
+     0.097
+    ],
+    [
+     "QAT",
+     "Qatar",
+     0.091
+    ],
+    [
+     "ARE",
+     "United Arab Emirates",
+     0.077
+    ],
+    [
+     "SAU",
+     "Saudi Arabia",
+     0.047
+    ]
+   ]
+  }
+ ],
+ "mon_vs": {
+  "cer_mon_n": 20,
+  "cer_mon_lib_n": 10,
+  "cer_mon_libdem_mean": 0.635,
+  "parl_rep_libdem_mean": 0.502,
+  "parl_rep_n": 42,
+  "cer_mon_autoc": [
+   "Cambodia",
+   "Papua New Guinea",
+   "Thailand"
+  ],
+  "top10_libdem": [
+   {
+    "country": "Denmark",
+    "iso3": "DNK",
+    "family_id": "PM",
+    "vdem_libdem": 0.884
+   },
+   {
+    "country": "Sweden",
+    "iso3": "SWE",
+    "family_id": "PM",
+    "vdem_libdem": 0.853
+   },
+   {
+    "country": "Norway",
+    "iso3": "NOR",
+    "family_id": "PM",
+    "vdem_libdem": 0.847
+   },
+   {
+    "country": "Switzerland",
+    "iso3": "CHE",
+    "family_id": "AE",
+    "vdem_libdem": 0.843
+   },
+   {
+    "country": "Estonia",
+    "iso3": "EST",
+    "family_id": "PR",
+    "vdem_libdem": 0.837
+   },
+   {
+    "country": "Ireland",
+    "iso3": "IRL",
+    "family_id": "PR",
+    "vdem_libdem": 0.822
+   },
+   {
+    "country": "Costa Rica",
+    "iso3": "CRI",
+    "family_id": "PS",
+    "vdem_libdem": 0.809
+   },
+   {
+    "country": "Finland",
+    "iso3": "FIN",
+    "family_id": "PR",
+    "vdem_libdem": 0.808
+   },
+   {
+    "country": "France",
+    "iso3": "FRA",
+    "family_id": "SP",
+    "vdem_libdem": 0.8
+   },
+   {
+    "country": "Czechia",
+    "iso3": "CZE",
+    "family_id": "PR",
+    "vdem_libdem": 0.794
+   }
+  ],
+  "top10_mon_n": 3,
+  "top20_mon_n": 8
+ },
+ "fam_libdem": [
+  {
+   "id": "PM",
+   "name": "Parliamentary monarchies",
+   "short": "Parl. monarchy",
+   "colour": "#3C6E9E",
+   "n": 20,
+   "mean": 0.635,
+   "median": 0.735,
+   "pts": [
+    [
+     "DNK",
+     "Denmark",
+     0.884
+    ],
+    [
+     "SWE",
+     "Sweden",
+     0.853
+    ],
+    [
+     "NOR",
+     "Norway",
+     0.847
+    ],
+    [
+     "BEL",
+     "Belgium",
+     0.794
+    ],
+    [
+     "AUS",
+     "Australia",
+     0.793
+    ],
+    [
+     "NZL",
+     "New Zealand",
+     0.787
+    ],
+    [
+     "LUX",
+     "Luxembourg",
+     0.777
+    ],
+    [
+     "NLD",
+     "Netherlands",
+     0.774
+    ],
+    [
+     "ESP",
+     "Spain",
+     0.741
+    ],
+    [
+     "CAN",
+     "Canada",
+     0.736
+    ],
+    [
+     "JPN",
+     "Japan",
+     0.734
+    ],
+    [
+     "GBR",
+     "United Kingdom",
+     0.689
+    ],
+    [
+     "JAM",
+     "Jamaica",
+     0.679
+    ],
+    [
+     "SLB",
+     "Solomon Islands",
+     0.539
+    ],
+    [
+     "LSO",
+     "Lesotho",
+     0.512
+    ],
+    [
+     "BTN",
+     "Bhutan",
+     0.457
+    ],
+    [
+     "PNG",
+     "Papua New Guinea",
+     0.384
+    ],
+    [
+     "MYS",
+     "Malaysia",
+     0.355
+    ],
+    [
+     "THA",
+     "Thailand",
+     0.314
+    ],
+    [
+     "KHM",
+     "Cambodia",
+     0.051
+    ]
+   ]
+  },
+  {
+   "id": "RM",
+   "name": "Ruling monarchies",
+   "short": "Ruling monarchy",
+   "colour": "#7B4FA0",
+   "n": 4,
+   "mean": 0.178,
+   "median": 0.189,
+   "pts": [
+    [
+     "JOR",
+     "Jordan",
+     0.274
+    ],
+    [
+     "MAR",
+     "Morocco",
+     0.251
+    ],
+    [
+     "KWT",
+     "Kuwait",
+     0.127
+    ],
+    [
+     "BHR",
+     "Bahrain",
+     0.062
+    ]
+   ]
+  },
+  {
+   "id": "AM",
+   "name": "Absolute monarchies",
+   "short": "Absolute monarchy",
+   "colour": "#A8326B",
+   "n": 5,
+   "mean": 0.09,
+   "median": 0.091,
+   "pts": [
+    [
+     "OMN",
+     "Oman",
+     0.14
+    ],
+    [
+     "SWZ",
+     "Eswatini",
+     0.097
+    ],
+    [
+     "QAT",
+     "Qatar",
+     0.091
+    ],
+    [
+     "ARE",
+     "United Arab Emirates",
+     0.077
+    ],
+    [
+     "SAU",
+     "Saudi Arabia",
+     0.047
+    ]
+   ]
+  },
+  {
+   "id": "PR",
+   "name": "Parliamentary republics",
+   "short": "Parl. republic",
+   "colour": "#2E8B7A",
+   "n": 42,
+   "mean": 0.502,
+   "median": 0.536,
+   "pts": [
+    [
+     "EST",
+     "Estonia",
+     0.837
+    ],
+    [
+     "IRL",
+     "Ireland",
+     0.822
+    ],
+    [
+     "FIN",
+     "Finland",
+     0.808
+    ],
+    [
+     "CZE",
+     "Czechia",
+     0.794
+    ],
+    [
+     "DEU",
+     "Germany",
+     0.782
+    ],
+    [
+     "AUT",
+     "Austria",
+     0.757
+    ],
+    [
+     "LVA",
+     "Latvia",
+     0.751
+    ],
+    [
+     "ISL",
+     "Iceland",
+     0.72
+    ],
+    [
+     "BRB",
+     "Barbados",
+     0.679
+    ],
+    [
+     "TTO",
+     "Trinidad and Tobago",
+     0.668
+    ],
+    [
+     "POL",
+     "Poland",
+     0.645
+    ],
+    [
+     "ITA",
+     "Italy",
+     0.642
+    ],
+    [
+     "MUS",
+     "Mauritius",
+     0.639
+    ],
+    [
+     "CPV",
+     "Cabo Verde",
+     0.631
+    ],
+    [
+     "VUT",
+     "Vanuatu",
+     0.623
+    ],
+    [
+     "MLT",
+     "Malta",
+     0.621
+    ],
+    [
+     "HRV",
+     "Croatia",
+     0.593
+    ],
+    [
+     "SVN",
+     "Slovenia",
+     0.589
+    ],
+    [
+     "ISR",
+     "Israel",
+     0.588
+    ],
+    [
+     "SVK",
+     "Slovakia",
+     0.573
+    ],
+    [
+     "GRC",
+     "Greece",
+     0.568
+    ],
+    [
+     "NPL",
+     "Nepal",
+     0.505
+    ],
+    [
+     "MNE",
+     "Montenegro",
+     0.5
+    ],
+    [
+     "BGR",
+     "Bulgaria",
+     0.499
+    ],
+    [
+     "KOS",
+     "Kosovo",
+     0.457
+    ],
+    [
+     "MDA",
+     "Moldova",
+     0.449
+    ],
+    [
+     "FJI",
+     "Fiji",
+     0.398
+    ],
+    [
+     "ALB",
+     "Albania",
+     0.382
+    ],
+    [
+     "MKD",
+     "North Macedonia",
+     0.374
+    ],
+    [
+     "ARM",
+     "Armenia",
+     0.371
+    ],
+    [
+     "SGP",
+     "Singapore",
+     0.36
+    ],
+    [
+     "BIH",
+     "Bosnia and Herzegovina",
+     0.339
+    ],
+    [
+     "HUN",
+     "Hungary",
+     0.315
+    ],
+    [
+     "GEO",
+     "Georgia",
+     0.275
+    ],
+    [
+     "LBN",
+     "Lebanon",
+     0.267
+    ],
+    [
+     "IND",
+     "India",
+     0.26
+    ],
+    [
+     "IRQ",
+     "Iraq",
+     0.22
+    ],
+    [
+     "SRB",
+     "Serbia",
+     0.208
+    ],
+    [
+     "PAK",
+     "Pakistan",
+     0.176
+    ],
+    [
+     "TGO",
+     "Togo",
+     0.157
+    ],
+    [
+     "SOM",
+     "Somalia",
+     0.128
+    ],
+    [
+     "ETH",
+     "Ethiopia",
+     0.1
+    ]
+   ]
+  },
+  {
+   "id": "AE",
+   "name": "Assembly-chosen executives",
+   "short": "Assembly-chosen",
+   "colour": "#6A9A3A",
+   "n": 5,
+   "mean": 0.59,
+   "median": 0.626,
+   "pts": [
+    [
+     "CHE",
+     "Switzerland",
+     0.843
+    ],
+    [
+     "ZAF",
+     "South Africa",
+     0.633
+    ],
+    [
+     "SUR",
+     "Suriname",
+     0.626
+    ],
+    [
+     "BWA",
+     "Botswana",
+     0.52
+    ],
+    [
+     "GUY",
+     "Guyana",
+     0.328
+    ]
+   ]
+  },
+  {
+   "id": "SP",
+   "name": "Semi-presidential, premier-presidential",
+   "short": "Premier-pres.",
+   "colour": "#D19A1E",
+   "n": 9,
+   "mean": 0.504,
+   "median": 0.519,
+   "pts": [
+    [
+     "FRA",
+     "France",
+     0.8
+    ],
+    [
+     "PRT",
+     "Portugal",
+     0.717
+    ],
+    [
+     "LTU",
+     "Lithuania",
+     0.712
+    ],
+    [
+     "TLS",
+     "Timor-Leste",
+     0.549
+    ],
+    [
+     "STP",
+     "São Tomé and Príncipe",
+     0.519
+    ],
+    [
+     "ROU",
+     "Romania",
+     0.464
+    ],
+    [
+     "MNG",
+     "Mongolia",
+     0.424
+    ],
+    [
+     "UKR",
+     "Ukraine",
+     0.24
+    ],
+    [
+     "COG",
+     "Congo (Republic)",
+     0.115
+    ]
+   ]
+  },
+  {
+   "id": "SR",
+   "name": "Semi-presidential, president-parliamentary",
+   "short": "President-parl.",
+   "colour": "#D9682B",
+   "n": 18,
+   "mean": 0.166,
+   "median": 0.115,
+   "pts": [
+    [
+     "TWN",
+     "Taiwan",
+     0.704
+    ],
+    [
+     "SEN",
+     "Senegal",
+     0.484
+    ],
+    [
+     "TUN",
+     "Tunisia",
+     0.265
+    ],
+    [
+     "CIV",
+     "Côte d'Ivoire",
+     0.228
+    ],
+    [
+     "KAZ",
+     "Kazakhstan",
+     0.131
+    ],
+    [
+     "MRT",
+     "Mauritania",
+     0.127
+    ],
+    [
+     "DZA",
+     "Algeria",
+     0.126
+    ],
+    [
+     "DJI",
+     "Djibouti",
+     0.118
+    ],
+    [
+     "COD",
+     "DR Congo",
+     0.115
+    ],
+    [
+     "EGY",
+     "Egypt",
+     0.115
+    ],
+    [
+     "CMR",
+     "Cameroon",
+     0.114
+    ],
+    [
+     "CAF",
+     "Central African Republic",
+     0.102
+    ],
+    [
+     "RWA",
+     "Rwanda",
+     0.09
+    ],
+    [
+     "TCD",
+     "Chad",
+     0.062
+    ],
+    [
+     "BDI",
+     "Burundi",
+     0.06
+    ],
+    [
+     "RUS",
+     "Russia",
+     0.056
+    ],
+    [
+     "AZE",
+     "Azerbaijan",
+     0.053
+    ],
+    [
+     "BLR",
+     "Belarus",
+     0.038
+    ]
+   ]
+  },
+  {
+   "id": "PS",
+   "name": "Presidential republics",
+   "short": "Presidential",
+   "colour": "#B73A3A",
+   "n": 49,
+   "mean": 0.377,
+   "median": 0.376,
+   "pts": [
+    [
+     "CRI",
+     "Costa Rica",
+     0.809
+    ],
+    [
+     "URY",
+     "Uruguay",
+     0.79
+    ],
+    [
+     "CHL",
+     "Chile",
+     0.781
+    ],
+    [
+     "KOR",
+     "South Korea",
+     0.739
+    ],
+    [
+     "BRA",
+     "Brazil",
+     0.704
+    ],
+    [
+     "SYC",
+     "Seychelles",
+     0.68
+    ],
+    [
+     "CYP",
+     "Cyprus",
+     0.664
+    ],
+    [
+     "LKA",
+     "Sri Lanka",
+     0.613
+    ],
+    [
+     "GHA",
+     "Ghana",
+     0.606
+    ],
+    [
+     "PAN",
+     "Panama",
+     0.575
+    ],
+    [
+     "USA",
+     "United States",
+     0.571
+    ],
+    [
+     "COL",
+     "Colombia",
+     0.555
+    ],
+    [
+     "ARG",
+     "Argentina",
+     0.524
+    ],
+    [
+     "GTM",
+     "Guatemala",
+     0.523
+    ],
+    [
+     "GMB",
+     "Gambia",
+     0.522
+    ],
+    [
+     "NAM",
+     "Namibia",
+     0.519
+    ],
+    [
+     "PER",
+     "Peru",
+     0.506
+    ],
+    [
+     "DOM",
+     "Dominican Republic",
+     0.505
+    ],
+    [
+     "MWI",
+     "Malawi",
+     0.462
+    ],
+    [
+     "KEN",
+     "Kenya",
+     0.446
+    ],
+    [
+     "LBR",
+     "Liberia",
+     0.417
+    ],
+    [
+     "MDV",
+     "Maldives",
+     0.416
+    ],
+    [
+     "ECU",
+     "Ecuador",
+     0.386
+    ],
+    [
+     "HND",
+     "Honduras",
+     0.38
+    ],
+    [
+     "PRY",
+     "Paraguay",
+     0.376
+    ],
+    [
+     "ZMB",
+     "Zambia",
+     0.375
+    ],
+    [
+     "BOL",
+     "Bolivia",
+     0.352
+    ],
+    [
+     "SLE",
+     "Sierra Leone",
+     0.348
+    ],
+    [
+     "BEN",
+     "Benin",
+     0.323
+    ],
+    [
+     "NGA",
+     "Nigeria",
+     0.311
+    ],
+    [
+     "TZA",
+     "Tanzania",
+     0.297
+    ],
+    [
+     "IDN",
+     "Indonesia",
+     0.296
+    ],
+    [
+     "PHL",
+     "Philippines",
+     0.291
+    ],
+    [
+     "MEX",
+     "Mexico",
+     0.221
+    ],
+    [
+     "GAB",
+     "Gabon",
+     0.178
+    ],
+    [
+     "KGZ",
+     "Kyrgyzstan",
+     0.178
+    ],
+    [
+     "MOZ",
+     "Mozambique",
+     0.175
+    ],
+    [
+     "UGA",
+     "Uganda",
+     0.165
+    ],
+    [
+     "AGO",
+     "Angola",
+     0.163
+    ],
+    [
+     "ZWE",
+     "Zimbabwe",
+     0.147
+    ],
+    [
+     "COM",
+     "Comoros",
+     0.132
+    ],
+    [
+     "TUR",
+     "Turkey",
+     0.11
+    ],
+    [
+     "SLV",
+     "El Salvador",
+     0.09
+    ],
+    [
+     "UZB",
+     "Uzbekistan",
+     0.079
+    ],
+    [
+     "GNQ",
+     "Equatorial Guinea",
+     0.047
+    ],
+    [
+     "TJK",
+     "Tajikistan",
+     0.043
+    ],
+    [
+     "VEN",
+     "Venezuela",
+     0.042
+    ],
+    [
+     "TKM",
+     "Turkmenistan",
+     0.034
+    ],
+    [
+     "NIC",
+     "Nicaragua",
+     0.019
+    ]
+   ]
+  },
+  {
+   "id": "OP",
+   "name": "One-party states",
+   "short": "One-party",
+   "colour": "#7A2E2E",
+   "n": 6,
+   "mean": 0.055,
+   "median": 0.048,
+   "pts": [
+    [
+     "LAO",
+     "Laos",
+     0.11
+    ],
+    [
+     "VNM",
+     "Vietnam",
+     0.102
+    ],
+    [
+     "CUB",
+     "Cuba",
+     0.057
+    ],
+    [
+     "CHN",
+     "China",
+     0.039
+    ],
+    [
+     "PRK",
+     "North Korea",
+     0.014
+    ],
+    [
+     "ERI",
+     "Eritrea",
+     0.009
+    ]
+   ]
+  },
+  {
+   "id": "MI",
+   "name": "Military governments",
+   "short": "Military",
+   "colour": "#5C5A3C",
+   "n": 8,
+   "mean": 0.107,
+   "median": 0.099,
+   "pts": [
+    [
+     "MDG",
+     "Madagascar",
+     0.187
+    ],
+    [
+     "NER",
+     "Niger",
+     0.177
+    ],
+    [
+     "MLI",
+     "Mali",
+     0.15
+    ],
+    [
+     "BFA",
+     "Burkina Faso",
+     0.103
+    ],
+    [
+     "GIN",
+     "Guinea",
+     0.095
+    ],
+    [
+     "GNB",
+     "Guinea-Bissau",
+     0.095
+    ],
+    [
+     "SDN",
+     "Sudan",
+     0.034
+    ],
+    [
+     "MMR",
+     "Myanmar",
+     0.015
+    ]
+   ]
+  },
+  {
+   "id": "TH",
+   "name": "Theocracies",
+   "short": "Theocracy",
+   "colour": "#3F3A6B",
+   "n": 2,
+   "mean": 0.06,
+   "median": 0.06,
+   "pts": [
+    [
+     "IRN",
+     "Iran",
+     0.103
+    ],
+    [
+     "AFG",
+     "Afghanistan",
+     0.018
+    ]
+   ]
+  },
+  {
+   "id": "TR",
+   "name": "Transitional or divided authority",
+   "short": "Transitional",
+   "colour": "#8E8A80",
+   "n": 7,
+   "mean": 0.084,
+   "median": 0.098,
+   "pts": [
+    [
+     "BGD",
+     "Bangladesh",
+     0.116
+    ],
+    [
+     "PSE",
+     "Palestine",
+     0.114
+    ],
+    [
+     "HTI",
+     "Haiti",
+     0.098
+    ],
+    [
+     "LBY",
+     "Libya",
+     0.098
+    ],
+    [
+     "SSD",
+     "South Sudan",
+     0.064
+    ],
+    [
+     "SYR",
+     "Syria",
+     0.054
+    ],
+    [
+     "YEM",
+     "Yemen",
+     0.043
+    ]
+   ]
+  }
+ ],
+ "pres_parl": {
+  "pres_dem_pct": 55.1,
+  "parl_dem_pct": 69.0,
+  "pres_lib_pct": 12.2,
+  "parl_lib_pct": 26.2,
+  "pres_n": 49,
+  "parl_n": 42,
+  "srp_dem_pct": 11.1,
+  "spp_dem_pct": 77.8,
+  "srp_n": 18,
+  "spp_n": 9
+ },
+ "federal": {
+  "list": [
+   "India",
+   "United States",
+   "Pakistan",
+   "Nigeria",
+   "Brazil",
+   "Russia",
+   "Ethiopia",
+   "Mexico",
+   "Germany",
+   "Iraq",
+   "Argentina",
+   "Canada",
+   "Malaysia",
+   "Nepal",
+   "Venezuela",
+   "Australia",
+   "Somalia",
+   "Belgium",
+   "United Arab Emirates",
+   "Austria",
+   "Switzerland",
+   "Bosnia and Herzegovina",
+   "Comoros",
+   "Micronesia",
+   "Saint Kitts and Nevis"
+  ],
+  "n": 25,
+  "pop_pct": 40.6,
+  "regionalised": [
+   "Italy",
+   "Spain",
+   "United Kingdom"
+  ],
+  "autonomous_n": 21,
+  "small": [
+   "Comoros",
+   "Micronesia",
+   "Saint Kitts and Nevis"
+  ]
+ },
+ "checks": {
+  "head_of_state": {
+   "agree": 166,
+   "one source": 17,
+   "hand decision": 9,
+   "disagree": 5
+  },
+  "head_of_state_detail": {
+   "follows head of state": 183,
+   "hand decision": 14
+  },
+  "executive": {
+   "agree": 144,
+   "disagree": 30,
+   "hand decision": 23
+  },
+  "hos_hog": {
+   "agree": 164,
+   "one source": 23,
+   "disagree": 10
+  },
+  "territory": {
+   "one source": 181,
+   "hand decision": 16
+  },
+  "chambers": {
+   "agree": 164,
+   "one source": 25,
+   "disagree": 4,
+   "hand decision": 4
+  },
+  "electoral_system": {
+   "agree": 149,
+   "not applicable": 17,
+   "one source": 16,
+   "hand decision": 13,
+   "disagree": 2
+  },
+  "power_sharing": {
+   "hand-coded field": 193,
+   "hand decision": 4
+  }
+ },
+ "disagreements": [
+  {
+   "iso": "BTN",
+   "country": "Bhutan",
+   "field": "head_of_state",
+   "value": "Constitutional monarchy, ceremonial monarch"
+  },
+  {
+   "iso": "JOR",
+   "country": "Jordan",
+   "field": "head_of_state",
+   "value": "Constitutional monarchy, ruling monarch"
+  },
+  {
+   "iso": "LUX",
+   "country": "Luxembourg",
+   "field": "head_of_state",
+   "value": "Constitutional monarchy, ceremonial monarch"
+  },
+  {
+   "iso": "MAR",
+   "country": "Morocco",
+   "field": "head_of_state",
+   "value": "Constitutional monarchy, ruling monarch"
+  },
+  {
+   "iso": "THA",
+   "country": "Thailand",
+   "field": "head_of_state",
+   "value": "Constitutional monarchy, ceremonial monarch"
+  },
+  {
+   "iso": "DZA",
+   "country": "Algeria",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "AZE",
+   "country": "Azerbaijan",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "BHR",
+   "country": "Bahrain",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "BLR",
+   "country": "Belarus",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "BFA",
+   "country": "Burkina Faso",
+   "field": "executive",
+   "value": "Military government"
+  },
+  {
+   "iso": "BDI",
+   "country": "Burundi",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "CMR",
+   "country": "Cameroon",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "CAF",
+   "country": "Central African Republic",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "TCD",
+   "country": "Chad",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "COG",
+   "country": "Congo (Republic)",
+   "field": "executive",
+   "value": "Semi-presidential: premier-presidential"
+  },
+  {
+   "iso": "CIV",
+   "country": "Côte d'Ivoire",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "DJI",
+   "country": "Djibouti",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "EGY",
+   "country": "Egypt",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "GIN",
+   "country": "Guinea",
+   "field": "executive",
+   "value": "Military government"
+  },
+  {
+   "iso": "GNB",
+   "country": "Guinea-Bissau",
+   "field": "executive",
+   "value": "Military government"
+  },
+  {
+   "iso": "JOR",
+   "country": "Jordan",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "KAZ",
+   "country": "Kazakhstan",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "KWT",
+   "country": "Kuwait",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "LIE",
+   "country": "Liechtenstein",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "MDG",
+   "country": "Madagascar",
+   "field": "executive",
+   "value": "Military government"
+  },
+  {
+   "iso": "MLI",
+   "country": "Mali",
+   "field": "executive",
+   "value": "Military government"
+  },
+  {
+   "iso": "MRT",
+   "country": "Mauritania",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "MCO",
+   "country": "Monaco",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "MAR",
+   "country": "Morocco",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "NER",
+   "country": "Niger",
+   "field": "executive",
+   "value": "Military government"
+  },
+  {
+   "iso": "RWA",
+   "country": "Rwanda",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "SEN",
+   "country": "Senegal",
+   "field": "executive",
+   "value": "Semi-presidential: president-parliamentary"
+  },
+  {
+   "iso": "SUR",
+   "country": "Suriname",
+   "field": "executive",
+   "value": "Parliamentary, executive president chosen by or through the legislature"
+  },
+  {
+   "iso": "TON",
+   "country": "Tonga",
+   "field": "executive",
+   "value": "Dualist (monarch and parliament)"
+  },
+  {
+   "iso": "ARE",
+   "country": "United Arab Emirates",
+   "field": "executive",
+   "value": "Royal (absolute)"
+  },
+  {
+   "iso": "AFG",
+   "country": "Afghanistan",
+   "field": "hos_hog",
+   "value": "Separate"
+  },
+  {
+   "iso": "GNQ",
+   "country": "Equatorial Guinea",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "GMB",
+   "country": "Gambia",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "MOZ",
+   "country": "Mozambique",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "SDN",
+   "country": "Sudan",
+   "field": "hos_hog",
+   "value": "Separate"
+  },
+  {
+   "iso": "SYR",
+   "country": "Syria",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "TJK",
+   "country": "Tajikistan",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "UGA",
+   "country": "Uganda",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "UZB",
+   "country": "Uzbekistan",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "ZWE",
+   "country": "Zimbabwe",
+   "field": "hos_hog",
+   "value": "Fused (one person or body)"
+  },
+  {
+   "iso": "ERI",
+   "country": "Eritrea",
+   "field": "chambers",
+   "value": "None sitting"
+  },
+  {
+   "iso": "GNB",
+   "country": "Guinea-Bissau",
+   "field": "chambers",
+   "value": "None sitting"
+  },
+  {
+   "iso": "HTI",
+   "country": "Haiti",
+   "field": "chambers",
+   "value": "None sitting"
+  },
+  {
+   "iso": "MMR",
+   "country": "Myanmar",
+   "field": "chambers",
+   "value": "None sitting"
+  },
+  {
+   "iso": "LBY",
+   "country": "Libya",
+   "field": "electoral_system",
+   "value": "Parallel"
+  },
+  {
+   "iso": "MKD",
+   "country": "North Macedonia",
+   "field": "electoral_system",
+   "value": "List PR"
+  }
+ ],
+ "hand": {
+  "n": 83,
+  "countries": 60,
+  "by_conf": {
+   "high": 66,
+   "medium": 17
+  },
+  "overrides": 61,
+  "confirms": 22,
+  "rows": [
+   {
+    "id": "H01",
+    "iso3": "GBR",
+    "field": "territory",
+    "value": "Regionalised",
+    "reason": "Devolved legislatures for Scotland, Wales and Northern Ireland with law-making powers; England has none, so devolution is asymmetric. The Factbook's label (parliamentary constitutional monarchy) is silent on this.",
+    "citation": "Scotland Act 1998; Government of Wales Act 2006; Northern Ireland Act 1998",
+    "confidence": "high"
+   },
+   {
+    "id": "H02",
+    "iso3": "ITA",
+    "field": "territory",
+    "value": "Regionalised",
+    "reason": "Twenty regions with elected councils and constitutional legislative powers (fifteen ordinary, five with special statutes). The Factbook lists the five autonomous regions, which alone would suggest a unitary state with autonomous regions.",
+    "citation": "Constitution of the Italian Republic, Title V, Articles 114 to 133",
+    "confidence": "high"
+   },
+   {
+    "id": "H03",
+    "iso3": "ESP",
+    "field": "territory",
+    "value": "Regionalised",
+    "reason": "Seventeen autonomous communities, each with its own parliament and statute of autonomy, cover the whole country. The Factbook lists them as administrative divisions.",
+    "citation": "Spanish Constitution of 1978, Title VIII, Articles 143 to 158",
+    "confidence": "high"
+   },
+   {
+    "id": "H04",
+    "iso3": "ARG",
+    "field": "territory",
+    "value": "Federal",
+    "reason": "The Factbook's government type (presidential republic) omits the federal form; the constitution adopts it in its first article and the 23 provinces have their own constitutions.",
+    "citation": "Constitution of the Argentine Nation, Articles 1, 5 and 121 to 128",
+    "confidence": "high"
+   },
+   {
+    "id": "H05",
+    "iso3": "BIH",
+    "field": "territory",
+    "value": "Federal",
+    "reason": "Two entities (the Federation of Bosnia and Herzegovina and Republika Srpska) and the Brcko District hold most powers; the Factbook labels the state a parliamentary republic.",
+    "citation": "Constitution of Bosnia and Herzegovina (Annex 4, General Framework Agreement for Peace, 1995), Articles I and III",
+    "confidence": "high"
+   },
+   {
+    "id": "H06",
+    "iso3": "BIH",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "Three directly elected members, one Bosniak and one Croat from the Federation and one Serb from Republika Srpska, chairing in rotation. An international High Representative retains powers to impose laws and remove officials (noted, not coded).",
+    "citation": "Constitution of Bosnia and Herzegovina, Article V; General Framework Agreement, Annex 10",
+    "confidence": "high"
+   },
+   {
+    "id": "H07",
+    "iso3": "BIH",
+    "field": "power_sharing",
+    "value": "Ethnic",
+    "reason": "The presidency, the House of Peoples and key offices are allocated among Bosniaks, Croats and Serbs.",
+    "citation": "Constitution of Bosnia and Herzegovina, Articles IV and V",
+    "confidence": "high"
+   },
+   {
+    "id": "H08",
+    "iso3": "LBN",
+    "field": "power_sharing",
+    "value": "Confessional",
+    "reason": "Parliamentary seats are split equally between Christians and Muslims and allocated by sect; by the National Pact the president is a Maronite Christian, the prime minister a Sunni Muslim and the speaker a Shia Muslim. Without this field Lebanon would share an exact signature with Israel.",
+    "citation": "Constitution of Lebanon, Articles 24 and 95, as amended after the Taif Agreement (1989); National Pact (1943)",
+    "confidence": "high"
+   },
+   {
+    "id": "H09",
+    "iso3": "BEL",
+    "field": "power_sharing",
+    "value": "Linguistic",
+    "reason": "The Council of Ministers must have as many Dutch-speaking as French-speaking members, the prime minister possibly excepted.",
+    "citation": "Constitution of Belgium, Article 99",
+    "confidence": "high"
+   },
+   {
+    "id": "H10",
+    "iso3": "BDI",
+    "field": "power_sharing",
+    "value": "Ethnic",
+    "reason": "Ethnic quotas for the government and the National Assembly (at most 60 per cent Hutu and 40 per cent Tutsi), carried over from the Arusha Agreement.",
+    "citation": "Constitution of the Republic of Burundi (2018); Arusha Peace and Reconciliation Agreement (2000)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H11",
+    "iso3": "FRA",
+    "field": "executive",
+    "value": "Semi-presidential: premier-presidential",
+    "reason": "The constitution gives the president no power to dismiss the prime minister, who leaves office by tendering the government's resignation, and the government is responsible to the National Assembly. V-Dem's in-practice coding (the president would succeed in removing the prime minister) reflects how presidents with a majority have obtained resignations; I follow the constitutional definition of the subtype.",
+    "citation": "Constitution of the French Republic (1958), Articles 8, 20 and 49 to 50; V-Dem v2exrmhgnp_5",
+    "confidence": "high"
+   },
+   {
+    "id": "H12",
+    "iso3": "UKR",
+    "field": "executive",
+    "value": "Semi-presidential: premier-presidential",
+    "reason": "Since the 2004 amendments were restored in 2014 the prime minister is appointed and dismissed by the Verkhovna Rada; the president cannot dismiss the prime minister. V-Dem's in-practice coding (0.6) leans the other way under martial law.",
+    "citation": "Constitution of Ukraine, Articles 85, 87, 106 and 114 to 115 (as restored in 2014)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H13",
+    "iso3": "CHE",
+    "field": "executive",
+    "value": "Directorial",
+    "reason": "The executive is the seven-member Federal Council, elected by the Federal Assembly for a fixed four-year term, collegial, and not subject to a vote of confidence. The president of the Confederation is chosen each year from among the seven and is first among equals.",
+    "citation": "Federal Constitution of the Swiss Confederation (1999), Articles 174 to 177",
+    "confidence": "high"
+   },
+   {
+    "id": "H14",
+    "iso3": "CHE",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "The Federal Council as a body acts as head of state and head of government.",
+    "citation": "Federal Constitution of the Swiss Confederation (1999), Articles 174 and 176",
+    "confidence": "high"
+   },
+   {
+    "id": "H15",
+    "iso3": "SMR",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "Two Captains Regent, elected by the Grand and General Council for six months, are joint heads of state; the Congress of State is responsible to the Council.",
+    "citation": "CIA World Factbook (2026), executive branch; Declaration of the Citizens' Rights and Fundamental Principles of the San Marinese Order (1974), Article 3",
+    "confidence": "high"
+   },
+   {
+    "id": "H16",
+    "iso3": "IRN",
+    "field": "executive",
+    "value": "Theocratic",
+    "reason": "The Supreme Leader, a senior jurist chosen for life by the Assembly of Experts, is head of state, commands the armed forces and sets general policy; the Guardian Council vets candidates and legislation. The president is directly elected and heads the government.",
+    "citation": "Constitution of the Islamic Republic of Iran, Articles 5, 57, 91 to 99 and 107 to 113; CIA World Factbook (2026): theocratic republic",
+    "confidence": "high"
+   },
+   {
+    "id": "H17",
+    "iso3": "IRN",
+    "field": "head_of_state_detail",
+    "value": "Supreme Leader",
+    "reason": "The head of state is the Supreme Leader, not the president.",
+    "citation": "Constitution of the Islamic Republic of Iran, Articles 107 to 113",
+    "confidence": "high"
+   },
+   {
+    "id": "H18",
+    "iso3": "AFG",
+    "field": "head_of_state",
+    "value": "Theocratic emirate",
+    "reason": "The Taliban leader rules as Amir al-Mu'minin of the Islamic Emirate, a non-hereditary religious office; there is no constitution in force, no legislature and no elections.",
+    "citation": "CIA World Factbook (2026): government type theocratic, chief of state Taliban Leader Haybatullah Akhundzada; V-Dem v16: head of state reached office by force, no legislature",
+    "confidence": "high"
+   },
+   {
+    "id": "H19",
+    "iso3": "AFG",
+    "field": "executive",
+    "value": "Theocratic",
+    "reason": "As above.",
+    "citation": "CIA World Factbook (2026); V-Dem v16 (v2expathhs = 0, v2lgbicam = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H20",
+    "iso3": "AFG",
+    "field": "head_of_state_detail",
+    "value": "Emir (religious leader)",
+    "reason": "As above.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H21",
+    "iso3": "VAT",
+    "field": "head_of_state",
+    "value": "Absolute monarchy",
+    "reason": "The pope, elected for life by the College of Cardinals, holds the fullness of legislative, executive and judicial power in the state.",
+    "citation": "Fundamental Law of Vatican City State (2023), Article 1; CIA World Factbook (2026): ecclesiastical elective monarchy, self-described as an absolute monarchy",
+    "confidence": "high"
+   },
+   {
+    "id": "H22",
+    "iso3": "VAT",
+    "field": "executive",
+    "value": "Theocratic",
+    "reason": "Sovereignty is held by the head of the Catholic Church; laws are made by the Pontifical Commission, appointed by the pope.",
+    "citation": "Fundamental Law of Vatican City State (2023); CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H23",
+    "iso3": "VAT",
+    "field": "head_of_state_detail",
+    "value": "Elective monarch",
+    "reason": "The pope is elected by the College of Cardinals.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H24",
+    "iso3": "AND",
+    "field": "head_of_state",
+    "value": "Constitutional monarchy, ceremonial monarch",
+    "reason": "Two co-princes, the Bishop of Urgell and the President of France, are jointly head of state with mainly formal powers; the head of government is elected by the General Council.",
+    "citation": "Constitution of the Principality of Andorra (1993), Articles 43 to 46 and 68",
+    "confidence": "high"
+   },
+   {
+    "id": "H25",
+    "iso3": "AND",
+    "field": "head_of_state_detail",
+    "value": "Co-princes",
+    "reason": "As above.",
+    "citation": "Constitution of the Principality of Andorra (1993), Article 43",
+    "confidence": "high"
+   },
+   {
+    "id": "H26",
+    "iso3": "AND",
+    "field": "electoral_system",
+    "value": "Parallel",
+    "reason": "Half of the 28 members are elected in two-seat parish constituencies by simple majority and half in a single national constituency by proportional representation, on separate ballots, with no compensation between the tiers. Andorra is not in V-Dem.",
+    "citation": "CIA World Factbook, legislative branch (2024 and 2026 editions)",
+    "confidence": "high"
+   },
+   {
+    "id": "H27",
+    "iso3": "MYS",
+    "field": "head_of_state_detail",
+    "value": "Elective monarch",
+    "reason": "The Yang di-Pertuan Agong is elected for five years by the Conference of Rulers from among the nine hereditary state rulers, in practice by rotation.",
+    "citation": "Federal Constitution of Malaysia, Articles 32 and 38 and the Third Schedule",
+    "confidence": "high"
+   },
+   {
+    "id": "H28",
+    "iso3": "KHM",
+    "field": "head_of_state_detail",
+    "value": "Elective monarch",
+    "reason": "The king is chosen by the nine-member Royal Council of the Throne from among male descendants of three royal lines.",
+    "citation": "Constitution of the Kingdom of Cambodia, Articles 13 and 14; CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H29",
+    "iso3": "ARE",
+    "field": "head_of_state",
+    "value": "Absolute monarchy",
+    "reason": "A federation of seven hereditary emirates. The Federal Supreme Council of the seven rulers is the highest authority and elects the president from among them; the Federal National Council is advisory, half indirectly elected and half appointed. V-Dem's indices (royal council, hereditary power base 0.38) would otherwise class the monarch as ceremonial.",
+    "citation": "Constitution of the United Arab Emirates (1971), Articles 46 to 51; CIA World Factbook (2026): federation of monarchies",
+    "confidence": "high"
+   },
+   {
+    "id": "H30",
+    "iso3": "ARE",
+    "field": "head_of_state_detail",
+    "value": "Elective monarch",
+    "reason": "The presidency of the federation is elected by the Federal Supreme Council.",
+    "citation": "Constitution of the United Arab Emirates, Article 51",
+    "confidence": "high"
+   },
+   {
+    "id": "H31",
+    "iso3": "ARE",
+    "field": "electoral_system",
+    "value": "Indirect or appointed",
+    "reason": "Twenty Federal National Council members are chosen by an electoral college appointed by the rulers and twenty are appointed. V-Dem records 50 per cent of the chamber as directly elected; I treat the electoral college vote as indirect.",
+    "citation": "CIA World Factbook (2026): 40 seats (20 indirectly elected; 20 appointed)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H32",
+    "iso3": "LBY",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "Two rival governments since 2014: the Government of National Unity in Tripoli, recognised by the UN, and a government in the east backed by the House of Representatives. No national election since 2014; the presidential election planned for 2021 was not held.",
+    "citation": "CIA World Factbook (2026): in transition; first direct presidential election not held as planned; Libyan Political Agreement (2015)",
+    "confidence": "high"
+   },
+   {
+    "id": "H33",
+    "iso3": "LBY",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "The three-member Presidential Council acts as head of state.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H34",
+    "iso3": "MMR",
+    "field": "executive",
+    "value": "Military government",
+    "reason": "The armed forces have ruled since the February 2021 coup; in July 2025 the commander-in-chief became acting president. Elections began at the end of 2025, after the V-Dem reference year.",
+    "citation": "V-Dem v16 (v2expathhs = 0, v2x_ex_military = 1.0); CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H35",
+    "iso3": "SDN",
+    "field": "executive",
+    "value": "Military government",
+    "reason": "The Sovereign Council is chaired by the commander of the Sudanese Armed Forces, at war with the Rapid Support Forces since April 2023, which declared a rival administration in 2025.",
+    "citation": "V-Dem v16 (v2expathhs = 5, v2x_ex_military = 0.75); CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H36",
+    "iso3": "SDN",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "The Sovereign Council is a collective head of state.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H37",
+    "iso3": "HTI",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "A nine-member Presidential Transitional Council has held presidential powers since April 2024; there has been no elected president since 2021 and no sitting parliament since January 2023.",
+    "citation": "CIA World Factbook (2026), executive branch note; V-Dem v16 (v2lgbicam = 0, v2expathhs = 8)",
+    "confidence": "high"
+   },
+   {
+    "id": "H38",
+    "iso3": "HTI",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "As above.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H39",
+    "iso3": "SYR",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "After the fall of the Assad government in December 2024 a five-year transition began under a constitutional declaration of March 2025, with an interim president.",
+    "citation": "CIA World Factbook (2026): transitional presidential republic; V-Dem v16 (v2expathhs = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H40",
+    "iso3": "SYR",
+    "field": "chambers",
+    "value": "Unicameral",
+    "reason": "A transitional People's Assembly was formed in 2025, two thirds chosen by indirect selection and one third appointed. V-Dem records no legislature for 2025.",
+    "citation": "CIA World Factbook (2026): 210 seats (140 indirectly elected; 70 appointed)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H41",
+    "iso3": "SYR",
+    "field": "electoral_system",
+    "value": "Indirect or appointed",
+    "reason": "As above.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H42",
+    "iso3": "YEM",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "An eight-member Presidential Leadership Council has held executive power since April 2022, while the Houthi movement controls the capital and much of the north. The House of Representatives was last elected in 2003.",
+    "citation": "CIA World Factbook (2026): in transition, executive branch note",
+    "confidence": "high"
+   },
+   {
+    "id": "H43",
+    "iso3": "YEM",
+    "field": "head_of_state_detail",
+    "value": "Collective presidency",
+    "reason": "As above.",
+    "citation": "CIA World Factbook (2026)",
+    "confidence": "high"
+   },
+   {
+    "id": "H44",
+    "iso3": "BGD",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "Parliament was dissolved in August 2024 after the prime minister fled, and an interim government led by a chief adviser took office pending elections.",
+    "citation": "CIA World Factbook (2026), executive branch note; V-Dem v16 (v2lgbicam = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H45",
+    "iso3": "PSE",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "The Palestinian Authority governs parts of the West Bank under a 2003 Basic Law; Gaza has been run separately since 2007 and has been at war since 2023. The Legislative Council was dissolved in 2018 and there has been no national election since 2006. V-Dem codes the West Bank and Gaza as separate units; the scores shown are for the West Bank.",
+    "citation": "V-Dem v16 (units Palestine/West Bank and Palestine/Gaza); Palestinian Basic Law (2003 amended)",
+    "confidence": "high"
+   },
+   {
+    "id": "H46",
+    "iso3": "PSE",
+    "field": "head_of_state",
+    "value": "Republic",
+    "reason": "The President of the State of Palestine (also President of the Palestinian Authority) is head of state; there is no Factbook entry for Palestine as a state.",
+    "citation": "V-Dem v16 (v2expathhs = 7); Palestinian Basic Law (2003 amended)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H47",
+    "iso3": "SSD",
+    "field": "executive",
+    "value": "Transitional or divided authority",
+    "reason": "Governed since 2020 by a Revitalised Transitional Government of National Unity under the 2018 peace agreement, with an appointed Transitional National Legislature; elections have been repeatedly postponed.",
+    "citation": "Revitalised Agreement on the Resolution of the Conflict in the Republic of South Sudan (2018); CIA World Factbook (2026): 550 seats, all appointed",
+    "confidence": "high"
+   },
+   {
+    "id": "H49",
+    "iso3": "GAB",
+    "field": "electoral_system",
+    "value": "Two-round system",
+    "reason": "The 2025 legislative election filled the National Assembly by two-round majority voting; V-Dem's share of directly elected members (12 per cent) averages the appointed transitional parliament over the year.",
+    "citation": "CIA World Factbook (2026): 145 seats, all directly elected; V-Dem v16 v2elloelsy (2025) = 1",
+    "confidence": "high"
+   },
+   {
+    "id": "H50",
+    "iso3": "KWT",
+    "field": "chambers",
+    "value": "None sitting",
+    "reason": "The emir suspended the National Assembly in May 2024 for up to four years.",
+    "citation": "V-Dem v16 (v2lgbicam = 0); CIA World Factbook (2026) gives no legislature",
+    "confidence": "high"
+   },
+   {
+    "id": "H51",
+    "iso3": "QAT",
+    "field": "electoral_system",
+    "value": "Indirect or appointed",
+    "reason": "A 2024 constitutional referendum ended elections to the Shura Council; all members are appointed.",
+    "citation": "CIA World Factbook (2026): 49 seats, all appointed; V-Dem v16 (v2lgello = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H52",
+    "iso3": "ERI",
+    "field": "executive",
+    "value": "One-party state",
+    "reason": "The president heads the sole legal party, which has ruled since 1991; there have been no national elections and the 1997 constitution has never been implemented.",
+    "citation": "CIA World Factbook (2026), executive branch note 1; V-Dem v16 (v2lgbicam = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H53",
+    "iso3": "LIE",
+    "field": "head_of_state",
+    "value": "Constitutional monarchy, ruling monarch",
+    "reason": "The prince must sanction every law, can dissolve the Landtag and can dismiss the government; his powers were widened by referendum in 2003. Liechtenstein is not in V-Dem and the Factbook says only constitutional monarchy.",
+    "citation": "Constitution of the Principality of Liechtenstein (1921, as amended 2003), Articles 9, 48 and 80",
+    "confidence": "high"
+   },
+   {
+    "id": "H54",
+    "iso3": "MCO",
+    "field": "head_of_state",
+    "value": "Constitutional monarchy, ruling monarch",
+    "reason": "Executive power is vested in the prince; the minister of state and the government serve under his authority and are not responsible to the National Council.",
+    "citation": "Constitution of the Principality of Monaco (1962), Articles 3 and 43 to 44",
+    "confidence": "high"
+   },
+   {
+    "id": "H55",
+    "iso3": "TON",
+    "field": "head_of_state",
+    "value": "Constitutional monarchy, ruling monarch",
+    "reason": "Since 2010 the prime minister is chosen by the Legislative Assembly, but the king keeps the power to withhold assent, appoints senior judges and is backed by nine seats chosen by the nobles. A borderline case.",
+    "citation": "Constitution of Tonga (1875, as amended 2010); CIA World Factbook (2026): constitutional monarchy, 17 people's and 9 nobles' representatives",
+    "confidence": "medium"
+   },
+   {
+    "id": "H56",
+    "iso3": "IDN",
+    "field": "chambers",
+    "value": "Bicameral",
+    "reason": "The People's Consultative Assembly is made up of the House of Representatives and the weaker Regional Representative Council. V-Dem and the 2024 Factbook say bicameral; the 2026 Factbook says unicameral.",
+    "citation": "Constitution of Indonesia (1945, as amended), Articles 2, 19 and 22C; V-Dem v16 (v2lgbicam = 2); CIA World Factbook (2024)",
+    "confidence": "high"
+   },
+   {
+    "id": "H57",
+    "iso3": "HND",
+    "field": "electoral_system",
+    "value": "List PR",
+    "reason": "Members are elected by list proportional representation in 18 departments, with preference votes for candidates. V-Dem's 2025 code (single transferable vote) is the only source to say so; both Factbook editions say proportional representation by party list.",
+    "citation": "CIA World Factbook (2024): party-list proportional representation; CIA World Factbook (2026): proportional representation",
+    "confidence": "medium"
+   },
+   {
+    "id": "H58",
+    "iso3": "SGP",
+    "field": "electoral_system",
+    "value": "Party block vote",
+    "reason": "Most MPs are elected in multi-member group representation constituencies, where the list with most votes takes every seat; the rest are elected by first past the post. V-Dem's code for the 2025 election (two-round system) does not match either Factbook edition.",
+    "citation": "Parliamentary Elections Act 1954 (Singapore), group representation constituencies; CIA World Factbook (2024 and 2026): simple majority",
+    "confidence": "medium"
+   },
+   {
+    "id": "H59",
+    "iso3": "FSM",
+    "field": "executive",
+    "value": "Parliamentary, executive president chosen by or through the legislature",
+    "reason": "The president is elected by Congress from among its four at-large senators and is both head of state and head of government.",
+    "citation": "CIA World Factbook (2026): executive branch",
+    "confidence": "medium"
+   },
+   {
+    "id": "H60",
+    "iso3": "FSM",
+    "field": "electoral_system",
+    "value": "First past the post",
+    "reason": "Ten members are elected in single-seat districts by simple majority and four at large, one per state; the Factbook calls the at-large vote proportional, but with one seat per state each is a single-seat plurality race.",
+    "citation": "CIA World Factbook (2024): legislative branch",
+    "confidence": "medium"
+   },
+   {
+    "id": "H61",
+    "iso3": "BRB",
+    "field": "head_of_state",
+    "value": "Republic",
+    "reason": "Barbados became a republic in November 2021 with a president elected by Parliament. The 2026 Factbook text still carries the phrase 'a Commonwealth realm'.",
+    "citation": "V-Dem v16 (v2expathhs = 6, legislature); CIA World Factbook (2026): parliamentary republic",
+    "confidence": "high"
+   },
+   {
+    "id": "H62",
+    "iso3": "GEO",
+    "field": "executive",
+    "value": "Parliamentary",
+    "reason": "Since the 2017 constitution took full effect in 2024 the president is elected by a 300-member electoral college and the government answers to parliament. The Factbook still says semi-presidential republic.",
+    "citation": "Constitution of Georgia (as amended 2017), Articles 50 and 54; V-Dem v16 (v2expathhs = 6); CIA World Factbook (2026): president elected by a 300-member College of Electors",
+    "confidence": "high"
+   },
+   {
+    "id": "H63",
+    "iso3": "KGZ",
+    "field": "executive",
+    "value": "Presidential",
+    "reason": "The 2021 constitution made the president head of the executive, with a chairman of the cabinet who heads the presidential administration. The Factbook's government type (parliamentary republic) predates it.",
+    "citation": "Constitution of the Kyrgyz Republic (2021); V-Dem v16 (v2exhoshog = 1)",
+    "confidence": "high"
+   },
+   {
+    "id": "H64",
+    "iso3": "TGO",
+    "field": "executive",
+    "value": "Parliamentary",
+    "reason": "The 2024 constitution created a president elected by parliament with mainly formal powers and a President of the Council of Ministers who leads the government. The Factbook's government type (presidential republic) predates it.",
+    "citation": "Constitution of the Togolese Republic (2024); V-Dem v16 (v2expathhs = 6, v2ex_hosw = 0); CIA World Factbook (2026), executive branch",
+    "confidence": "high"
+   },
+   {
+    "id": "H66",
+    "iso3": "DNK",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "The Faroe Islands and Greenland are self-governing parts of the Realm with their own parliaments.",
+    "citation": "Faroe Islands Self-Government Act (2005); Act on Greenland Self-Government (2009)",
+    "confidence": "high"
+   },
+   {
+    "id": "H67",
+    "iso3": "NLD",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "Aruba, Curaçao and Sint Maarten are autonomous constituent countries of the Kingdom of the Netherlands with their own parliaments.",
+    "citation": "Charter for the Kingdom of the Netherlands (1954)",
+    "confidence": "high"
+   },
+   {
+    "id": "H68",
+    "iso3": "FIN",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "The Åland Islands have an elected parliament with legislative powers.",
+    "citation": "Act on the Autonomy of Åland (1991)",
+    "confidence": "high"
+   },
+   {
+    "id": "H69",
+    "iso3": "TZA",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "Zanzibar has its own president, government and House of Representatives within the union.",
+    "citation": "Constitution of the United Republic of Tanzania (1977), Articles 102 to 107",
+    "confidence": "high"
+   },
+   {
+    "id": "H70",
+    "iso3": "AZE",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "The Nakhchivan Autonomous Republic has its own elected assembly.",
+    "citation": "Constitution of the Republic of Azerbaijan (1995), Articles 134 to 141",
+    "confidence": "high"
+   },
+   {
+    "id": "H71",
+    "iso3": "SRB",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "The Autonomous Province of Vojvodina has an elected assembly; the constitution also names Kosovo and Metohija, which Serbia does not control.",
+    "citation": "Constitution of the Republic of Serbia (2006), Articles 182 to 187",
+    "confidence": "high"
+   },
+   {
+    "id": "H72",
+    "iso3": "PHL",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "The Bangsamoro Autonomous Region in Muslim Mindanao has its own parliament.",
+    "citation": "Republic Act No. 11054 (Bangsamoro Organic Law) (2018)",
+    "confidence": "high"
+   },
+   {
+    "id": "H73",
+    "iso3": "TTO",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "The Tobago House of Assembly is an elected assembly with its own executive council.",
+    "citation": "Tobago House of Assembly Act (1996)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H74",
+    "iso3": "MUS",
+    "field": "territory",
+    "value": "Unitary with autonomous regions",
+    "reason": "Rodrigues has an elected Regional Assembly with powers over local affairs.",
+    "citation": "Rodrigues Regional Assembly Act (2001)",
+    "confidence": "medium"
+   },
+   {
+    "id": "H75",
+    "iso3": "CIV",
+    "field": "territory",
+    "value": "Unitary",
+    "reason": "The Factbook's two 'autonomous districts' (Abidjan and Yamoussoukro) are administrative units, not self-governing regions.",
+    "citation": "CIA World Factbook (2026): administrative divisions",
+    "confidence": "high"
+   },
+   {
+    "id": "H76",
+    "iso3": "KOR",
+    "field": "territory",
+    "value": "Unitary",
+    "reason": "Sejong's 'special self-governing city' status is an administrative status, not regional autonomy.",
+    "citation": "CIA World Factbook (2026): administrative divisions",
+    "confidence": "high"
+   },
+   {
+    "id": "H77",
+    "iso3": "TUN",
+    "field": "executive",
+    "value": "Semi-presidential: president-parliamentary",
+    "reason": "Under the 2022 constitution the directly elected president appoints and dismisses the head of government. The Factbook's government type (parliamentary republic) predates it.",
+    "citation": "Constitution of the Tunisian Republic (2022); V-Dem v16 (v2ex_hosw = 1, v2exrmhgnp_5 = 0.6)",
+    "confidence": "high"
+   },
+   {
+    "id": "H78",
+    "iso3": "KIR",
+    "field": "executive",
+    "value": "Presidential",
+    "reason": "The president is directly elected, but only from candidates nominated by the House of Assembly, and a vote of no confidence forces a new election: a hybrid. I follow the Factbook's label.",
+    "citation": "CIA World Factbook (2026): presidential republic; executive branch",
+    "confidence": "medium"
+   },
+   {
+    "id": "H80",
+    "iso3": "SOM",
+    "field": "electoral_system",
+    "value": "Indirect or appointed",
+    "reason": "Members of the House of the People are chosen by delegates selected by clan elders; V-Dem's last coded direct election is from 1969.",
+    "citation": "CIA World Factbook (2026): 275 seats, all indirectly elected; V-Dem v16 (v2lgello = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H81",
+    "iso3": "NER",
+    "field": "electoral_system",
+    "value": "Indirect or appointed",
+    "reason": "Since the 2023 coup the legislature has been replaced by appointed bodies.",
+    "citation": "CIA World Factbook (2026): 194 seats all appointed; V-Dem v16 (v2lgello = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H82",
+    "iso3": "PSE",
+    "field": "chambers",
+    "value": "None sitting",
+    "reason": "The Palestinian Legislative Council was dissolved in 2018.",
+    "citation": "V-Dem v16 (v2lgbicam = 0)",
+    "confidence": "high"
+   },
+   {
+    "id": "H83",
+    "iso3": "COD",
+    "field": "electoral_system",
+    "value": "List PR",
+    "reason": "Most members (439 of 500) are elected by open-list proportional representation in multi-member constituencies; the 61 single-member constituencies use plurality, as a list system does where only one seat is at stake. V-Dem has no code for the 2023 election; the 2026 Factbook says mixed system.",
+    "citation": "CIA World Factbook (2024): legislative branch; CIA World Factbook (2026): mixed system",
+    "confidence": "medium"
+   },
+   {
+    "id": "H84",
+    "iso3": "MCO",
+    "field": "electoral_system",
+    "value": "Parallel",
+    "reason": "Sixteen of the 24 members go to the list or candidates with most votes in a single national constituency and eight are shared by proportional representation, with no compensation between the tiers. Monaco is not in V-Dem.",
+    "citation": "CIA World Factbook (2024): 16 by simple majority, 8 by proportional representation",
+    "confidence": "medium"
+   },
+   {
+    "id": "H85",
+    "iso3": "SMR",
+    "field": "electoral_system",
+    "value": "List PR",
+    "reason": "List proportional representation in a single constituency, with a majority bonus and a run-off between the two leading coalitions when no coalition wins a majority. San Marino is not in V-Dem.",
+    "citation": "CIA World Factbook (2024): list proportional representation in 2 rounds if needed; CIA World Factbook (2026): proportional representation",
+    "confidence": "high"
+   },
+   {
+    "id": "H86",
+    "iso3": "AGO",
+    "field": "executive",
+    "value": "Presidential",
+    "reason": "The head of the national list of the party with most votes in the general election becomes president, who heads the government and cannot be removed by a vote of confidence. V-Dem codes the route to office as the legislature; the Factbook calls Angola a presidential republic.",
+    "citation": "Constitution of the Republic of Angola (2010), Articles 106 and 109; CIA World Factbook (2026): presidential republic",
+    "confidence": "medium"
+   }
+  ]
+ },
+ "tricky": [
+  {
+   "iso": "GBR",
+   "country": "United Kingdom",
+   "family_id": "PM",
+   "head_of_state": "Constitutional monarchy, ceremonial monarch",
+   "head_of_state_detail": "Hereditary monarch",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Regionalised",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H01",
+   "notes": "V-Dem v16 classes the United Kingdom as an electoral democracy for 2025, not a liberal democracy."
+  },
+  {
+   "iso": "FRA",
+   "country": "France",
+   "family_id": "SP",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Semi-presidential: premier-presidential",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Bicameral",
+   "electoral_system": "Two-round system",
+   "power_sharing": "No",
+   "signature_size": 2,
+   "hand": "H11",
+   "notes": NaN
+  },
+  {
+   "iso": "CHE",
+   "country": "Switzerland",
+   "family_id": "AE",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Collective presidency",
+   "executive": "Directorial",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H13 H14",
+   "notes": NaN
+  },
+  {
+   "iso": "IRN",
+   "country": "Iran",
+   "family_id": "TH",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Supreme Leader",
+   "executive": "Theocratic",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "Two-round system",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H16 H17",
+   "notes": NaN
+  },
+  {
+   "iso": "CHN",
+   "country": "China",
+   "family_id": "OP",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "One-party state",
+   "hos_hog": "Separate",
+   "territory": "Unitary with autonomous regions",
+   "chambers": "Unicameral",
+   "electoral_system": "Indirect or appointed",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": NaN,
+   "notes": NaN
+  },
+  {
+   "iso": "RUS",
+   "country": "Russia",
+   "family_id": "SR",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Semi-presidential: president-parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "Parallel",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": NaN,
+   "notes": NaN
+  },
+  {
+   "iso": "BIH",
+   "country": "Bosnia and Herzegovina",
+   "family_id": "PR",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Collective presidency",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "Ethnic",
+   "signature_size": 1,
+   "hand": "H05 H06 H07",
+   "notes": "An international High Representative keeps powers to impose laws and dismiss officials."
+  },
+  {
+   "iso": "LBN",
+   "country": "Lebanon",
+   "family_id": "PR",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "Confessional",
+   "signature_size": 1,
+   "hand": "H08",
+   "notes": NaN
+  },
+  {
+   "iso": "VAT",
+   "country": "Holy See (Vatican City)",
+   "family_id": "TH",
+   "head_of_state": "Absolute monarchy",
+   "head_of_state_detail": "Elective monarch",
+   "executive": "Theocratic",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "Indirect or appointed",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H21 H22 H23",
+   "notes": NaN
+  },
+  {
+   "iso": "AND",
+   "country": "Andorra",
+   "family_id": "PM",
+   "head_of_state": "Constitutional monarchy, ceremonial monarch",
+   "head_of_state_detail": "Co-princes",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "Parallel",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H24 H25 H26",
+   "notes": NaN
+  },
+  {
+   "iso": "MYS",
+   "country": "Malaysia",
+   "family_id": "PM",
+   "head_of_state": "Constitutional monarchy, ceremonial monarch",
+   "head_of_state_detail": "Elective monarch",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H27",
+   "notes": NaN
+  },
+  {
+   "iso": "ARE",
+   "country": "United Arab Emirates",
+   "family_id": "AM",
+   "head_of_state": "Absolute monarchy",
+   "head_of_state_detail": "Elective monarch",
+   "executive": "Royal (absolute)",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Unicameral",
+   "electoral_system": "Indirect or appointed",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H29 H30 H31",
+   "notes": "Monarch's power: the Factbook says 'federation of monarchies', V-Dem's indices give constitutional monarchy, ceremonial monarch. Executive: the Factbook says 'federation of monarchies'."
+  },
+  {
+   "iso": "LBY",
+   "country": "Libya",
+   "family_id": "TR",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Collective presidency",
+   "executive": "Transitional or divided authority",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "Parallel",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H32 H33",
+   "notes": "The House of Representatives was elected in 2014; sources disagree on its electoral system (V-Dem: parallel; Factbook 2024: majority vote)."
+  },
+  {
+   "iso": "MMR",
+   "country": "Myanmar",
+   "family_id": "MI",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Military government",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "None sitting",
+   "electoral_system": "No sitting chamber",
+   "power_sharing": "No",
+   "signature_size": 2,
+   "hand": "H34",
+   "notes": "Elections began at the end of 2025 (Factbook 2026); V-Dem records no sitting legislature for 2025."
+  },
+  {
+   "iso": "AFG",
+   "country": "Afghanistan",
+   "family_id": "TH",
+   "head_of_state": "Theocratic emirate",
+   "head_of_state_detail": "Emir (religious leader)",
+   "executive": "Theocratic",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "None sitting",
+   "electoral_system": "No sitting chamber",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H18 H19 H20",
+   "notes": NaN
+  },
+  {
+   "iso": "SDN",
+   "country": "Sudan",
+   "family_id": "MI",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Collective presidency",
+   "executive": "Military government",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "None sitting",
+   "electoral_system": "No sitting chamber",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H35 H36",
+   "notes": NaN
+  },
+  {
+   "iso": "HTI",
+   "country": "Haiti",
+   "family_id": "TR",
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Collective presidency",
+   "executive": "Transitional or divided authority",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "None sitting",
+   "electoral_system": "No sitting chamber",
+   "power_sharing": "No",
+   "signature_size": 1,
+   "hand": "H37 H38",
+   "notes": NaN
+  }
+ ],
+ "spot": {
+  "DEU": {
+   "country": "Germany",
+   "family_id": "PR",
+   "sig": "S074",
+   "sig_n": 1,
+   "sig_iso": [
+    "DEU"
+   ],
+   "regime": "Liberal democracy",
+   "libdem": 0.782,
+   "polyarchy": 0.828,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "Mixed-member proportional",
+   "power_sharing": "No"
+  },
+  "ITA": {
+   "country": "Italy",
+   "family_id": "PR",
+   "sig": "S077",
+   "sig_n": 1,
+   "sig_iso": [
+    "ITA"
+   ],
+   "regime": "Liberal democracy",
+   "libdem": 0.642,
+   "polyarchy": 0.745,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Regionalised",
+   "chambers": "Bicameral",
+   "electoral_system": "Parallel",
+   "power_sharing": "No"
+  },
+  "GBR": {
+   "country": "United Kingdom",
+   "family_id": "PM",
+   "sig": "S042",
+   "sig_n": 1,
+   "sig_iso": [
+    "GBR"
+   ],
+   "regime": "Electoral democracy",
+   "libdem": 0.689,
+   "polyarchy": 0.772,
+   "head_of_state": "Constitutional monarchy, ceremonial monarch",
+   "head_of_state_detail": "Hereditary monarch",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Regionalised",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No"
+  },
+  "FRA": {
+   "country": "France",
+   "family_id": "SP",
+   "sig": "S030",
+   "sig_n": 2,
+   "sig_iso": [
+    "COG",
+    "FRA"
+   ],
+   "regime": "Liberal democracy",
+   "libdem": 0.8,
+   "polyarchy": 0.865,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Semi-presidential: premier-presidential",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Bicameral",
+   "electoral_system": "Two-round system",
+   "power_sharing": "No"
+  },
+  "CHE": {
+   "country": "Switzerland",
+   "family_id": "AE",
+   "sig": "S061",
+   "sig_n": 1,
+   "sig_iso": [
+    "CHE"
+   ],
+   "regime": "Liberal democracy",
+   "libdem": 0.843,
+   "polyarchy": 0.882,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Collective presidency",
+   "executive": "Directorial",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No"
+  },
+  "USA": {
+   "country": "United States",
+   "family_id": "PS",
+   "sig": "S024",
+   "sig_n": 2,
+   "sig_iso": [
+    "NGA",
+    "USA"
+   ],
+   "regime": "Electoral democracy",
+   "libdem": 0.571,
+   "polyarchy": 0.735,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Presidential",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No"
+  },
+  "IND": {
+   "country": "India",
+   "family_id": "PR",
+   "sig": "S012",
+   "sig_n": 3,
+   "sig_iso": [
+    "ETH",
+    "IND",
+    "PAK"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.26,
+   "polyarchy": 0.377,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No"
+  },
+  "CHN": {
+   "country": "China",
+   "family_id": "OP",
+   "sig": "S070",
+   "sig_n": 1,
+   "sig_iso": [
+    "CHN"
+   ],
+   "regime": "Closed autocracy",
+   "libdem": 0.039,
+   "polyarchy": 0.072,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "One-party state",
+   "hos_hog": "Separate",
+   "territory": "Unitary with autonomous regions",
+   "chambers": "Unicameral",
+   "electoral_system": "Indirect or appointed",
+   "power_sharing": "No"
+  },
+  "RUS": {
+   "country": "Russia",
+   "family_id": "SR",
+   "sig": "S104",
+   "sig_n": 1,
+   "sig_iso": [
+    "RUS"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.056,
+   "polyarchy": 0.17,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Semi-presidential: president-parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "Parallel",
+   "power_sharing": "No"
+  },
+  "LBN": {
+   "country": "Lebanon",
+   "family_id": "PR",
+   "sig": "S082",
+   "sig_n": 1,
+   "sig_iso": [
+    "LBN"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.267,
+   "polyarchy": 0.419,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "Confessional"
+  },
+  "ISR": {
+   "country": "Israel",
+   "family_id": "PR",
+   "sig": "S001",
+   "sig_n": 14,
+   "sig_iso": [
+    "ALB",
+    "ARM",
+    "BGR",
+    "CPV",
+    "EST",
+    "FJI",
+    "HRV",
+    "ISL",
+    "ISR",
+    "KOS",
+    "LVA",
+    "MKD",
+    "MNE",
+    "SVK"
+   ],
+   "regime": "Electoral democracy",
+   "libdem": 0.588,
+   "polyarchy": 0.694,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No"
+  },
+  "COG": {
+   "country": "Congo (Republic)",
+   "family_id": "SP",
+   "sig": "S030",
+   "sig_n": 2,
+   "sig_iso": [
+    "COG",
+    "FRA"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.115,
+   "polyarchy": 0.243,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Semi-presidential: premier-presidential",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Bicameral",
+   "electoral_system": "Two-round system",
+   "power_sharing": "No"
+  },
+  "IRN": {
+   "country": "Iran",
+   "family_id": "TH",
+   "sig": "S111",
+   "sig_n": 1,
+   "sig_iso": [
+    "IRN"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.103,
+   "polyarchy": 0.159,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "Supreme Leader",
+   "executive": "Theocratic",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Unicameral",
+   "electoral_system": "Two-round system",
+   "power_sharing": "No"
+  },
+  "BRA": {
+   "country": "Brazil",
+   "family_id": "PS",
+   "sig": "S025",
+   "sig_n": 2,
+   "sig_iso": [
+    "ARG",
+    "BRA"
+   ],
+   "regime": "Electoral democracy",
+   "libdem": 0.704,
+   "polyarchy": 0.784,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Presidential",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No"
+  },
+  "JPN": {
+   "country": "Japan",
+   "family_id": "PM",
+   "sig": "S046",
+   "sig_n": 1,
+   "sig_iso": [
+    "JPN"
+   ],
+   "regime": "Liberal democracy",
+   "libdem": 0.734,
+   "polyarchy": 0.819,
+   "head_of_state": "Constitutional monarchy, ceremonial monarch",
+   "head_of_state_detail": "Hereditary monarch",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Unitary",
+   "chambers": "Bicameral",
+   "electoral_system": "Parallel",
+   "power_sharing": "No"
+  },
+  "MEX": {
+   "country": "Mexico",
+   "family_id": "PS",
+   "sig": "S091",
+   "sig_n": 1,
+   "sig_iso": [
+    "MEX"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.221,
+   "polyarchy": 0.469,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Presidential",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "Mixed-member proportional",
+   "power_sharing": "No"
+  },
+  "NGA": {
+   "country": "Nigeria",
+   "family_id": "PS",
+   "sig": "S024",
+   "sig_n": 2,
+   "sig_iso": [
+    "NGA",
+    "USA"
+   ],
+   "regime": "Electoral democracy",
+   "libdem": 0.311,
+   "polyarchy": 0.505,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Presidential",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No"
+  },
+  "IDN": {
+   "country": "Indonesia",
+   "family_id": "PS",
+   "sig": "S094",
+   "sig_n": 1,
+   "sig_iso": [
+    "IDN"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.296,
+   "polyarchy": 0.462,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Presidential",
+   "hos_hog": "Fused (one person or body)",
+   "territory": "Unitary with autonomous regions",
+   "chambers": "Bicameral",
+   "electoral_system": "List PR",
+   "power_sharing": "No"
+  },
+  "PAK": {
+   "country": "Pakistan",
+   "family_id": "PR",
+   "sig": "S012",
+   "sig_n": 3,
+   "sig_iso": [
+    "ETH",
+    "IND",
+    "PAK"
+   ],
+   "regime": "Electoral autocracy",
+   "libdem": 0.176,
+   "polyarchy": 0.302,
+   "head_of_state": "Republic",
+   "head_of_state_detail": "President",
+   "executive": "Parliamentary",
+   "hos_hog": "Separate",
+   "territory": "Federal",
+   "chambers": "Bicameral",
+   "electoral_system": "First past the post",
+   "power_sharing": "No"
+  }
+ },
+ "italy_germany_diff": [
+  "territory",
+  "electoral_system"
+ ],
+ "sig_of": {
+  "FRA_COG": true,
+  "ITA_DEU": false,
+  "LBN_ISR": false
+ }
+}

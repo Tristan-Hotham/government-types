@@ -1,0 +1,157 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array,xcolor,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={How the World Is Governed},pdfauthor={Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries How the World Is Governed\par}
+\vspace{0.4em}
+{\large A feature-by-feature classification of {{n.countries|int}} systems of government,\\cross-checked against V-Dem and the CIA World Factbook\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: @@DOILINK@@\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+Maps of political regimes usually sort countries into democracies and autocracies. I classify the constitutional form of all {{n.countries|int}} states (the {{n.un_members|int}} UN members, the Holy See, Palestine, Taiwan and Kosovo) on eight features: the kind of head of state, how that office is filled, the executive type (including the premier-presidential and president-parliamentary subtypes of semi-presidentialism), whether head of state and head of government are one office, the territorial structure, the number of chambers, the electoral system of the lower or only chamber and any power sharing fixed by community. Each field is derived by stated rules from two independent sources, V-Dem {{meta.vdem_version|raw}} (latest year {{meta.vdem_year|raw}}) and the CIA World Factbook (2026 and 2024 editions), compared cell by cell, with {{hand.n|int}} documented and cited hand decisions. The countries fall into {{n.families|int}} families and {{signatures.n|int}} exact systems, of which {{signatures.n_unique|int}} belong to a single country; those {{signatures.n_unique|int}} countries hold {{signatures.pop_unique_pct|pc}} of the world's population. The largest shared system, unitary parliamentary republics with one chamber elected by list proportional representation, has {{signatures.largest.n|int}} members. Presidential republics ({{families.7.n|int}}) and parliamentary republics ({{families.3.n|int}}) are the largest families and each holds over a quarter of humanity; {{h.federal_n|int}} federations hold {{h.federal_pop_pct|pc}}. Set against V-Dem's Regimes of the World, {{x_elec_regime.dem_share.Proportional|pc}} of countries electing their lower house by proportional representation are democracies against {{x_elec_regime.dem_share.Majoritarian|pc}} of majoritarian ones, {{pres_parl.spp_dem_pct|pc}} of premier-presidential against {{pres_parl.srp_dem_pct|pc}} of president-parliamentary systems, and ceremonial monarchies have the highest mean Liberal Democracy Index of any family ({{mon_vs.cer_mon_libdem_mean|f2}}). These patterns are descriptive. The classification, sources and decisions are released as open data.
+
+\textbf{Keywords:} political systems; forms of government; semi-presidentialism; federalism; electoral systems; V-Dem; Regimes of the World; CIA World Factbook; comparative politics; open data
+\end{quote}
+
+\section{Introduction}
+The most widely used maps of political systems answer one question: is a country democratic? V-Dem's Regimes of the World \citep{row}, Freedom House and the Economist Intelligence Unit each give two to four classes. They are indispensable, but they describe the quality of a regime rather than its architecture. Two parliamentary republics with ceremonial presidents, Germany and Italy, sit in the same class on such a map, yet Germany is a federation whose Bundestag is elected by mixed-member proportional representation, while Italy is a regionalised state whose Chamber of Deputies is elected by a parallel system. Political scientists have long distinguished these features \citep{lijphart,shugartcarey,elgie2011,reynolds}; open, current, global datasets that put them together for every country are rarer.
+
+This paper builds one. It classifies all {{n.countries|int}} states on eight features of constitutional form and practice, derives each field by stated rules from two independent sources, records where they disagree, and documents every hand decision with a citation. It then groups identical combinations (``signatures'') into a hierarchy of families and exact systems, counts how widely each is shared and how many people live under it, and sets the classification beside V-Dem's democracy measures. An interactive version is at \url{{{meta.page}}}.
+
+\section{Data}
+\textbf{V-Dem.} The V-Dem Country-Year Dataset {{meta.vdem_version|raw}} \citep{vdem}, as packaged in the vdemdata R package 16.0 \citep{vdemdata}, latest year {{meta.vdem_year|raw}}, licensed CC BY-SA 4.0 (as listed in the Swedish National Data Service catalogue, \url{https://researchdata.se/en/catalogue/dataset/ext0309-1}). I use the Regimes of the World classification (v2x\_regime), the Liberal and Electoral Democracy Indices (v2x\_libdem, v2x\_polyarchy) with their intervals, and institutional indicators: how the head of state reached office (v2expathhs), whether head of state and head of government are the same (v2exhoshog), the head of state's relative power over the cabinet (v2ex\_hosw), whether the head of state could remove the head of government in practice (v2exrmhgnp\_5), the hereditary, military and party dimensions of the executive's power base, the number of chambers (v2lgbicam), the share of the lower chamber directly elected (v2lgello) and the thirteen-category electoral system of the latest election to the lower chamber (v2elloelsy). V-Dem covers {{n.in_vdem|int}} of the {{n.countries|int}} states; the {{n.not_vdem|int}} not covered are microstates and small island states.
+
+\textbf{CIA World Factbook.} The Factbook as JSON \citep{factbook}, at the repository's final 2026 state and at commit {{meta.fb_commit_old|raw}} (December 2024), the last snapshot with full-text descriptions of each legislature. The Factbook is a US government work in the public domain. I use its government type, executive branch (chief of state, head of government, election process), legislative structure and electoral system, administrative divisions, and international organisation membership (to define the set of UN member states).
+
+\textbf{Population and boundaries.} World Bank total population for {{n.pop_year|raw}} \citep{wb}, with Natural Earth estimates for Taiwan and the Holy See; Natural Earth 1:50m and 1:10m countries \citep{naturalearth}.
+
+Wikidata and Wikipedia's lists of countries by system of government and by electoral system would make a natural third source; they could not be retrieved for this version and are not used.
+
+\section{Methods}
+\subsection{Fields and rules}
+\textbf{Head of state.} A country is a monarchy if V-Dem codes its head of state as having reached office by hereditary succession, a royal council or appointment by a foreign power (the Commonwealth realms), or, for countries outside V-Dem, if the Factbook calls it one. A monarchy is \emph{absolute} if the Factbook says so; \emph{constitutional with a ruling monarch} (dualist) if V-Dem codes the head of state as at least as powerful as the head of government over the cabinet (v2ex\_hosw~$\geq$~0.5) or the hereditary dimension as at least 0.5; otherwise \emph{ceremonial}. The office is recorded as hereditary, elective, a monarch abroad or co-princes for monarchies, and as a president, a collective presidency or a Supreme Leader for republics.
+
+\textbf{Executive.} Military government (a head of state who took power by force or was appointed by the military, with a military power base of at least 0.5), one-party state (Factbook ``communist'' or a head of state appointed by the ruling party) and the theocratic and transitional cases (Factbook labels, hand decisions) are assigned first. Monarchies take the executive implied by the monarch's power. For republics, a directly elected president who is also head of government is \emph{presidential}; a head of state who is also head of government but chosen by or through the legislature gives a \emph{parliamentary system with an executive president}, Switzerland's collegial Federal Council a \emph{directorial} system; a head of state not directly elected, with a separate head of government, is \emph{parliamentary}. A directly elected president with a separate prime minister is \emph{semi-presidential} if the Factbook calls the system presidential or semi-presidential or V-Dem codes the president as at least as powerful as the prime minister; otherwise parliamentary. Following \citet{shugartcarey}, semi-presidential systems are \emph{president-parliamentary} where the president can also remove the prime minister (V-Dem v2exrmhgnp\_5 above 0.5) and \emph{premier-presidential} otherwise; France and Ukraine are set by their constitutions, which give the president no such power, although V-Dem's in-practice coding differs.
+
+\textbf{Territory, chambers, elections and power sharing.} Federations are those the Factbook calls federal, plus Argentina and Bosnia and Herzegovina; Italy, Spain and the United Kingdom are \emph{regionalised}; \emph{unitary with autonomous regions} comes from autonomous units in the Factbook's administrative divisions with hand additions and exclusions. Chambers are V-Dem's count of sitting chambers (``none sitting'' where a legislature is dissolved or suspended), checked against the Factbook. The electoral system is V-Dem's code for the latest election, checked against the Factbook's 2026 category and a parse of its 2024 text; a chamber less than half directly elected is ``indirect or appointed''. Power sharing is coded only where the constitution or a binding pact allocates top offices or seats by community (Lebanon, Bosnia and Herzegovina, Belgium, Burundi).
+
+\textbf{Precedence and cross-checks.} For each field a hand decision overrides the rule, V-Dem's in-practice coding is preferred to the Factbook where both exist, and the Factbook is used alone where V-Dem is silent. Each country--field cell records its source values and whether the sources agree, disagree, or only one speaks.
+
+\subsection{Families and signatures}
+A country's \emph{signature} is the combination of its eight fields. Identical signatures form an \emph{exact system}. \emph{Families} group countries by head of state and executive into {{n.families|int}} classes; \emph{sub-families} split each family by the broad class of electoral system (majoritarian, mixed or semi-proportional, proportional, not directly elected), giving {{n.subfamilies|int}} sub-families. All statistics are descriptive counts and population shares, with population weights from {{n.pop_year|raw}}.
+
+\section{Results}
+\subsection{Families}
+Table~\ref{tab:families} and Figures~\ref{fig:map} and~\ref{fig:families} summarise the families. Presidential republics ({{families.7.n|int}} countries, {{families.7.pop_pct|pc}} of the world's population) and parliamentary republics ({{families.3.n|int}}, {{families.3.pop_pct|pc}}) are the largest, followed by {{families.0.n|int}} parliamentary monarchies ({{families.0.pop_pct|pc}}), {{h.realms|int}} of them Commonwealth realms. Semi-presidential systems number {{h.semi_n|int}}: {{h.semi_prp_n|int}} president-parliamentary, holding {{families.6.pop_pct|pc}} of the world's people, and {{h.semi_pp_n|int}} premier-presidential ({{families.5.pop_pct|pc}}). One-party states are only {{families.8.n|int}} but hold {{families.8.pop_pct|pc}} of humanity. In all, {{h.no_election_exec_n|int}} countries with {{h.no_election_exec_pop_pct|pc}} of the world's people are governed by a party, the military, clerics, a royal family or a transitional authority. There are {{h.monarchies|int}} monarchies ({{h.monarchies_pop_pct|pc}} of the population) and {{h.federal_n|int}} federations ({{h.federal_pop_pct|pc}}).
+
+{{TABLE_FAMILIES}}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_map_family.png}
+\caption{Families of government, shaded by the electoral system of the lower or only chamber, with patterns for federal, regionalised and autonomous-region states (Equal Earth projection).}\label{fig:map}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_families.png}
+\caption{Countries and share of world population in each family, split by electoral system.}\label{fig:families}\end{figure}
+
+\subsection{Exact systems}
+The {{n.countries|int}} countries have {{signatures.n|int}} distinct signatures. {{signatures.n_shared|int}} are shared by two or more countries ({{signatures.countries_shared|int}} countries in all) and {{signatures.n_unique|int}} are unique (Figure~\ref{fig:sigs}, Table~\ref{tab:sigs}). The largest shared system has {{signatures.largest.n|int}} members, mostly in central and eastern Europe; the second, its presidential counterpart, has {{signatures.second.n|int}}. India, Pakistan and Ethiopia share an exact system, as do the United States and Nigeria and Brazil and Argentina. Germany and Italy differ in territory and electoral system. France and the Republic of the Congo share an exact system although V-Dem scores their liberal democracy at {{spot.FRA.libdem|f2}} and {{spot.COG.libdem|f2}}. The unique systems include the most populous states with idiosyncratic designs (China, Indonesia, Russia, Mexico, Japan, Iran, Germany) and the textbook one-offs: Switzerland's directorial Federal Council, Bosnia's three-member presidency, Lebanon's confessional parliament, Andorra's co-princes and the Holy See. Without the power-sharing field, Lebanon would share its signature with Israel.
+
+{{TABLE_SIGS}}
+
+\begin{figure}[tbp]\centering\includegraphics[width=.86\textwidth]{f_signatures.png}
+\caption{How many countries share each exact system.}\label{fig:sigs}\end{figure}
+
+
+\subsection{Single features}
+List proportional representation is the commonest electoral system for the lower or only chamber ({{h.listpr_n|int}} countries) but covers only {{h.listpr_pop_pct|pc}} of the world's people; first past the post is used by {{h.fptp_n|int}} countries with {{h.fptp_pop_pct|pc}}, {{h.fptp_ind_usa_share|pc}} of them in India and the United States (Figure~\ref{fig:elmap}). Mixed systems are used by {{h.mixed_n|int}} countries ({{h.parallel_n|int}} parallel, {{h.mmp_n|int}} mixed-member proportional). {{h.not_elected_n|int}} countries, with {{h.not_elected_pop_pct|pc}} of the world's people, have no directly elected lower chamber or none sitting. {{h.bicameral_n|int}} legislatures are bicameral, {{h.unicameral_n|int}} unicameral, and {{h.none_sitting_n|int}} countries have no sitting legislature. In {{h.fused_n|int}} countries one person or body is both head of state and head of government.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_map_electoral.png}
+\caption{Electoral system of the lower or only chamber.}\label{fig:elmap}\end{figure}
+
+\subsection{Form and freedom}
+V-Dem classes {{h.closed_n|int}} countries as closed autocracies, {{h.elaut_n|int}} as electoral autocracies, {{h.eldem_n|int}} as electoral democracies and {{h.lib_n|int}} as liberal democracies for {{meta.vdem_year|raw}}; {{h.autoc_pop_pct|pc}} of the world's people live in autocracies and {{h.lib_pop_pct|pc}} in liberal democracies. Figure~\ref{fig:xreg} crosses the electoral system with regime type: {{x_elec_regime.dem_share.Proportional|pc}} of proportional, {{x_elec_regime.dem_share.Mixed|pc}} of mixed and {{x_elec_regime.dem_share.Majoritarian|pc}} of majoritarian countries are democracies, and {{x_elec_regime.lib_share.Proportional|pc}}, {{x_elec_regime.lib_share.Mixed|pc}} and {{x_elec_regime.lib_share.Majoritarian|pc}} respectively are liberal democracies. Among the {{h.lib_n|int}} liberal democracies, {{lib_dem_pr_pct|pc}} use proportional representation, {{lib_dem_mixed_pct|pc}} a mixed system and {{lib_dem_maj_pct|pc}} a majoritarian one.
+
+Figure~\ref{fig:ldi} shows the Liberal Democracy Index by family. The {{mon_vs.cer_mon_n|int}} ceremonial monarchies scored by V-Dem have the highest mean ({{mon_vs.cer_mon_libdem_mean|f2}}, against {{mon_vs.parl_rep_libdem_mean|f2}} for parliamentary republics); {{mon_vs.cer_mon_lib_n|int}} of them are liberal democracies, and the three highest-scoring countries on V-Dem's index are Denmark, Sweden and Norway. Cambodia, Papua New Guinea and Thailand are ceremonial monarchies classed as autocracies. Where the monarch rules, scores are low: the mean is {{families.1.libdem_mean|f2}} for ruling and {{families.2.libdem_mean|f2}} for absolute monarchies. {{pres_parl.spp_dem_pct|pc}} of premier-presidential countries are democracies against {{pres_parl.srp_dem_pct|pc}} of president-parliamentary ones; among presidential republics the share is {{pres_parl.pres_dem_pct|pc}}, among parliamentary republics {{pres_parl.parl_dem_pct|pc}}. These contrasts echo long-standing arguments about presidentialism \citep{linz,cheibub} and semi-presidential subtypes \citep{elgie2011}, but they are bivariate and descriptive: region, colonial inheritance, wealth and history shape both institutions and democracy, and in authoritarian states constitutions often describe the form rather than the reality of power.
+
+\begin{figure}[tbp]\centering\includegraphics[width=.9\textwidth]{f_elec_regime.png}
+\caption{Electoral system of the lower or only chamber against V-Dem Regimes of the World ({{meta.vdem_year|raw}}), countries.}\label{fig:xreg}\end{figure}
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_ldi.png}
+\caption{V-Dem Liberal Democracy Index by family ({{meta.vdem_year|raw}}); ticks mark medians.}\label{fig:ldi}\end{figure}
+
+\subsection{Agreement between sources and hand decisions}
+Where both sources speak to a field they agree in most cases (Table~\ref{tab:checks}). {{n.disagree_cells|int}} country--field cells in {{n.disagree_countries|int}} countries still disagree after the rules are applied. The largest group ({{checks_words.ex_semi_from_pres|int}}) are states the Factbook labels presidential that also have a prime minister whom V-Dem codes the president as able to dismiss; others are monarchies the Factbook calls parliamentary where V-Dem codes a ruling monarch (Jordan, Morocco) and military regimes the Factbook lists under their constitutional label. {{hand.n|int}} hand decisions in {{hand.countries|int}} countries ({{hand.by_conf.high|int}} rated high confidence, {{hand.by_conf.medium|int}} medium) settle the remaining hard cases, among them the United Kingdom's asymmetric devolution, France's constitutional premier-presidentialism, Switzerland's directorial executive, Iran's Supreme Leader, Bosnia's federal structure and ethnic presidency, Lebanon's confessional power sharing, the Holy See, Andorra's co-princes, Malaysia's elective monarchy, the United Arab Emirates as a federation of absolute monarchies, and the transitional or military governments of Libya, Myanmar, Afghanistan, Sudan and Haiti (Table~\ref{tab:hard}). Every decision, with its reason and citation, is in the released data.
+
+{{TABLE_CHECKS}}
+
+{{TABLE_HARD}}
+
+\section{Discussion}
+Moving from a binary to eight fields changes what a world map of government shows. At family level the map is dominated by two large blocks, presidential republics in the Americas and Africa and parliamentary systems in Europe, South Asia and the old Commonwealth, with a belt of president-parliamentary systems across North Africa and the former Soviet Union and a small but populous set of one-party states in East Asia. At the level of exact systems, institutional design turns out to be highly individual: two in five countries have a combination nobody else uses, among them China, Indonesia and Russia. Shared systems cluster regionally, which is what one would expect from diffusion of constitutional models, from post-communist Europe's list-PR parliamentary republics to Latin America's presidential list-PR republics and the Caribbean realms' Westminster template.
+
+The classification separates form from quality on purpose. That France and the Republic of the Congo share an exact constitutional form, or that ceremonial monarchy co-exists with both the highest and some of the lowest liberal democracy scores, are reminders that institutional labels are not regime outcomes. The descriptive associations reported here, between proportional representation, premier-presidential semi-presidentialism and parliamentary monarchy on one side and democracy on the other, are consistent with comparative research but should not be read causally.
+
+\section{Limitations}
+First, every typology flattens: degrees of federalism, of presidential power and of proportionality are continuous, and the thresholds used (for example V-Dem's in-practice indicator at 0.5 for the semi-presidential subtype) decide borderline cases. Second, the two sources differ in kind: V-Dem codes practice through expert surveys, with uncertainty; the Factbook describes the constitution and sometimes lags behind changes. Third, the electoral system is that of the latest coded election and may since have been reformed. Fourth, V-Dem does not cover {{n.not_vdem|int}} small states, whose fields rest on the Factbook and hand decisions. Fifth, the reference date is the start of {{meta.ref_year|raw}}, and some countries (Guinea, Myanmar, Syria) were changing as it passed. Sixth, power sharing is coded narrowly and reserved seats for minorities are not coded. Finally, Wikidata and Wikipedia, natural third sources, could not be used in this version.
+
+\section{Conclusion}
+The world's {{n.countries|int}} states fall into {{n.families|int}} families of government but {{signatures.n|int}} exact systems, and {{signatures.n_unique|int}} countries, holding {{signatures.pop_unique_pct|pc}} of humanity, share their system with nobody. Classifying form and quality separately, from cross-checked open sources with every judgement documented, gives a map of how countries are put together that sits beside, rather than replaces, maps of how democratic they are.
+
+\section*{Data and code availability}
+The interactive map is at \url{{{meta.page}}}. Data and code are at \url{{{meta.repo}}} and archived with this paper at @@DOILINK@@. Because the data include V-Dem values, the derived data, text and figures are released under CC BY-SA 4.0; code under the MIT licence. The Factbook is public domain, World Bank data CC BY 4.0 and Natural Earth public domain.
+
+\section*{AI statement}
+I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.
+
+\begin{thebibliography}{20}
+\bibitem[Cheibub(2007)]{cheibub} Cheibub, J. A. (2007) \emph{Presidentialism, Parliamentarism, and Democracy}. Cambridge: Cambridge University Press.
+\bibitem[CIA(2026)]{factbook} Central Intelligence Agency (2026) \emph{The World Factbook}, 2026 and December 2024 editions. Public domain. As JSON: \url{https://github.com/factbook/factbook.json}
+\bibitem[Coppedge et al.(2026)]{vdem} Coppedge, M., Gerring, J., Knutsen, C. H., Lindberg, S. I., Teorell, J. et al. (2026) V-Dem Country-Year Dataset {{meta.vdem_version|raw}}. Varieties of Democracy (V-Dem) Project. \url{https://doi.org/{{meta.vdem_doi|raw}}}
+\bibitem[Duverger(1980)]{duverger} Duverger, M. (1980) A new political system model: semi-presidential government. \emph{European Journal of Political Research} 8(2), 165 to 187.
+\bibitem[Elgie(2011)]{elgie2011} Elgie, R. (2011) \emph{Semi-Presidentialism: Sub-Types and Democratic Performance}. Oxford: Oxford University Press.
+\bibitem[Lijphart(2012)]{lijphart} Lijphart, A. (2012) \emph{Patterns of Democracy: Government Forms and Performance in Thirty-Six Countries}. 2nd edn. New Haven: Yale University Press.
+\bibitem[Linz(1990)]{linz} Linz, J. J. (1990) The perils of presidentialism. \emph{Journal of Democracy} 1(1), 51 to 69.
+\bibitem[Lührmann et al.(2018)]{row} Lührmann, A., Tannenberg, M. and Lindberg, S. I. (2018) Regimes of the World (RoW): opening new avenues for the comparative study of political regimes. \emph{Politics and Governance} 6(1), 60 to 77.
+\bibitem[Maerz et al.(2026)]{vdemdata} Maerz, S. F., Edgell, A. B., Hellmeier, S., Ilchenko, N. and Fox, L. (2026) vdemdata: an R package to load, explore and work with the most recent V-Dem dataset, version 16.0. \url{https://github.com/vdeminstitute/vdemdata}
+\bibitem[Natural Earth(2026)]{naturalearth} Natural Earth (2026) Admin 0 countries, 1:10m and 1:50m. Public domain. \url{https://www.naturalearthdata.com/}
+\bibitem[Reynolds et al.(2005)]{reynolds} Reynolds, A., Reilly, B. and Ellis, A. (2005) \emph{Electoral System Design: The New International IDEA Handbook}. Stockholm: International IDEA.
+\bibitem[Shugart and Carey(1992)]{shugartcarey} Shugart, M. S. and Carey, J. M. (1992) \emph{Presidents and Assemblies: Constitutional Design and Electoral Dynamics}. Cambridge: Cambridge University Press.
+\bibitem[World Bank(2026)]{wb} World Bank (2026) World Development Indicators: population, total (SP.POP.TOTL). CC BY 4.0. Via \url{https://github.com/datasets/population}
+\end{thebibliography}
+
+\clearpage
+\appendix
+\section{All {{n.countries|int}} countries}
+{{TABLE_ALL}}
+\end{document}
