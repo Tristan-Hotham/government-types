@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "How the World Is Governed: A Feature-by-Feature Classification of 197 Systems of Government, Cross-Checked against V-Dem and the CIA World Factbook"
+type: dataset
+authors:
+  - family-names: Hotham
+    given-names: Tristan
+    orcid: "https://orcid.org/0000-0003-4931-9349"
+    affiliation: "Independent researcher"
+doi: "10.5281/zenodo.23863540"
+url: "https://maps.tristanhotham.com/government-types/"
+repository-code: "https://github.com/Tristan-Hotham/government-types"
+license: CC-BY-SA-4.0
+keywords:
+  - "political systems"
+  - "forms of government"
+  - "semi-presidentialism"
+  - "federalism"
+  - "electoral systems"
+  - "V-Dem"
+  - "Regimes of the World"
+  - "CIA World Factbook"
+  - "comparative politics"
+  - "open data"
